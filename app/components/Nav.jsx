@@ -6,32 +6,17 @@ var Nav = React.createClass({
 
   render: function(){
     return (
-      <nav className="navbar navbar-inverse navbar-fixed-top">
-      	<div className="container">
-      		<div className="navbar-header">
-      			<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-      				<span className="sr-only">Toggle navigation</span>
-      				<span className="icon-bar"></span>
-      				<span className="icon-bar"></span>
-      				<span className="icon-bar"></span>
-      			</button>
-      			<a className="navbar-brand" href="#">Balance Web Development</a>
-      		</div>
-      		<div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      			<ul className="nav navbar-nav navbar-right">
-      				<li><a href="#">About</a></li>
-      				<li className="dropdown">
-      					<a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-      					<ul className="dropdown-menu">
-      						<li><a href="#">Design</a></li>
-      						<li><a href="#">Development</a></li>
-      						<li><a href="#">Consulting</a></li>
-      					</ul>
-      				</li>
-      				<li><a href="#">Contact</a></li>
-      			</ul>
-      		</div>
-      	</div>
+      <nav className="navbar navbar-default navbar-fixed-top">
+        <div className="container-fluid">
+          <div className="navbar-header">
+            <a className="navbar-brand" >YUNLIN's PORTFOLIO</a>
+          </div>
+          <ul className="nav navbar-nav">
+            <li><Link to="/home" activeClassName="active" activeStyle={{fontWeight:"bold"}}>Home</Link></li>
+            <li><Link to="/contact" activeClassName="active" activeStyle={{fontWeight:"bold"}}>Contact</Link></li>
+            <li><a href="#test">Test</a></li>
+          </ul>
+        </div>
       </nav>
       // <div data-sticky-container="">
       //   <div className="sticky" data-sticky="" data-options="marginTop:-0.8;">

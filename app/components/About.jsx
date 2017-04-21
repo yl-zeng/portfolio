@@ -1,43 +1,22 @@
 var React = require("React");
 
 
-
 var About = (props) =>{
   return (
     <div>
-      <div id="section-about">
-          <nav id="nav-bar" class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-              //Brand and toggle get grouped for better mobile display
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                <a class="navbar-brand animated flip" href="#twoam">2am ninja</a>
-              </div>
-
-              //Collect the nav links, forms, and other content for toggling
-              <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-
-              </div>
-              // /.navbar-collapse
+      <section id="about" class="sec-about">
+        <div className="container-fluid">
+          <h1>About me</h1>
+          <hr />
+          <div className="row">
+            <div className="col-sm-6 col-sm-offset-3">
+              <p>Hi, my name is Alex Devero and I am a Web Designer & Developer based in Prague. I love crafting beautiful web pages in HTML5, CSS3 and JavaScript or jQuery. My other skills include WordPress, Photoshop, Illustrator. You can grab my CV in
+                <a href="#">English</a> or <a href="#">Czech</a> version. If you want to hire me or just to talk, <a class="js-connect" href="#footer">connect</a> with me.</p>
             </div>
-            // /.container-fluid
-          </nav>
-
-
-
-      </div>
+          </div>
+        </div>
+      </section>
     </div>
-
   );
 };
 

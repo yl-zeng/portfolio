@@ -1,24 +1,19 @@
-var React = require("react");
+var React = require("React");
+var Nav2 = require("Nav2");
+var About = require("About");
+var Skill = require("Skill");
+var Folio = require("Folio");
 
 
-var Home = React.createClass({
-  render: function(){
-    return (
-      <div>
-        <div id="section-main" >
-          <h1 className="text-center heading">Technology doesn't change world, people do.</h1>
-            <div id="Big-in" className="animated infinite slideInDown">
-              <i className="fa fa-linkedin fa-5x"></i>
-            </div>
-        </div>
-
-        <h1 className="section">hello</h1>
-        <h1 className="section">hello</h1>
-        <h1 className="section">hello</h1>
-      </div>
-    )
-  }
-});
-
+var Home = (props) =>{
+  return (
+    <div>
+      <Nav2></Nav2>
+      <About></About>
+      <Skill></Skill>
+      <Folio></Folio>
+    </div>
+  );
+};
 
 module.exports = Home;

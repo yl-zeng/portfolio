@@ -23,8 +23,14 @@ module.exports ={
     alias:{
       Main:"app/components/Main.jsx",
       Nav:"app/components/Nav.jsx",
+      Nav2:"app/components/Nav2.jsx",
+      Page:"app/components/Page.jsx",
+      Home:"app/components/Home.jsx",
       About:"app/components/About.jsx",
-      Home:"app/components/Home.jsx"
+      Skill:"app/components/Skill.jsx",
+      Folio:"app/components/Folio.jsx",
+      Contact:"app/components/Contact.jsx"
+
     },
     extensions:['','.js','.jsx']
   },
