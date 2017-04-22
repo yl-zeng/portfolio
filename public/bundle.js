@@ -33373,31 +33373,100 @@
 /* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var React = __webpack_require__(21);
 
-	var Folio = function Folio(props) {
-	  return React.createElement(
-	    "div",
-	    null,
-	    React.createElement(
-	      "section",
-	      { id: "folio", className: "sec-folio folio" },
+	var Folio = React.createClass({
+	  displayName: 'Folio',
+
+
+	  render: function render() {
+	    var project = {
+	      title: 'Quotes',
+	      text: 'HI',
+
+	      image: ['http://2am.ninja/img/quotes.jpg'],
+	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/dojjre'], ['Live Site', 'fa-link', 'http://2am.ninja/quotes/']]
+	    };
+
+	    return React.createElement(
+	      'div',
+	      null,
 	      React.createElement(
-	        "div",
-	        { className: "container" },
+	        'section',
+	        { id: 'folio', className: 'sec-folio folio' },
 	        React.createElement(
-	          "h1",
-	          { className: "text-center" },
-	          "FOLIO"
-	        ),
-	        React.createElement("hr", null),
-	        React.createElement("div", { "class": "row", id: "theProjects" })
+	          'div',
+	          { className: 'container' },
+	          React.createElement(
+	            'h1',
+	            { className: 'text-center' },
+	            'FOLIO'
+	          ),
+	          React.createElement('hr', null),
+	          React.createElement(
+	            'div',
+	            { className: 'row', id: 'theProjects' },
+	            React.createElement(
+	              'div',
+	              { className: 'col-sm-6 col-md-4' },
+	              React.createElement(
+	                'div',
+	                { className: 'card effect_click' },
+	                React.createElement(
+	                  'div',
+	                  { className: 'card_front' },
+	                  React.createElement(
+	                    'figure',
+	                    null,
+	                    React.createElement('img', { className: 'img-responsive', src: project.image[0] }),
+	                    React.createElement(
+	                      'figcaption',
+	                      { className: 'project-title' },
+	                      project.title
+	                    )
+	                  )
+	                ),
+	                React.createElement(
+	                  'div',
+	                  { className: 'card_back' },
+	                  React.createElement(
+	                    'figure',
+	                    null,
+	                    React.createElement(
+	                      'div',
+	                      { className: 'project-title' },
+	                      project.title
+	                    ),
+	                    React.createElement(
+	                      'figcaption',
+	                      null,
+	                      React.createElement(
+	                        'div',
+	                        { className: 'project-body' },
+	                        project.text
+	                      ),
+	                      React.createElement(
+	                        'div',
+	                        null,
+	                        React.createElement(
+	                          'a',
+	                          { 'data-toggle': 'tooltip', title: project.site[0][0], 'data-placement': 'top', href: project.site[0][2], target: '_blank', className: 'btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0' },
+	                          React.createElement('i', { className: 'fa \' + project.site[0][1] + \'', 'aria-hidden': 'true' })
+	                        )
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
 	      )
-	    )
-	  );
-	};
+	    );
+	  }
+	});
 
 	module.exports = Folio;
 
@@ -33591,7 +33660,7 @@
 
 
 	// module
-	exports.push([module.id, "#folio{\r\n  margin-top: 300px;\r\n}\r\n", ""]);
+	exports.push([module.id, "#folio{\r\n  margin-top: 300px;\r\n}\r\n\r\n\r\n.btn-circle {\r\n  width: 50px;\r\n  height: 50px;\r\n  text-align: center;\r\n  padding: 0;\r\n  font-size: 24px;\r\n  line-height: 48px;\r\n  border-radius: 50%;\r\n  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.btn-lnk {\r\n  position: absolute;\r\n  bottom: 15px;\r\n}\r\n\r\n.btn-lnk0 {\r\n  left: 30px;\r\n}\r\n\r\n.btn-lnk1 {\r\n  right: 30px;\r\n}\r\n\r\n\r\n.card {\r\n  position: relative;\r\n  width: 300px;\r\n  height: 365px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 20px;\r\n  -webkit-perspective: 2000px;\r\n  -moz-perspective: 2000px;\r\n  perspective: 2000px;\r\n  cursor: pointer;\r\n}\r\n\r\n.card img {\r\n  width: calc(300px - 0px);\r\n  height: calc(365px - 45px);\r\n  border-top-left-radius: 6px;\r\n  border-top-right-radius: 6px;\r\n  border-style: solid;\r\n  border-color: rgba(0,0,0,0.16);\r\n  border-bottom-width: 1px;\r\n}\r\n\r\n.card_front, .card_back {\r\n  position: absolute;\r\n  left: 0px;\r\n  top: 0px;\r\n  width: inherit;\r\n  height: inherit;\r\n  border-style: solid;\r\n  border-width: 0px;\r\n  border-radius: 6px;\r\n  border-color: #666;\r\n  -webkit-backface-visibility: hidden;\r\n  backface-visibility: hidden;\r\n  -webkit-transition: -webkit-transform 0.9s ease-in-out;\r\n  transition: transform 0.9s ease-in-out;\r\n  -webkit-transform-style: preserve-3d;\r\n  -moz-transform-style: preserve-3d;\r\n  transform-style: preserve-3d;\r\n  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)\r\n}\r\n\r\n\r\n.card_front:hover, .card_back:hover {\r\n  left: -4px;\r\n  top: -4px;\r\n  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.card_front {\r\n  background-color: white;\r\n}\r\n\r\n.card_back {\r\n  background-color: #fafffc;\r\n  -webkit-transform: rotateY(179deg);\r\n  -ms-transform: rotateY(179deg);\r\n  transform: rotateY(179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_front {\r\n\r\n  -webkit-transform: rotateY(-179deg);\r\n  -ms-transform: rotateY(-179deg);\r\n  transform: rotateY(-179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_back {\r\n\r\n  -webkit-transform: rotateY(0deg);\r\n  -ms-transform: rotateY(0deg);\r\n  transform: rotateY(0deg);\r\n}\r\n", ""]);
 
 	// exports
 
