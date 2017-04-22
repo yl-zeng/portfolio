@@ -1,6 +1,6 @@
 var React = require("React");
 
-var Nav2 = (props) =>{
+var Footer = (props) =>{
   return (
       <nav id="2-nav-bar" className="navbar navbar-inverse navbar-fixed-bottom">
           <div className="container-fluid">
@@ -18,8 +18,7 @@ var Nav2 = (props) =>{
             </div>
           </div>
         </nav>
-
   );
 };
 
-module.exports = Nav2;
+module.exports = Footer;

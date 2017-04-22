@@ -4,6 +4,7 @@ var webpack = require("webpack");
 module.exports ={
   entry: [
     "script!jquery/dist/jquery.min.js",
+    "script!bootstrap/dist/js/bootstrap.min.js",
     "./app/app.jsx"],
   externals:{
     jquery:'jQuery'
@@ -24,7 +25,8 @@ module.exports ={
       Main:"app/components/Main.jsx",
       Nav:"app/components/Nav.jsx",
       Nav2:"app/components/Nav2.jsx",
-      Page:"app/components/Page.jsx",
+      Footer:"app/components/Footer.jsx",
+      IndexPage:"app/components/IndexPage.jsx",
       Home:"app/components/Home.jsx",
       About:"app/components/About.jsx",
       Skill:"app/components/Skill.jsx",

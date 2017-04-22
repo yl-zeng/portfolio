@@ -9,12 +9,11 @@ var Nav = React.createClass({
       <nav className="navbar navbar-default navbar-fixed-top">
         <div className="container-fluid">
           <div className="navbar-header">
-            <a className="navbar-brand" >YUNLIN's PORTFOLIO</a>
+            <a className="navbar-brand" href="/">YUNLIN's PORTFOLIO</a>
           </div>
           <ul className="nav navbar-nav">
             <li><Link to="/home" activeClassName="active" activeStyle={{fontWeight:"bold"}}>Home</Link></li>
             <li><Link to="/contact" activeClassName="active" activeStyle={{fontWeight:"bold"}}>Contact</Link></li>
-            <li><a href="#test">Test</a></li>
           </ul>
         </div>
       </nav>

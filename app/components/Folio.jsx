@@ -8,7 +8,18 @@ var Folio = React.createClass({
 
     var data = [{
       title: 'Quotes',
-      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-build-a-random-quote-machine" target="_blank"><i>Build a Random Quote Machine</i></a>. The user is able to show a new random quote and send that quote to Twitter. <strong>Quotes</strong> was designed and optimized to be a mobile web app first.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Graphics Editor:</strong> Gimp, pixlr.com<br> <strong>Images:</strong> lorempixel.com<br> <strong>Fonts:</strong> Font-awesome<br> <strong>Data:</strong> random famous quotes API',
+      text: (
+        <div>
+          <p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-build-a-random-quote-machine" target="_blank"><i>Build a Random Quote Machine</i></a>. The user is able to show a new random quote and send that quote to Twitter.
+          <strong>Quotes</strong> was designed and optimized to be a mobile web app first.</p>
+          <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br/>
+          <strong>Layout:</strong> Bootstrap<br/>
+          <strong>Graphics Editor:</strong> Gimp, pixlr.com<br/>
+          <strong>Images:</strong> lorempixel.com<br/>
+          <strong>Fonts:</strong> Font-awesome<br/>
+          <strong>Data:</strong> random famous quotes API
+        </div>
+      ),
 
       image: ['http://2am.ninja/img/quotes.jpg'],
       site: [
