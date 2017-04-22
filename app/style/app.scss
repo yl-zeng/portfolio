@@ -1,4 +1,16 @@
+html {
+  font-size: 16px;
+}
 
+body {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+}
+
+hr {
+  margin-bottom: 3em;
+  width: 7%;
+}
 
 #section-main {
   height:700px;
@@ -16,7 +28,12 @@
 }
 
 .section{
-  height:500px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.navbar-default{
+  background: #fff;
 }
 
 #2-nav-bar {

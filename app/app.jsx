@@ -7,12 +7,12 @@ var Page = require("Page");
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
-import 'font-awesome/css/font-awesome.min.css';
+//import 'font-awesome/css/font-awesome.min.css';
 
 require("style!css!sass!./style/app.scss");
 require("./style/about.css");
 require("./style/skill.css");
-
+require("./style/folio.css");
 
 ReactDOM.render(
   <Router history={hashHistory}>

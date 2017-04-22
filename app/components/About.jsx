@@ -3,10 +3,9 @@ var React = require("React");
 
 var About = (props) =>{
   return (
-    <div>
-      <section id="about" class="sec-about">
-        <div className="container-fluid">
-          <h1>About me</h1>
+      <section id="about" className="sec-about section">
+        <div className="container">
+          <h1 className="text-center">ABOUT ME</h1>
           <hr />
           <div className="row">
             <div className="col-sm-6 col-sm-offset-3">
@@ -16,7 +15,6 @@ var About = (props) =>{
           </div>
         </div>
       </section>
-    </div>
   );
 };
 
