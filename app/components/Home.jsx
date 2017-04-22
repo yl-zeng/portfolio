@@ -6,6 +6,8 @@ var Folio = require("Folio");
 
 
 var Home = (props) =>{
+
+
   return (
     <div>
       <Nav2></Nav2>

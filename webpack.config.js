@@ -29,7 +29,8 @@ module.exports ={
       About:"app/components/About.jsx",
       Skill:"app/components/Skill.jsx",
       Folio:"app/components/Folio.jsx",
-      Contact:"app/components/Contact.jsx"
+      Contact:"app/components/Contact.jsx",
+      Card:"app/components/Card.jsx"
 
     },
     extensions:['','.js','.jsx']

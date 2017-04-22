@@ -97,14 +97,14 @@
 
 	var Main = __webpack_require__(255);
 	var Home = __webpack_require__(282);
-	var Page = __webpack_require__(287);
+	var Page = __webpack_require__(288);
 
 	//import 'font-awesome/css/font-awesome.min.css';
 
-	__webpack_require__(288);
-	__webpack_require__(290);
-	__webpack_require__(292);
-	__webpack_require__(294);
+	__webpack_require__(289);
+	__webpack_require__(291);
+	__webpack_require__(293);
+	__webpack_require__(295);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -33183,6 +33183,7 @@
 	var Folio = __webpack_require__(286);
 
 	var Home = function Home(props) {
+
 	  return React.createElement(
 	    "div",
 	    null,
@@ -33373,94 +33374,91 @@
 /* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(21);
+	var Card = __webpack_require__(287);
 
 	var Folio = React.createClass({
-	  displayName: 'Folio',
+	  displayName: "Folio",
 
 
 	  render: function render() {
-	    var project = {
+
+	    var data = [{
 	      title: 'Quotes',
-	      text: 'HI',
+	      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-build-a-random-quote-machine" target="_blank"><i>Build a Random Quote Machine</i></a>. The user is able to show a new random quote and send that quote to Twitter. <strong>Quotes</strong> was designed and optimized to be a mobile web app first.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Graphics Editor:</strong> Gimp, pixlr.com<br> <strong>Images:</strong> lorempixel.com<br> <strong>Fonts:</strong> Font-awesome<br> <strong>Data:</strong> random famous quotes API',
 
 	      image: ['http://2am.ninja/img/quotes.jpg'],
 	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/dojjre'], ['Live Site', 'fa-link', 'http://2am.ninja/quotes/']]
-	    };
+	    }, {
+	      title: 'Twitch TV',
+	      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-use-the-twitchtv-json-api" target="_blank"><i>Use the Twitchtv JSON API</i></a>. A user can see if Free Code Camp is currently streaming on Twitch.tv.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Fonts:</strong> Ubuntu Mono<br> <strong>Data:</strong> Twitchtv API',
+
+	      image: ['http://2am.ninja/img/twitch3.jpg'],
+	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/jrEBgq']
+	      //      ,['Live Site', 'fa-link', 'http://2am.ninja/twitch/']
+	      ]
+	    }, {
+	      title: 'Wiki Search',
+	      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-build-a-wikipedia-viewer" target="_blank"><i>Build a Wikipedia Viewer</i></a>. A user can search Wikipedia entries in a search box and see the resulting Wikipedia entries.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Graphics Editor:</strong> pixlr.com<br> <strong>Images:</strong> unsplash.com<br> <strong>Data:</strong> Wikipedia API',
+
+	      image: ['http://2am.ninja/img/wiki.jpg'],
+	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/rVRwor']]
+	    }, {
+	      title: 'Pomodoro Timer',
+	      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-build-a-pomodoro-clock" target="_blank"><i>Build a Pomodoro Clock</i></a>. A user can start a 25 minute pomodoro, and the timer will go off once 25 minutes has elapsed. <strong>Pomodoro Timer</strong> was designed and optimized to be a mobile web app first.</p> <strong>Code:</strong> HTML5, HTML5 Canvas, CSS3, Javascript, jQuery, ion.sound<br> <strong>Layout:</strong> Bootstrap, HTML5 Canvas<br> <strong>Fonts:</strong> IcoMoon',
+
+	      image: ['http://2am.ninja/img/timer.jpg'],
+	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/WvVZyM'], ['Live Site', 'fa-link', 'http://2am.ninja/timer/']]
+	    }, {
+	      title: 'Local Weather',
+	      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-show-the-local-weather" target="_blank"><i>Show the Local Weather</i></a>. A user can see the weather in my current location.. <strong>Local Weather</strong> was designed and optimized to be a mobile web app first.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Images:</strong> flickr.com<br> <strong>Fonts:</strong> Climacons, Open Sans<br> <strong>Data:</strong> Open Weather Map API, IP-API.com Geolocation API',
+
+	      image: ['http://2am.ninja/img/weather.jpg'],
+	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/oXaoxb']]
+	    }, {
+	      title: 'Bar Graph',
+	      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/visualize-data-with-a-bar-chart" target="_blank"><i>Visualize Data with a Bar Chart </i></a>. The user can see US Gross Domestic Product by quarter, over time, with a mouse over tooltip.</p> <strong>Code:</strong> HTML5, CSS3, D3, SVG, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap',
+
+	      image: ['http://2am.ninja/img/bar-graph.jpg'],
+	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/PNJMpg']]
+	    }, {
+	      title: 'Heat Map',
+	      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/visualize-data-with-a-heat-map" target="_blank"><i>Visualize Data with a Heat Map</i></a>. The user can view a heat map with data represented both on the Y and X axis, with mouse over tooltip.</p> <strong>Code:</strong> HTML5, CSS3, D3, SVG, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap',
+
+	      image: ['http://2am.ninja/img/heat-map.jpg'],
+	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/VeKNEa']]
+	    }, {
+	      title: 'Tic-Tac-Toe',
+	      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/build-a-tic-tac-toe-game" target="_blank"><i>Build a Tic Tac Toe Game</i></a>. The user can play a game of Tic Tac Toe with the computer.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Materialize.css',
+
+	      image: ['http://2am.ninja/img/ttt.jpg'],
+	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/jWWYLo']]
+	    }];
 
 	    return React.createElement(
-	      'div',
+	      "div",
 	      null,
 	      React.createElement(
-	        'section',
-	        { id: 'folio', className: 'sec-folio folio' },
+	        "section",
+	        { id: "folio", className: "sec-folio folio" },
 	        React.createElement(
-	          'div',
-	          { className: 'container' },
+	          "div",
+	          { className: "container" },
 	          React.createElement(
-	            'h1',
-	            { className: 'text-center' },
-	            'FOLIO'
+	            "h1",
+	            { className: "text-center" },
+	            "FOLIO"
 	          ),
-	          React.createElement('hr', null),
+	          React.createElement("hr", null),
 	          React.createElement(
-	            'div',
-	            { className: 'row', id: 'theProjects' },
-	            React.createElement(
-	              'div',
-	              { className: 'col-sm-6 col-md-4' },
-	              React.createElement(
-	                'div',
-	                { className: 'card effect_click' },
-	                React.createElement(
-	                  'div',
-	                  { className: 'card_front' },
-	                  React.createElement(
-	                    'figure',
-	                    null,
-	                    React.createElement('img', { className: 'img-responsive', src: project.image[0] }),
-	                    React.createElement(
-	                      'figcaption',
-	                      { className: 'project-title' },
-	                      project.title
-	                    )
-	                  )
-	                ),
-	                React.createElement(
-	                  'div',
-	                  { className: 'card_back' },
-	                  React.createElement(
-	                    'figure',
-	                    null,
-	                    React.createElement(
-	                      'div',
-	                      { className: 'project-title' },
-	                      project.title
-	                    ),
-	                    React.createElement(
-	                      'figcaption',
-	                      null,
-	                      React.createElement(
-	                        'div',
-	                        { className: 'project-body' },
-	                        project.text
-	                      ),
-	                      React.createElement(
-	                        'div',
-	                        null,
-	                        React.createElement(
-	                          'a',
-	                          { 'data-toggle': 'tooltip', title: project.site[0][0], 'data-placement': 'top', href: project.site[0][2], target: '_blank', className: 'btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0' },
-	                          React.createElement('i', { className: 'fa \' + project.site[0][1] + \'', 'aria-hidden': 'true' })
-	                        )
-	                      )
-	                    )
-	                  )
-	                )
-	              )
-	            )
+	            "div",
+	            { className: "row", id: "theProjects" },
+	            React.createElement(Card, { projectData: data[0] }),
+	            React.createElement(Card, { projectData: data[1] }),
+	            React.createElement(Card, { projectData: data[2] }),
+	            React.createElement(Card, { projectData: data[3] })
 	          )
 	        )
 	      )
@@ -33472,6 +33470,109 @@
 
 /***/ },
 /* 287 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(21);
+
+	var Card = React.createClass({
+	  displayName: 'Card',
+
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      projectData: {
+	        title: 'Quotes',
+	        text: 'HI',
+
+	        image: ['http://2am.ninja/img/quotes.jpg'],
+	        site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/dojjre'], ['Live Site', 'fa-link', 'http://2am.ninja/quotes/']]
+	      }
+	    };
+	  },
+
+	  getInitialState: function getInitialState() {
+	    return {
+	      flip: ""
+	    };
+	  },
+
+	  handleClick: function handleClick(e) {
+	    e.preventDefault();
+	    //alert("this LInk is clicked");
+	    if (this.state.flip === "") {
+	      this.setState({
+	        flip: "flipped"
+	      });
+	    } else {
+	      this.setState({
+	        flip: ""
+	      });
+	    }
+	  },
+	  render: function render() {
+	    var project = this.props.projectData;
+
+	    return React.createElement(
+	      'div',
+	      { className: 'col-sm-6 col-md-4' },
+	      React.createElement(
+	        'div',
+	        { className: "card effect_click " + this.state.flip, onClick: this.handleClick },
+	        React.createElement(
+	          'div',
+	          { className: 'card_front' },
+	          React.createElement(
+	            'figure',
+	            null,
+	            React.createElement('img', { className: 'img-responsive', src: project.image[0] }),
+	            React.createElement(
+	              'figcaption',
+	              { className: 'project-title' },
+	              project.title
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'card_back' },
+	          React.createElement(
+	            'figure',
+	            null,
+	            React.createElement(
+	              'div',
+	              { className: 'project-title' },
+	              project.title
+	            ),
+	            React.createElement(
+	              'figcaption',
+	              null,
+	              React.createElement(
+	                'div',
+	                { className: 'project-body' },
+	                project.text
+	              ),
+	              React.createElement(
+	                'div',
+	                null,
+	                React.createElement(
+	                  'a',
+	                  { 'data-toggle': 'tooltip', title: project.site[0][0], 'data-placement': 'top', href: project.site[0][2], target: '_blank', className: 'btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0' },
+	                  React.createElement('i', { className: "fa " + project.site[0][1], 'aria-hidden': 'true' })
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Card;
+
+/***/ },
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33506,13 +33607,13 @@
 	module.exports = Page;
 
 /***/ },
-/* 288 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(289);
+	var content = __webpack_require__(290);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(17)(content, {});
@@ -33532,7 +33633,7 @@
 	}
 
 /***/ },
-/* 289 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)(undefined);
@@ -33546,13 +33647,13 @@
 
 
 /***/ },
-/* 290 */
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(291);
+	var content = __webpack_require__(292);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(17)(content, {});
@@ -33572,7 +33673,7 @@
 	}
 
 /***/ },
-/* 291 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)(undefined);
@@ -33586,13 +33687,13 @@
 
 
 /***/ },
-/* 292 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(293);
+	var content = __webpack_require__(294);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(17)(content, {});
@@ -33612,7 +33713,7 @@
 	}
 
 /***/ },
-/* 293 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)(undefined);
@@ -33626,13 +33727,13 @@
 
 
 /***/ },
-/* 294 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(295);
+	var content = __webpack_require__(296);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(17)(content, {});
@@ -33652,7 +33753,7 @@
 	}
 
 /***/ },
-/* 295 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)(undefined);
@@ -33660,7 +33761,7 @@
 
 
 	// module
-	exports.push([module.id, "#folio{\r\n  margin-top: 300px;\r\n}\r\n\r\n\r\n.btn-circle {\r\n  width: 50px;\r\n  height: 50px;\r\n  text-align: center;\r\n  padding: 0;\r\n  font-size: 24px;\r\n  line-height: 48px;\r\n  border-radius: 50%;\r\n  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.btn-lnk {\r\n  position: absolute;\r\n  bottom: 15px;\r\n}\r\n\r\n.btn-lnk0 {\r\n  left: 30px;\r\n}\r\n\r\n.btn-lnk1 {\r\n  right: 30px;\r\n}\r\n\r\n\r\n.card {\r\n  position: relative;\r\n  width: 300px;\r\n  height: 365px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 20px;\r\n  -webkit-perspective: 2000px;\r\n  -moz-perspective: 2000px;\r\n  perspective: 2000px;\r\n  cursor: pointer;\r\n}\r\n\r\n.card img {\r\n  width: calc(300px - 0px);\r\n  height: calc(365px - 45px);\r\n  border-top-left-radius: 6px;\r\n  border-top-right-radius: 6px;\r\n  border-style: solid;\r\n  border-color: rgba(0,0,0,0.16);\r\n  border-bottom-width: 1px;\r\n}\r\n\r\n.card_front, .card_back {\r\n  position: absolute;\r\n  left: 0px;\r\n  top: 0px;\r\n  width: inherit;\r\n  height: inherit;\r\n  border-style: solid;\r\n  border-width: 0px;\r\n  border-radius: 6px;\r\n  border-color: #666;\r\n  -webkit-backface-visibility: hidden;\r\n  backface-visibility: hidden;\r\n  -webkit-transition: -webkit-transform 0.9s ease-in-out;\r\n  transition: transform 0.9s ease-in-out;\r\n  -webkit-transform-style: preserve-3d;\r\n  -moz-transform-style: preserve-3d;\r\n  transform-style: preserve-3d;\r\n  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)\r\n}\r\n\r\n\r\n.card_front:hover, .card_back:hover {\r\n  left: -4px;\r\n  top: -4px;\r\n  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.card_front {\r\n  background-color: white;\r\n}\r\n\r\n.card_back {\r\n  background-color: #fafffc;\r\n  -webkit-transform: rotateY(179deg);\r\n  -ms-transform: rotateY(179deg);\r\n  transform: rotateY(179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_front {\r\n\r\n  -webkit-transform: rotateY(-179deg);\r\n  -ms-transform: rotateY(-179deg);\r\n  transform: rotateY(-179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_back {\r\n\r\n  -webkit-transform: rotateY(0deg);\r\n  -ms-transform: rotateY(0deg);\r\n  transform: rotateY(0deg);\r\n}\r\n", ""]);
+	exports.push([module.id, "#folio{\r\n  margin-top: 300px;\r\n  padding-bottom: 200px;\r\n}\r\n\r\n\r\n.btn-circle {\r\n  width: 50px;\r\n  height: 50px;\r\n  text-align: center;\r\n  padding: 0;\r\n  font-size: 24px;\r\n  line-height: 48px;\r\n  border-radius: 50%;\r\n  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.btn-lnk {\r\n  position: absolute;\r\n  bottom: 15px;\r\n}\r\n\r\n.btn-lnk0 {\r\n  left: 30px;\r\n}\r\n\r\n.btn-lnk1 {\r\n  right: 30px;\r\n}\r\n\r\n\r\n.card {\r\n  position: relative;\r\n  width: 300px;\r\n  height: 365px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 20px;\r\n  -webkit-perspective: 2000px;\r\n  -moz-perspective: 2000px;\r\n  perspective: 2000px;\r\n  cursor: pointer;\r\n}\r\n\r\n.card img {\r\n  width: calc(300px - 0px);\r\n  height: calc(365px - 45px);\r\n  border-top-left-radius: 6px;\r\n  border-top-right-radius: 6px;\r\n  border-style: solid;\r\n  border-color: rgba(0,0,0,0.16);\r\n  border-bottom-width: 1px;\r\n}\r\n\r\n.card_front, .card_back {\r\n  position: absolute;\r\n  left: 0px;\r\n  top: 0px;\r\n  width: inherit;\r\n  height: inherit;\r\n  border-style: solid;\r\n  border-width: 0px;\r\n  border-radius: 6px;\r\n  border-color: #666;\r\n  -webkit-backface-visibility: hidden;\r\n  backface-visibility: hidden;\r\n  -webkit-transition: -webkit-transform 0.9s ease-in-out;\r\n  transition: transform 0.9s ease-in-out;\r\n  -webkit-transform-style: preserve-3d;\r\n  -moz-transform-style: preserve-3d;\r\n  transform-style: preserve-3d;\r\n  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)\r\n}\r\n\r\n\r\n.card_front:hover, .card_back:hover {\r\n  left: -4px;\r\n  top: -4px;\r\n  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.card_front {\r\n  background-color: white;\r\n}\r\n\r\n.card_back {\r\n  background-color: #fafffc;\r\n  -webkit-transform: rotateY(179deg);\r\n  -ms-transform: rotateY(179deg);\r\n  transform: rotateY(179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_front {\r\n\r\n  -webkit-transform: rotateY(-179deg);\r\n  -ms-transform: rotateY(-179deg);\r\n  transform: rotateY(-179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_back {\r\n\r\n  -webkit-transform: rotateY(0deg);\r\n  -ms-transform: rotateY(0deg);\r\n  transform: rotateY(0deg);\r\n}\r\n", ""]);
 
 	// exports
 
