@@ -92,7 +92,7 @@ var Folio = React.createClass({
 
     return (
       <div>
-        <section id="folio" className="sec-folio folio">
+        <section id="folio" className="sec-folio">
           <div className="container">
             <h1 className="text-center">FOLIO</h1>
             <hr />

@@ -4,7 +4,7 @@ var React = require("React");
 var Skill = (props) =>{
   return (
     <div>
-      <section id="skill" className="sec-skill section">
+      <section id="skill" className="sec-skill">
         <div className="container">
           <h1 className="text-center">SKILLS</h1>
           <hr />

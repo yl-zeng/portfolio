@@ -113,13 +113,12 @@
 	var IndexPage = __webpack_require__(290);
 	var Contact = __webpack_require__(291);
 
-	//import 'font-awesome/css/font-awesome.min.css';
-
 	__webpack_require__(293);
 	__webpack_require__(295);
 	__webpack_require__(297);
 	__webpack_require__(299);
 	__webpack_require__(301);
+	__webpack_require__(303);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -33116,13 +33115,13 @@
 	        ),
 	        React.createElement(
 	          "ul",
-	          { className: "nav navbar-nav" },
+	          { className: "nav navbar-nav navbar-right" },
 	          React.createElement(
 	            "li",
 	            null,
 	            React.createElement(
 	              Link,
-	              { to: "/home", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
+	              { to: "/home", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
 	              "Home"
 	            )
 	          ),
@@ -33131,47 +33130,13 @@
 	            null,
 	            React.createElement(
 	              Link,
-	              { to: "/contact", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
+	              { to: "/contact", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
 	              "Contact"
 	            )
 	          )
 	        )
 	      )
-	    )
-	    // <div data-sticky-container="">
-	    //   <div className="sticky" data-sticky="" data-options="marginTop:-0.8;">
-	    //     <div className="top-bar">
-	    //       <div className="row column">
-	    //         <div className="top-bar-left">
-	    //           <ul className="menu">
-	    //             <li className="menu-text">YUNLIN</li>
-	    //             <li>
-	    //               <Link to="/about" activeClassName="active" activeStyle={{fontWeight:"bold"}}>About</Link>
-	    //             </li>
-	    //             <li>
-	    //               <Link to="/contact" activeClassName="active" activeStyle={{fontWeight:"bold"}}>Contact</Link>
-	    //             </li>
-	    //           </ul>
-	    //         </div>
-	    //         <div className="top-bar-right">
-	    //           <form>
-	    //             <ul className="menu">
-	    //               <li>
-	    //                 <input type="search" placeholder="Search Weather by Zip Code" ref="search"/>
-	    //               </li>
-	    //               <li>
-	    //                 <input type="submit" className="button" value="Get Weather"/>
-	    //               </li>
-	    //             </ul>
-	    //           </form>
-	    //         </div>
-	    //
-	    //       </div>
-	    //     </div>
-	    //   </div>
-	    // </div>
-
-	    ;
+	    );
 	  }
 	});
 
@@ -33207,62 +33172,89 @@
 /* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
 	var React = __webpack_require__(258);
+	var ReactDOM = __webpack_require__(54);
+	var ReactDOMServer = __webpack_require__(306);
 
-	var Nav2 = function Nav2(props) {
-	  return React.createElement(
-	    "nav",
-	    { id: "2-nav-bar", className: "navbar navbar-inverse navbar-fixed-bottom" },
-	    React.createElement(
-	      "div",
-	      { className: "container-fluid" },
+	var Nav2 = React.createClass({
+	  displayName: "Nav2",
+
+
+	  handleClick1: function handleClick1(e) {
+	    e.preventDefault();
+	    $('body, html').animate({
+	      scrollTop: $("#about").offset().top + 50
+	    }, 750);
+	  },
+	  handleClick2: function handleClick2(e) {
+	    e.preventDefault();
+	    $('body, html').animate({
+	      scrollTop: $("#skill").offset().top + 50
+	    }, 750);
+	  },
+	  handleClick3: function handleClick3(e) {
+	    e.preventDefault();
+	    $('body, html').animate({
+	      scrollTop: $("#folio").offset().top + 50
+	    }, 750);
+	  },
+
+	  render: function render() {
+	    return React.createElement(
+	      "nav",
+	      { id: "2-nav-bar", className: "navbar navbar-inverse navbar-fixed-bottom", role: "navigation" },
 	      React.createElement(
 	        "div",
-	        { className: "navbar-header" },
-	        React.createElement("i", { className: "navbar-brand fa fa-linkedin animated flip", href: "#twoam" })
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "collapse navbar-collapse", id: "navbar-collapse-1" },
+	        { className: "container-fluid" },
 	        React.createElement(
-	          "ul",
-	          { className: "nav navbar-nav navbar-left" },
+	          "div",
+	          { className: "navbar-header" },
+	          React.createElement("i", { className: "navbar-brand fa fa-linkedin animated flip", href: "#twoam" })
+	        ),
+	        React.createElement(
+	          "div",
+	          { className: "collapse navbar-collapse", id: "navbar-collapse-1" },
 	          React.createElement(
-	            "li",
-	            null,
+	            "ul",
+	            { className: "nav navbar-nav navbar-center js-nav" },
 	            React.createElement(
-	              "a",
-	              { href: "#about" },
-	              "About"
-	            )
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
+	              "li",
+	              null,
+	              React.createElement(
+	                "a",
+	                { href: "#about", className: "nav2-link-title", onClick: this.handleClick1 },
+	                "About"
+	              )
+	            ),
 	            React.createElement(
-	              "a",
-	              { href: "#skill" },
-	              "Skill"
-	            )
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
+	              "li",
+	              null,
+	              React.createElement(
+	                "a",
+	                { href: "#skill", className: "nav2-link-title", onClick: this.handleClick2 },
+	                "Skill"
+	              )
+	            ),
 	            React.createElement(
-	              "a",
-	              { href: "#folio" },
-	              "Contact"
+	              "li",
+	              null,
+	              React.createElement(
+	                "a",
+	                { href: "#folio", className: "nav2-link-title", onClick: this.handleClick3 },
+	                "Folio"
+	              )
 	            )
 	          )
 	        )
 	      )
-	    )
-	  );
-	};
+	    );
+	  }
+	});
 
 	module.exports = Nav2;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(305)))
 
 /***/ },
 /* 286 */
@@ -33336,7 +33328,7 @@
 	    null,
 	    React.createElement(
 	      "section",
-	      { id: "skill", className: "sec-skill section" },
+	      { id: "skill", className: "sec-skill" },
 	      React.createElement(
 	        "div",
 	        { className: "container" },
@@ -33566,7 +33558,7 @@
 	      null,
 	      React.createElement(
 	        "section",
-	        { id: "folio", className: "sec-folio folio" },
+	        { id: "folio", className: "sec-folio" },
 	        React.createElement(
 	          "div",
 	          { className: "container" },
@@ -33703,6 +33695,9 @@
 
 	var React = __webpack_require__(23);
 
+	var _require = __webpack_require__(200),
+	    Link = _require.Link;
+
 	var IndexPage = React.createClass({
 	  displayName: "IndexPage",
 
@@ -33724,7 +33719,11 @@
 	        React.createElement(
 	          "div",
 	          { id: "Big-in", className: "animated infinite slideInDown" },
-	          React.createElement("i", { className: "fa fa-linkedin fa-5x" })
+	          React.createElement(
+	            Link,
+	            { to: "/home", style: { color: "white" } },
+	            React.createElement("i", { className: "fa fa-angle-double-down fa-5x" })
+	          )
 	        )
 	      )
 	    );
@@ -33747,69 +33746,74 @@
 
 	  render: function render() {
 	    return React.createElement(
-	      "section",
-	      { id: "contact", className: "sec-contact" },
+	      "div",
+	      null,
 	      React.createElement(
-	        "div",
-	        { className: "container" },
-	        React.createElement(
-	          "h1",
-	          null,
-	          "Hire me"
-	        ),
-	        React.createElement("hr", null),
+	        "section",
+	        { id: "contact", className: "sec-contact" },
 	        React.createElement(
 	          "div",
-	          { className: "row" },
+	          { className: "container" },
+	          React.createElement(
+	            "h1",
+	            null,
+	            "Hire me"
+	          ),
+	          React.createElement("hr", null),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-4 col-sm-offset-4" },
+	            { className: "row" },
 	            React.createElement(
-	              "form",
-	              { className: "center-block", action: "#", method: "post" },
+	              "div",
+	              { className: "col-sm-4 col-sm-offset-4" },
 	              React.createElement(
-	                "div",
-	                { className: "form-group" },
+	                "form",
+	                { className: "center-block", action: "#", method: "post" },
 	                React.createElement(
-	                  "label",
-	                  { className: "sr-only", "for": "inputName" },
-	                  "Full name"
+	                  "div",
+	                  { className: "form-group" },
+	                  React.createElement(
+	                    "label",
+	                    { className: "sr-only", "for": "inputName" },
+	                    "Full name"
+	                  ),
+	                  React.createElement("input", { id: "inputName", className: "form-control", type: "text", placeholder: "Adam Smith", required: true })
 	                ),
-	                React.createElement("input", { id: "inputName", className: "form-control", type: "text", placeholder: "Adam Smith", required: true })
-	              ),
-	              React.createElement(
-	                "div",
-	                { className: "form-group" },
 	                React.createElement(
-	                  "label",
-	                  { "for": "inputMail", className: "sr-only" },
-	                  "Email Address"
+	                  "div",
+	                  { className: "form-group" },
+	                  React.createElement(
+	                    "label",
+	                    { "for": "inputMail", className: "sr-only" },
+	                    "Email Address"
+	                  ),
+	                  React.createElement("input", { id: "inputMail", className: "form-control", type: "email", placeholder: "adam.smith@mail.com", required: true })
 	                ),
-	                React.createElement("input", { id: "inputMail", className: "form-control", type: "email", placeholder: "adam.smith@mail.com", required: true })
-	              ),
-	              React.createElement(
-	                "div",
-	                { className: "form-group" },
 	                React.createElement(
-	                  "label",
-	                  { "for": "inputMessage", className: "sr-only" },
-	                  "Your Message"
+	                  "div",
+	                  { className: "form-group" },
+	                  React.createElement(
+	                    "label",
+	                    { "for": "inputMessage", className: "sr-only" },
+	                    "Your Message"
+	                  ),
+	                  React.createElement("textarea", { id: "inputMessage", className: "form-control", name: "message", cols: "30", rows: "8", required: true })
 	                ),
-	                React.createElement("textarea", { id: "inputMessage", className: "form-control", name: "message", cols: "30", rows: "8", required: true })
-	              ),
-	              React.createElement(
-	                "div",
-	                { className: "form-group" },
 	                React.createElement(
-	                  "button",
-	                  { className: "btn btn-default center-block", type: "submit", value: "Hire me" },
-	                  "Hire me"
+	                  "div",
+	                  { className: "form-group" },
+	                  React.createElement(
+	                    "button",
+	                    { className: "btn btn-default center-block", type: "submit", value: "Hire me" },
+	                    "Hire me"
+	                  )
 	                )
 	              )
 	            )
 	          )
 	        )
-	      )
+	      ),
+	      React.createElement(Footer, null)
 	    );
 	  }
 	});
@@ -33825,54 +33829,61 @@
 	var React = __webpack_require__(258);
 
 	var Footer = function Footer(props) {
-	  return React.createElement(
-	    "nav",
-	    { id: "2-nav-bar", className: "navbar navbar-inverse navbar-fixed-bottom" },
-	    React.createElement(
-	      "div",
-	      { className: "container-fluid" },
-	      React.createElement(
+	    return React.createElement(
 	        "div",
-	        { className: "navbar-header" },
-	        React.createElement("i", { className: "navbar-brand fa fa-linkedin animated flip", href: "#twoam" })
-	      ),
-	      React.createElement(
-	        "div",
-	        { className: "collapse navbar-collapse", id: "navbar-collapse-1" },
+	        { id: "footer", className: "text-center sec-footer" },
 	        React.createElement(
-	          "ul",
-	          { className: "nav navbar-nav navbar-left" },
-	          React.createElement(
-	            "li",
+	            "ul",
 	            null,
 	            React.createElement(
-	              "a",
-	              { href: "#about" },
-	              "About"
-	            )
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
+	                "li",
+	                { className: "highlight" },
+	                React.createElement(
+	                    "a",
+	                    { className: "fa-stack fa-1x", "data-toggle": "tooltip", title: "Email", "data-placement": "top", href: "mailto:2am.ninja@outlook.com" },
+	                    React.createElement("i", { className: "fa fa-square fa-stack-2x" }),
+	                    React.createElement("i", { className: "fa fa-envelope fa-stack-1x blacktext" })
+	                )
+	            ),
 	            React.createElement(
-	              "a",
-	              { href: "#skill" },
-	              "Skill"
-	            )
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
+	                "li",
+	                { className: "highlight" },
+	                React.createElement(
+	                    "a",
+	                    { className: "fa-stack fa-1x", "data-toggle": "tooltip", title: "Linkedin", "data-placement": "top", href: "https://www.linkedin.com/in/brucewilliamyoung", target: "_blank" },
+	                    React.createElement("i", { className: "fa fa-linkedin-square fa-stack-2x" })
+	                )
+	            ),
 	            React.createElement(
-	              "a",
-	              { href: "#folio" },
-	              "Contact"
+	                "li",
+	                { className: "highlight" },
+	                React.createElement(
+	                    "a",
+	                    { className: "fa-stack fa-1x", "data-toggle": "tooltip", title: "GitHub", "data-placement": "top", href: "https://github.com/mutantspore", target: "_blank" },
+	                    React.createElement("i", { className: "fa fa-github-square fa-stack-2x" })
+	                )
+	            ),
+	            React.createElement(
+	                "li",
+	                { className: "highlight" },
+	                React.createElement(
+	                    "a",
+	                    { className: "fa-stack fa-1x", "data-toggle": "tooltip", title: "CodePen", "data-placement": "top", href: "http://codepen.io/MutantSpore/", target: "_blank" },
+	                    React.createElement("i", { className: "fa fa-square fa-stack-2x" }),
+	                    React.createElement("i", { className: "fa fa-codepen fa-stack-1x blacktext" })
+	                )
+	            ),
+	            React.createElement(
+	                "li",
+	                { style: { display: "block", padding: "0px" } },
+	                React.createElement(
+	                    "p",
+	                    null,
+	                    "COPYRIGHT \xA9 2017 YUNLIN ZENG"
+	                )
 	            )
-	          )
 	        )
-	      )
-	    )
-	  );
+	    );
 	};
 
 	module.exports = Footer;
@@ -33893,8 +33904,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./app.scss", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./app.scss");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!!./app.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!!./app.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -33912,7 +33923,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\n  font-size: 16px; }\n\nbody {\n  font-family: 'Open sans', sans-serif;\n  font-weight: 300; }\n\nhr {\n  margin-bottom: 3em;\n  width: 7%; }\n\n.container > h1 {\n  font-weight: 300;\n  text-align: center;\n  text-transform: uppercase; }\n\np {\n  font-size: 16px;\n  line-height: 1.5; }\n\n#section-main {\n  height: 700px;\n  background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center;\n  background-size: cover; }\n\n.heading {\n  color: #fff;\n  padding-top: 300px;\n  font-family: 'Open sans', sans-serif;\n  font-weight: 300;\n  text-align: center;\n  letter-spacing: 5px;\n  text-transform: uppercase; }\n\n#Big-in {\n  padding-left: 200px; }\n\n.section {\n  padding-top: 100px;\n  padding-bottom: 60px; }\n\n.navbar-default {\n  background: #fff; }\n\n#2-nav-bar {\n  margin-top: 50px; }\n", ""]);
+	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\n\r\n#section-main {\r\n  height:700px;\r\n  background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;\r\n}\r\n\r\n#section-main:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 720px;\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.heading {\r\n  position: relative;\r\n  color: #fff;\r\n  padding-top:300px;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  text-align: center;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Big-in{\r\n  position: relative;\r\n  padding-top:  50px;\r\n  padding-left: 900px;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n\r\n/*\r\n#2-nav-bar {\r\n  margin-top: 50px;\r\n}*/\r\n", ""]);
 
 	// exports
 
@@ -33952,7 +33963,7 @@
 
 
 	// module
-	exports.push([module.id, "\r\n", ""]);
+	exports.push([module.id, "\r\n#about {\r\n  padding-top: 100px;\r\n  padding-bottom: 100px;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -33992,7 +34003,7 @@
 
 
 	// module
-	exports.push([module.id, "\r\n\r\n.sec-skill {\r\n  background: #f9f9f9;\r\n}\r\n\r\n.sec-services i {\r\n  display: block;\r\n  margin: auto;\r\n  width: 45px;\r\n}\r\n\r\n.sec-services .fa-paint-brush {\r\n  width: 64px;\r\n}\r\n\r\n.sec-services .fa-code {\r\n  width: 68px\r\n}\r\n\r\n.sec-services h2 {\r\n  margin: 1em 0;\r\n}\r\n\r\n.sec-testimonials {\r\n  background: #f9f9f9;\r\n}\r\n", ""]);
+	exports.push([module.id, "\r\n#skill {\r\n  padding-top: 100px;\r\n  padding-bottom: 100px;\r\n}\r\n\r\n\r\n.sec-skill {\r\n  background: #f9f9f9;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -34032,7 +34043,7 @@
 
 
 	// module
-	exports.push([module.id, "#folio{\r\n  margin-top: 80px;\r\n  padding-bottom: 200px;\r\n}\r\n\r\n\r\n.btn-circle {\r\n  width: 50px;\r\n  height: 50px;\r\n  text-align: center;\r\n  padding: 0;\r\n  font-size: 24px;\r\n  line-height: 48px;\r\n  border-radius: 50%;\r\n  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.btn-lnk {\r\n  position: absolute;\r\n  bottom: 15px;\r\n}\r\n\r\n.btn-lnk0 {\r\n  left: 30px;\r\n}\r\n\r\n.btn-lnk1 {\r\n  right: 30px;\r\n}\r\n\r\n\r\n.project-title {\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.75em;\r\n  font-weight: 500;\r\n  padding-top: 4px;\r\n  padding-bottom: 1px;\r\n  color: #666;\r\n  text-align: center;\r\n}\r\n\r\n.project-headings {\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.project-body {\r\n  font-family: 'Roboto', sans-serif;\r\n  font-size: 1em;\r\n  margin-left: 10px;\r\n  margin-right: 10px;\r\n  margin-top: 1px;\r\n  line-height: 1.5em;\r\n  letter-spacing: 0.03em;\r\n}\r\n\r\n.project {\r\n  border-width: thin;\r\n  border-color: #ccc;\r\n}\r\n\r\n.card {\r\n  position: relative;\r\n  width: 300px;\r\n  height: 365px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 20px;\r\n  -webkit-perspective: 2000px;\r\n  -moz-perspective: 2000px;\r\n  perspective: 2000px;\r\n  cursor: pointer;\r\n}\r\n\r\n.card img {\r\n  width: calc(300px - 0px);\r\n  height: calc(365px - 45px);\r\n  border-top-left-radius: 6px;\r\n  border-top-right-radius: 6px;\r\n  border-style: solid;\r\n  border-color: rgba(0,0,0,0.16);\r\n  border-bottom-width: 1px;\r\n}\r\n\r\n.card_front, .card_back {\r\n  position: absolute;\r\n  left: 0px;\r\n  top: 0px;\r\n  width: inherit;\r\n  height: inherit;\r\n  border-style: solid;\r\n  border-width: 0px;\r\n  border-radius: 6px;\r\n  border-color: #666;\r\n  -webkit-backface-visibility: hidden;\r\n  backface-visibility: hidden;\r\n  -webkit-transition: -webkit-transform 0.9s ease-in-out;\r\n  transition: transform 0.9s ease-in-out;\r\n  -webkit-transform-style: preserve-3d;\r\n  -moz-transform-style: preserve-3d;\r\n  transform-style: preserve-3d;\r\n  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)\r\n}\r\n\r\n\r\n.card_front:hover, .card_back:hover {\r\n  left: -4px;\r\n  top: -4px;\r\n  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.card_front {\r\n  background-color: white;\r\n}\r\n\r\n.card_back {\r\n  background-color: #fafffc;\r\n  -webkit-transform: rotateY(179deg);\r\n  -ms-transform: rotateY(179deg);\r\n  transform: rotateY(179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_front {\r\n\r\n  -webkit-transform: rotateY(-179deg);\r\n  -ms-transform: rotateY(-179deg);\r\n  transform: rotateY(-179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_back {\r\n\r\n  -webkit-transform: rotateY(0deg);\r\n  -ms-transform: rotateY(0deg);\r\n  transform: rotateY(0deg);\r\n}\r\n", ""]);
+	exports.push([module.id, "#folio{\r\n  padding-top: 100px;\r\n  padding-bottom: 200px;\r\n}\r\n\r\n\r\n.btn-circle {\r\n  width: 50px;\r\n  height: 50px;\r\n  text-align: center;\r\n  padding: 0;\r\n  font-size: 24px;\r\n  line-height: 48px;\r\n  border-radius: 50%;\r\n  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.btn-lnk {\r\n  position: absolute;\r\n  bottom: 15px;\r\n}\r\n\r\n.btn-lnk0 {\r\n  left: 30px;\r\n}\r\n\r\n.btn-lnk1 {\r\n  right: 30px;\r\n}\r\n\r\n\r\n.project-title {\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.75em;\r\n  font-weight: 500;\r\n  padding-top: 4px;\r\n  padding-bottom: 1px;\r\n  color: #666;\r\n  text-align: center;\r\n}\r\n\r\n.project-headings {\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.project-body {\r\n  font-family: 'Roboto', sans-serif;\r\n  font-size: 1em;\r\n  margin-left: 10px;\r\n  margin-right: 10px;\r\n  margin-top: 1px;\r\n  line-height: 1.5em;\r\n  letter-spacing: 0.03em;\r\n}\r\n\r\n.project {\r\n  border-width: thin;\r\n  border-color: #ccc;\r\n}\r\n\r\n.card {\r\n  position: relative;\r\n  width: 300px;\r\n  height: 365px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 20px;\r\n  -webkit-perspective: 2000px;\r\n  -moz-perspective: 2000px;\r\n  perspective: 2000px;\r\n  cursor: pointer;\r\n}\r\n\r\n.card img {\r\n  width: calc(300px - 0px);\r\n  height: calc(365px - 45px);\r\n  border-top-left-radius: 6px;\r\n  border-top-right-radius: 6px;\r\n  border-style: solid;\r\n  border-color: rgba(0,0,0,0.16);\r\n  border-bottom-width: 1px;\r\n}\r\n\r\n.card_front, .card_back {\r\n  position: absolute;\r\n  left: 0px;\r\n  top: 0px;\r\n  width: inherit;\r\n  height: inherit;\r\n  border-style: solid;\r\n  border-width: 0px;\r\n  border-radius: 6px;\r\n  border-color: #666;\r\n  -webkit-backface-visibility: hidden;\r\n  backface-visibility: hidden;\r\n  -webkit-transition: -webkit-transform 0.9s ease-in-out;\r\n  transition: transform 0.9s ease-in-out;\r\n  -webkit-transform-style: preserve-3d;\r\n  -moz-transform-style: preserve-3d;\r\n  transform-style: preserve-3d;\r\n  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)\r\n}\r\n\r\n\r\n.card_front:hover, .card_back:hover {\r\n  left: -4px;\r\n  top: -4px;\r\n  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.card_front {\r\n  background-color: white;\r\n}\r\n\r\n.card_back {\r\n  background-color: #fafffc;\r\n  -webkit-transform: rotateY(179deg);\r\n  -ms-transform: rotateY(179deg);\r\n  transform: rotateY(179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_front {\r\n\r\n  -webkit-transform: rotateY(-179deg);\r\n  -ms-transform: rotateY(-179deg);\r\n  transform: rotateY(-179deg);\r\n}\r\n\r\n.card.effect_click.flipped .card_back {\r\n\r\n  -webkit-transform: rotateY(0deg);\r\n  -ms-transform: rotateY(0deg);\r\n  transform: rotateY(0deg);\r\n}\r\n", ""]);
 
 	// exports
 
@@ -34072,10 +34083,215 @@
 
 
 	// module
-	exports.push([module.id, "\r\n.sec-contact {\r\n  padding-top:60px;\r\n}\r\n", ""]);
+	exports.push([module.id, "\r\n.sec-contact {\r\n  padding-top:60px;\r\n}\r\n\r\n\r\n.sec-contact .form-control:focus {\r\n  border-color: #ad0000;\r\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);\r\n}\r\n\r\n.sec-contact .btn {\r\n  padding: .5rem 1.75rem;\r\n  background: #000;\r\n  font-size: .95rem;\r\n  color: #fff;\r\n}\r\n.sec-contact .btn:hover, .sec-contact .btn:focus {\r\n  background: #ad0000;\r\n  border-color: #7a0000;\r\n}\r\n", ""]);
 
 	// exports
 
+
+/***/ },
+/* 303 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(304);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(19)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!../../node_modules/css-loader/index.js!!./footer.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!!./footer.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 304 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, "\r\n.sec-footer{\r\n  margin-top: 25px;\r\n  padding-bottom: 1px;\r\n}\r\n\r\n#footer {\r\n  width: 100%;\r\n  color: white;\r\n  background-color: #222;\r\n  opacity: 1;\r\n  a {\r\n    font-weight: 500;\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n#footer ul {\r\n  padding-top: 10px;\r\n  list-style-type: none;\r\n}\r\n\r\n#footer ul li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 6px 0px 6px;\r\n}\r\n\r\n#footer a {\r\n/*  color: #939393 !important; */\r\n  color: white !important;\r\n}\r\n\r\n.blacktext {\r\n  color: black;\r\n}\r\n\r\n.highlight {\r\n  opacity: 0.6;\r\n}\r\n\r\n.highlight:hover {\r\n  opacity: 1;\r\n}\r\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 305 */
+/***/ function(module, exports) {
+
+	module.exports = jQuery;
+
+/***/ },
+/* 306 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(307);
+
+/***/ },
+/* 307 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+
+	'use strict';
+
+	var ReactDefaultInjection = __webpack_require__(60);
+	var ReactServerRendering = __webpack_require__(308);
+	var ReactVersion = __webpack_require__(193);
+
+	ReactDefaultInjection.inject();
+
+	var ReactDOMServer = {
+	  renderToString: ReactServerRendering.renderToString,
+	  renderToStaticMarkup: ReactServerRendering.renderToStaticMarkup,
+	  version: ReactVersion
+	};
+
+	module.exports = ReactDOMServer;
+
+/***/ },
+/* 308 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+	'use strict';
+
+	var _prodInvariant = __webpack_require__(57);
+
+	var React = __webpack_require__(24);
+	var ReactDOMContainerInfo = __webpack_require__(189);
+	var ReactDefaultBatchingStrategy = __webpack_require__(162);
+	var ReactInstrumentation = __webpack_require__(84);
+	var ReactMarkupChecksum = __webpack_require__(191);
+	var ReactReconciler = __webpack_require__(81);
+	var ReactServerBatchingStrategy = __webpack_require__(309);
+	var ReactServerRenderingTransaction = __webpack_require__(155);
+	var ReactUpdates = __webpack_require__(78);
+
+	var emptyObject = __webpack_require__(42);
+	var instantiateReactComponent = __webpack_require__(140);
+	var invariant = __webpack_require__(30);
+
+	var pendingTransactions = 0;
+
+	/**
+	 * @param {ReactElement} element
+	 * @return {string} the HTML markup
+	 */
+	function renderToStringImpl(element, makeStaticMarkup) {
+	  var transaction;
+	  try {
+	    ReactUpdates.injection.injectBatchingStrategy(ReactServerBatchingStrategy);
+
+	    transaction = ReactServerRenderingTransaction.getPooled(makeStaticMarkup);
+
+	    pendingTransactions++;
+
+	    return transaction.perform(function () {
+	      var componentInstance = instantiateReactComponent(element, true);
+	      var markup = ReactReconciler.mountComponent(componentInstance, transaction, null, ReactDOMContainerInfo(), emptyObject, 0 /* parentDebugID */
+	      );
+	      if (process.env.NODE_ENV !== 'production') {
+	        ReactInstrumentation.debugTool.onUnmountComponent(componentInstance._debugID);
+	      }
+	      if (!makeStaticMarkup) {
+	        markup = ReactMarkupChecksum.addChecksumToMarkup(markup);
+	      }
+	      return markup;
+	    }, null);
+	  } finally {
+	    pendingTransactions--;
+	    ReactServerRenderingTransaction.release(transaction);
+	    // Revert to the DOM batching strategy since these two renderers
+	    // currently share these stateful modules.
+	    if (!pendingTransactions) {
+	      ReactUpdates.injection.injectBatchingStrategy(ReactDefaultBatchingStrategy);
+	    }
+	  }
+	}
+
+	/**
+	 * Render a ReactElement to its initial HTML. This should only be used on the
+	 * server.
+	 * See https://facebook.github.io/react/docs/top-level-api.html#reactdomserver.rendertostring
+	 */
+	function renderToString(element) {
+	  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToString(): You must pass a valid ReactElement.') : _prodInvariant('46') : void 0;
+	  return renderToStringImpl(element, false);
+	}
+
+	/**
+	 * Similar to renderToString, except this doesn't create extra DOM attributes
+	 * such as data-react-id that React uses internally.
+	 * See https://facebook.github.io/react/docs/top-level-api.html#reactdomserver.rendertostaticmarkup
+	 */
+	function renderToStaticMarkup(element) {
+	  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToStaticMarkup(): You must pass a valid ReactElement.') : _prodInvariant('47') : void 0;
+	  return renderToStringImpl(element, true);
+	}
+
+	module.exports = {
+	  renderToString: renderToString,
+	  renderToStaticMarkup: renderToStaticMarkup
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
+
+/***/ },
+/* 309 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2014-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+
+	'use strict';
+
+	var ReactServerBatchingStrategy = {
+	  isBatchingUpdates: false,
+	  batchedUpdates: function batchedUpdates(callback) {
+	    // Don't do anything here. During the server rendering we don't want to
+	    // schedule any updates. We will simply ignore them.
+	  }
+	};
+
+	module.exports = ReactServerBatchingStrategy;
 
 /***/ }
 /******/ ]);

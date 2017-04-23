@@ -1,0 +1,44 @@
+
+.sec-footer{
+  margin-top: 25px;
+  padding-bottom: 1px;
+}
+
+#footer {
+  width: 100%;
+  color: white;
+  background-color: #222;
+  opacity: 1;
+  a {
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+
+#footer ul {
+  padding-top: 10px;
+  list-style-type: none;
+}
+
+#footer ul li {
+  display: inline;
+  margin:0px;
+  padding: 0px 6px 0px 6px;
+}
+
+#footer a {
+/*  color: #939393 !important; */
+  color: white !important;
+}
+
+.blacktext {
+  color: black;
+}
+
+.highlight {
+  opacity: 0.6;
+}
+
+.highlight:hover {
+  opacity: 1;
+}

@@ -9,13 +9,13 @@ var Contact = require("Contact");
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
-//import 'font-awesome/css/font-awesome.min.css';
 
-require("style!css!sass!./style/app.scss");
+require("./style/app.css");
 require("./style/about.css");
 require("./style/skill.css");
 require("./style/folio.css");
 require("./style/contact.css");
+require("./style/footer.css");
 
 ReactDOM.render(
   <Router history={hashHistory}>
