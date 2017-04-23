@@ -1,38 +1,48 @@
 var React = require("React");
 
-var Footer = (props) =>{
-  return (
-      <div id='footer' className="text-center sec-footer">
-          <ul>
-              <li className='highlight'>
-                  <a className="fa-stack fa-1x" data-toggle="tooltip" title="Email" data-placement="top" href="mailto:2am.ninja@outlook.com">
-                      <i className="fa fa-square fa-stack-2x"></i>
-                      <i className="fa fa-envelope fa-stack-1x blacktext"></i>
-                  </a>
-              </li>
-              <li className='highlight'>
-                  <a className="fa-stack fa-1x" data-toggle="tooltip" title="Linkedin" data-placement="top" href="https://www.linkedin.com/in/brucewilliamyoung" target="_blank">
-                    <i className="fa fa-linkedin-square fa-stack-2x"></i>
-                  </a>
-              </li>
+var Footer = React.createClass({
 
-              <li className='highlight'>
-                  <a className="fa-stack fa-1x" data-toggle="tooltip" title="GitHub" data-placement="top" href="https://github.com/mutantspore" target="_blank">
-                    <i className="fa fa-github-square fa-stack-2x"></i>
-                  </a>
-              </li>
+  componentDidMount:function(){
+    $('#togglemail').tooltip({title: "Email", placement: "top"});
+    $('#togglelinkedin').tooltip({title: "Linkedin", placement: "top"});
+    $('#togglegithub').tooltip({title: "Github", placement: "top"});
+    $('#togglecodepen').tooltip({title: "Codepen", placement: "top"});
+  },
 
-              <li className='highlight'>
-                  <a className="fa-stack fa-1x" data-toggle="tooltip" title="CodePen" data-placement="top" href="http://codepen.io/MutantSpore/" target="_blank">
-                      <i className="fa fa-square fa-stack-2x"></i>
-                      <i className="fa fa-codepen fa-stack-1x blacktext"></i>
-                  </a>
-              </li>
-              <li style={{display:"block",padding:"0px"}}><p>COPYRIGHT © 2017 YUNLIN ZENG</p></li>
-          </ul>
-      </div>
+  render: function(){
+    return (
+        <footer id='footer' className="text-center sec-footer">
+            <ul>
+                <li className='highlight'>
+                    <a className="fa-stack fa-1x" id="togglemail" href="mailto:ylinzeng69@gmail.com">
+                        <i className="fa fa-square fa-stack-2x"></i>
+                        <i className="fa fa-envelope fa-stack-1x blacktext"></i>
+                    </a>
+                </li>
+                <li className='highlight'>
+                    <a className="fa-stack fa-1x" id="togglelinkedin" href="https://www.linkedin.com/in/yunlin-zeng-99a862115/" target="_blank">
+                      <i className="fa fa-linkedin-square fa-stack-2x"></i>
+                    </a>
+                </li>
 
-  );
-};
+                <li className='highlight'>
+                    <a className="fa-stack fa-1x" id="togglegithub" href="https://github.com/yl-zeng" target="_blank">
+                      <i className="fa fa-github-square fa-stack-2x"></i>
+                    </a>
+                </li>
+
+                <li className='highlight'>
+                    <a className="fa-stack fa-1x" id="togglecodepen" href="http://codepen.io/d26842684/" target="_blank">
+                        <i className="fa fa-square fa-stack-2x"></i>
+                        <i className="fa fa-codepen fa-stack-1x blacktext"></i>
+                    </a>
+                </li>
+                <li style={{display:"block",padding:"0px"}}><p>COPYRIGHT © 2017 YUNLIN ZENG</p></li>
+            </ul>
+        </footer>
+
+    );
+  }
+});
 
 module.exports = Footer;

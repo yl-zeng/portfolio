@@ -26,6 +26,7 @@ p {
 
 #section-main {
   height:700px;
+  width:100%;
   background: url(https://source.unsplash.com/random) no-repeat center center;
   background-size: cover;
 }
@@ -36,7 +37,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 720px;
+  height: 700px;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -52,7 +53,7 @@ p {
   z-index: 1;
 }
 
-#Big-in{
+#Bigin{
   position: relative;
   padding-top:  50px;
   padding-left: 900px;
@@ -86,8 +87,3 @@ p {
 .nav2-link-title{
   font-size: 20px;
 }
-
-/*
-#2-nav-bar {
-  margin-top: 50px;
-}*/

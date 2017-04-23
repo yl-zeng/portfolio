@@ -14,12 +14,12 @@ var Contact = React.createClass({
                 <form className="center-block" action="#" method="post">
                   <div className="form-group">
                     <label className="sr-only" for="inputName">Full name</label>
-                    <input id="inputName" className="form-control" type="text" placeholder="Adam Smith" required />
+                    <input id="inputName" className="form-control" type="text" placeholder="Yunlin Zeng" required />
                   </div>
                   <div className="form-group">
                     <label for="inputMail" className="sr-only">Email Address</label>
 
-                    <input id="inputMail" className="form-control" type="email" placeholder="adam.smith@mail.com" required />
+                    <input id="inputMail" className="form-control" type="email" placeholder="ylinzeng69@gmail.com" required />
                   </div>
 
                   <div className="form-group">

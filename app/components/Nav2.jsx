@@ -29,10 +29,19 @@ var Nav2 = React.createClass({
             <div className="container-fluid">
 
               <div className="navbar-header">
-                <i className="navbar-brand fa fa-linkedin animated flip" href="#twoam"></i>
+                <button className="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
+                  <span className="sr-only">Toggle Navigation</span>
+
+                  <span className="icon-bar"></span>
+
+                  <span className="icon-bar"></span>
+
+                  <span className="icon-bar"></span>
+                </button>
+                <a href="https://www.linkedin.com/in/yunlin-zeng-99a862115/" target="_block"><i className="navbar-brand fa fa-linkedin animated flip"></i></a>
               </div>
 
-              <div className="collapse navbar-collapse" id="navbar-collapse-1">
+              <div className="collapse navbar-collapse">
                 <ul className="nav navbar-nav navbar-center js-nav">
                   <li><a href="#about" className="nav2-link-title" onClick={this.handleClick1}>About</a></li>
                   <li><a href="#skill" className="nav2-link-title" onClick={this.handleClick2}>Skill</a></li>

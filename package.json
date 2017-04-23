@@ -27,6 +27,7 @@
     "file-loader": "^0.11.1",
     "font-awesome": "^4.7.0",
     "foundation-sites": "^6.2.0",
+    "image-webpack-loader": "^3.3.0",
     "jquery": "^2.2.1",
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.3",

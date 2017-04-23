@@ -110,15 +110,15 @@
 
 	var Main = __webpack_require__(257);
 	var Home = __webpack_require__(284);
-	var IndexPage = __webpack_require__(290);
-	var Contact = __webpack_require__(291);
+	var IndexPage = __webpack_require__(295);
+	var Contact = __webpack_require__(296);
 
-	__webpack_require__(293);
-	__webpack_require__(295);
-	__webpack_require__(297);
-	__webpack_require__(299);
-	__webpack_require__(301);
-	__webpack_require__(303);
+	__webpack_require__(298);
+	__webpack_require__(300);
+	__webpack_require__(302);
+	__webpack_require__(304);
+	__webpack_require__(306);
+	__webpack_require__(308);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -33108,30 +33108,46 @@
 	          "div",
 	          { className: "navbar-header" },
 	          React.createElement(
+	            "button",
+	            { className: "navbar-toggle collapsed", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse", role: "button" },
+	            React.createElement(
+	              "span",
+	              { className: "sr-only" },
+	              "Toggle Navigation"
+	            ),
+	            React.createElement("span", { className: "icon-bar" }),
+	            React.createElement("span", { className: "icon-bar" }),
+	            React.createElement("span", { className: "icon-bar" })
+	          ),
+	          React.createElement(
 	            "a",
 	            { className: "navbar-brand", href: "/" },
 	            "YUNLIN's PORTFOLIO"
 	          )
 	        ),
 	        React.createElement(
-	          "ul",
-	          { className: "nav navbar-nav navbar-right" },
+	          "div",
+	          { className: "collapse navbar-collapse" },
 	          React.createElement(
-	            "li",
-	            null,
+	            "ul",
+	            { className: "nav navbar-nav navbar-right" },
 	            React.createElement(
-	              Link,
-	              { to: "/home", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
-	              "Home"
-	            )
-	          ),
-	          React.createElement(
-	            "li",
-	            null,
+	              "li",
+	              null,
+	              React.createElement(
+	                Link,
+	                { to: "/home", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
+	                "Home"
+	              )
+	            ),
 	            React.createElement(
-	              Link,
-	              { to: "/contact", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
-	              "Contact"
+	              "li",
+	              null,
+	              React.createElement(
+	                Link,
+	                { to: "/contact", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
+	                "Contact"
+	              )
 	            )
 	          )
 	        )
@@ -33150,9 +33166,9 @@
 
 	var React = __webpack_require__(258);
 	var Nav2 = __webpack_require__(285);
-	var About = __webpack_require__(286);
-	var Skill = __webpack_require__(287);
-	var Folio = __webpack_require__(288);
+	var About = __webpack_require__(291);
+	var Skill = __webpack_require__(292);
+	var Folio = __webpack_require__(293);
 
 	var Home = function Home(props) {
 
@@ -33176,7 +33192,7 @@
 
 	var React = __webpack_require__(258);
 	var ReactDOM = __webpack_require__(54);
-	var ReactDOMServer = __webpack_require__(306);
+	var ReactDOMServer = __webpack_require__(287);
 
 	var Nav2 = React.createClass({
 	  displayName: "Nav2",
@@ -33211,11 +33227,27 @@
 	        React.createElement(
 	          "div",
 	          { className: "navbar-header" },
-	          React.createElement("i", { className: "navbar-brand fa fa-linkedin animated flip", href: "#twoam" })
+	          React.createElement(
+	            "button",
+	            { className: "navbar-toggle collapsed", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse", role: "button" },
+	            React.createElement(
+	              "span",
+	              { className: "sr-only" },
+	              "Toggle Navigation"
+	            ),
+	            React.createElement("span", { className: "icon-bar" }),
+	            React.createElement("span", { className: "icon-bar" }),
+	            React.createElement("span", { className: "icon-bar" })
+	          ),
+	          React.createElement(
+	            "a",
+	            { href: "https://www.linkedin.com/in/yunlin-zeng-99a862115/", target: "_block" },
+	            React.createElement("i", { className: "navbar-brand fa fa-linkedin animated flip" })
+	          )
 	        ),
 	        React.createElement(
 	          "div",
-	          { className: "collapse navbar-collapse", id: "navbar-collapse-1" },
+	          { className: "collapse navbar-collapse" },
 	          React.createElement(
 	            "ul",
 	            { className: "nav navbar-nav navbar-center js-nav" },
@@ -33254,20 +33286,188 @@
 	});
 
 	module.exports = Nav2;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(305)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(286)))
 
 /***/ },
 /* 286 */
+/***/ function(module, exports) {
+
+	module.exports = jQuery;
+
+/***/ },
+/* 287 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = __webpack_require__(288);
+
+/***/ },
+/* 288 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+
+	'use strict';
+
+	var ReactDefaultInjection = __webpack_require__(60);
+	var ReactServerRendering = __webpack_require__(289);
+	var ReactVersion = __webpack_require__(193);
+
+	ReactDefaultInjection.inject();
+
+	var ReactDOMServer = {
+	  renderToString: ReactServerRendering.renderToString,
+	  renderToStaticMarkup: ReactServerRendering.renderToStaticMarkup,
+	  version: ReactVersion
+	};
+
+	module.exports = ReactDOMServer;
+
+/***/ },
+/* 289 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+	'use strict';
+
+	var _prodInvariant = __webpack_require__(57);
+
+	var React = __webpack_require__(24);
+	var ReactDOMContainerInfo = __webpack_require__(189);
+	var ReactDefaultBatchingStrategy = __webpack_require__(162);
+	var ReactInstrumentation = __webpack_require__(84);
+	var ReactMarkupChecksum = __webpack_require__(191);
+	var ReactReconciler = __webpack_require__(81);
+	var ReactServerBatchingStrategy = __webpack_require__(290);
+	var ReactServerRenderingTransaction = __webpack_require__(155);
+	var ReactUpdates = __webpack_require__(78);
+
+	var emptyObject = __webpack_require__(42);
+	var instantiateReactComponent = __webpack_require__(140);
+	var invariant = __webpack_require__(30);
+
+	var pendingTransactions = 0;
+
+	/**
+	 * @param {ReactElement} element
+	 * @return {string} the HTML markup
+	 */
+	function renderToStringImpl(element, makeStaticMarkup) {
+	  var transaction;
+	  try {
+	    ReactUpdates.injection.injectBatchingStrategy(ReactServerBatchingStrategy);
+
+	    transaction = ReactServerRenderingTransaction.getPooled(makeStaticMarkup);
+
+	    pendingTransactions++;
+
+	    return transaction.perform(function () {
+	      var componentInstance = instantiateReactComponent(element, true);
+	      var markup = ReactReconciler.mountComponent(componentInstance, transaction, null, ReactDOMContainerInfo(), emptyObject, 0 /* parentDebugID */
+	      );
+	      if (process.env.NODE_ENV !== 'production') {
+	        ReactInstrumentation.debugTool.onUnmountComponent(componentInstance._debugID);
+	      }
+	      if (!makeStaticMarkup) {
+	        markup = ReactMarkupChecksum.addChecksumToMarkup(markup);
+	      }
+	      return markup;
+	    }, null);
+	  } finally {
+	    pendingTransactions--;
+	    ReactServerRenderingTransaction.release(transaction);
+	    // Revert to the DOM batching strategy since these two renderers
+	    // currently share these stateful modules.
+	    if (!pendingTransactions) {
+	      ReactUpdates.injection.injectBatchingStrategy(ReactDefaultBatchingStrategy);
+	    }
+	  }
+	}
+
+	/**
+	 * Render a ReactElement to its initial HTML. This should only be used on the
+	 * server.
+	 * See https://facebook.github.io/react/docs/top-level-api.html#reactdomserver.rendertostring
+	 */
+	function renderToString(element) {
+	  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToString(): You must pass a valid ReactElement.') : _prodInvariant('46') : void 0;
+	  return renderToStringImpl(element, false);
+	}
+
+	/**
+	 * Similar to renderToString, except this doesn't create extra DOM attributes
+	 * such as data-react-id that React uses internally.
+	 * See https://facebook.github.io/react/docs/top-level-api.html#reactdomserver.rendertostaticmarkup
+	 */
+	function renderToStaticMarkup(element) {
+	  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToStaticMarkup(): You must pass a valid ReactElement.') : _prodInvariant('47') : void 0;
+	  return renderToStringImpl(element, true);
+	}
+
+	module.exports = {
+	  renderToString: renderToString,
+	  renderToStaticMarkup: renderToStaticMarkup
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
+
+/***/ },
+/* 290 */
+/***/ function(module, exports) {
+
+	/**
+	 * Copyright 2014-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
+	 */
+
+	'use strict';
+
+	var ReactServerBatchingStrategy = {
+	  isBatchingUpdates: false,
+	  batchedUpdates: function batchedUpdates(callback) {
+	    // Don't do anything here. During the server rendering we don't want to
+	    // schedule any updates. We will simply ignore them.
+	  }
+	};
+
+	module.exports = ReactServerBatchingStrategy;
+
+/***/ },
+/* 291 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var React = __webpack_require__(258);
+	var React = __webpack_require__(23);
+
+	var _require = __webpack_require__(200),
+	    Link = _require.Link;
 
 	var About = function About(props) {
 	  return React.createElement(
 	    "section",
-	    { id: "about", className: "sec-about section" },
+	    { id: "about", className: "sec-about" },
 	    React.createElement(
 	      "div",
 	      { className: "container" },
@@ -33286,22 +33486,16 @@
 	          React.createElement(
 	            "p",
 	            null,
-	            "Hi, my name is Alex Devero and I am a Web Designer & Developer based in Prague. I love crafting beautiful web pages in HTML5, CSS3 and JavaScript or jQuery. My other skills include WordPress, Photoshop, Illustrator. You can grab my CV in",
+	            "Hi, my name is Yunlin Zeng and I am an upcoming Master of Science graduate major in Computer Engineering. I love crafting beautiful web pages with fantastic technology. You can grab my ",
 	            React.createElement(
 	              "a",
 	              { href: "#" },
-	              "English"
+	              "Resume"
 	            ),
-	            " or ",
+	            " here. If you want to hire me or just to talk, ",
 	            React.createElement(
-	              "a",
-	              { href: "#" },
-	              "Czech"
-	            ),
-	            " version. If you want to hire me or just to talk, ",
-	            React.createElement(
-	              "a",
-	              { "class": "js-connect", href: "#footer" },
+	              Link,
+	              { to: "/contact" },
 	              "connect"
 	            ),
 	            " with me."
@@ -33315,7 +33509,7 @@
 	module.exports = About;
 
 /***/ },
-/* 287 */
+/* 292 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33359,7 +33553,7 @@
 	          React.createElement(
 	            "div",
 	            { className: "col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/SQL.png" })
+	            React.createElement("img", { className: "img-responsive", src: "image/npm.png" })
 	          )
 	        ),
 	        React.createElement("br", null),
@@ -33411,7 +33605,7 @@
 	          React.createElement(
 	            "div",
 	            { className: "col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/npm.png" })
+	            React.createElement("img", { className: "img-responsive", src: "image/SQL.png" })
 	          )
 	        )
 	      )
@@ -33422,13 +33616,13 @@
 	module.exports = Skill;
 
 /***/ },
-/* 288 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	var React = __webpack_require__(23);
-	var Card = __webpack_require__(289);
+	var Card = __webpack_require__(294);
 
 	var Folio = React.createClass({
 	  displayName: "Folio",
@@ -33585,7 +33779,7 @@
 	module.exports = Folio;
 
 /***/ },
-/* 289 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33688,7 +33882,7 @@
 	module.exports = Card;
 
 /***/ },
-/* 290 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33701,29 +33895,26 @@
 	var IndexPage = React.createClass({
 	  displayName: "IndexPage",
 
+
 	  render: function render() {
 	    return React.createElement(
 	      "div",
-	      null,
+	      { id: "section-main", className: "container-fluid" },
+	      React.createElement(
+	        "h1",
+	        { className: "text-center heading" },
+	        "Technology doesn't change the world ",
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        " people do."
+	      ),
 	      React.createElement(
 	        "div",
-	        { id: "section-main" },
+	        { id: "Bigin", className: "animated infinite slideInDown" },
 	        React.createElement(
-	          "h1",
-	          { className: "text-center heading" },
-	          "Technology doesn't change world ",
-	          React.createElement("br", null),
-	          React.createElement("br", null),
-	          " people do."
-	        ),
-	        React.createElement(
-	          "div",
-	          { id: "Big-in", className: "animated infinite slideInDown" },
-	          React.createElement(
-	            Link,
-	            { to: "/home", style: { color: "white" } },
-	            React.createElement("i", { className: "fa fa-angle-double-down fa-5x" })
-	          )
+	          Link,
+	          { to: "/home", style: { color: "white" } },
+	          React.createElement("i", { className: "fa fa-angle-double-down fa-5x" })
 	        )
 	      )
 	    );
@@ -33733,13 +33924,13 @@
 	module.exports = IndexPage;
 
 /***/ },
-/* 291 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
 	var React = __webpack_require__(23);
-	var Footer = __webpack_require__(292);
+	var Footer = __webpack_require__(297);
 
 	var Contact = React.createClass({
 	  displayName: "Contact",
@@ -33777,7 +33968,7 @@
 	                    { className: "sr-only", "for": "inputName" },
 	                    "Full name"
 	                  ),
-	                  React.createElement("input", { id: "inputName", className: "form-control", type: "text", placeholder: "Adam Smith", required: true })
+	                  React.createElement("input", { id: "inputName", className: "form-control", type: "text", placeholder: "Yunlin Zeng", required: true })
 	                ),
 	                React.createElement(
 	                  "div",
@@ -33787,7 +33978,7 @@
 	                    { "for": "inputMail", className: "sr-only" },
 	                    "Email Address"
 	                  ),
-	                  React.createElement("input", { id: "inputMail", className: "form-control", type: "email", placeholder: "adam.smith@mail.com", required: true })
+	                  React.createElement("input", { id: "inputMail", className: "form-control", type: "email", placeholder: "ylinzeng69@gmail.com", required: true })
 	                ),
 	                React.createElement(
 	                  "div",
@@ -33821,81 +34012,94 @@
 	module.exports = Contact;
 
 /***/ },
-/* 292 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
 	var React = __webpack_require__(258);
 
-	var Footer = function Footer(props) {
-	    return React.createElement(
-	        "div",
-	        { id: "footer", className: "text-center sec-footer" },
-	        React.createElement(
-	            "ul",
-	            null,
+	var Footer = React.createClass({
+	    displayName: "Footer",
+
+
+	    componentDidMount: function componentDidMount() {
+	        $('#togglemail').tooltip({ title: "Email", placement: "top" });
+	        $('#togglelinkedin').tooltip({ title: "Linkedin", placement: "top" });
+	        $('#togglegithub').tooltip({ title: "Github", placement: "top" });
+	        $('#togglecodepen').tooltip({ title: "Codepen", placement: "top" });
+	    },
+
+	    render: function render() {
+	        return React.createElement(
+	            "footer",
+	            { id: "footer", className: "text-center sec-footer" },
 	            React.createElement(
-	                "li",
-	                { className: "highlight" },
+	                "ul",
+	                null,
 	                React.createElement(
-	                    "a",
-	                    { className: "fa-stack fa-1x", "data-toggle": "tooltip", title: "Email", "data-placement": "top", href: "mailto:2am.ninja@outlook.com" },
-	                    React.createElement("i", { className: "fa fa-square fa-stack-2x" }),
-	                    React.createElement("i", { className: "fa fa-envelope fa-stack-1x blacktext" })
-	                )
-	            ),
-	            React.createElement(
-	                "li",
-	                { className: "highlight" },
+	                    "li",
+	                    { className: "highlight" },
+	                    React.createElement(
+	                        "a",
+	                        { className: "fa-stack fa-1x", id: "togglemail", href: "mailto:ylinzeng69@gmail.com" },
+	                        React.createElement("i", { className: "fa fa-square fa-stack-2x" }),
+	                        React.createElement("i", { className: "fa fa-envelope fa-stack-1x blacktext" })
+	                    )
+	                ),
 	                React.createElement(
-	                    "a",
-	                    { className: "fa-stack fa-1x", "data-toggle": "tooltip", title: "Linkedin", "data-placement": "top", href: "https://www.linkedin.com/in/brucewilliamyoung", target: "_blank" },
-	                    React.createElement("i", { className: "fa fa-linkedin-square fa-stack-2x" })
-	                )
-	            ),
-	            React.createElement(
-	                "li",
-	                { className: "highlight" },
+	                    "li",
+	                    { className: "highlight" },
+	                    React.createElement(
+	                        "a",
+	                        { className: "fa-stack fa-1x", id: "togglelinkedin", href: "https://www.linkedin.com/in/yunlin-zeng-99a862115/", target: "_blank" },
+	                        React.createElement("i", { className: "fa fa-linkedin-square fa-stack-2x" })
+	                    )
+	                ),
 	                React.createElement(
-	                    "a",
-	                    { className: "fa-stack fa-1x", "data-toggle": "tooltip", title: "GitHub", "data-placement": "top", href: "https://github.com/mutantspore", target: "_blank" },
-	                    React.createElement("i", { className: "fa fa-github-square fa-stack-2x" })
-	                )
-	            ),
-	            React.createElement(
-	                "li",
-	                { className: "highlight" },
+	                    "li",
+	                    { className: "highlight" },
+	                    React.createElement(
+	                        "a",
+	                        { className: "fa-stack fa-1x", id: "togglegithub", href: "https://github.com/yl-zeng", target: "_blank" },
+	                        React.createElement("i", { className: "fa fa-github-square fa-stack-2x" })
+	                    )
+	                ),
 	                React.createElement(
-	                    "a",
-	                    { className: "fa-stack fa-1x", "data-toggle": "tooltip", title: "CodePen", "data-placement": "top", href: "http://codepen.io/MutantSpore/", target: "_blank" },
-	                    React.createElement("i", { className: "fa fa-square fa-stack-2x" }),
-	                    React.createElement("i", { className: "fa fa-codepen fa-stack-1x blacktext" })
-	                )
-	            ),
-	            React.createElement(
-	                "li",
-	                { style: { display: "block", padding: "0px" } },
+	                    "li",
+	                    { className: "highlight" },
+	                    React.createElement(
+	                        "a",
+	                        { className: "fa-stack fa-1x", id: "togglecodepen", href: "http://codepen.io/d26842684/", target: "_blank" },
+	                        React.createElement("i", { className: "fa fa-square fa-stack-2x" }),
+	                        React.createElement("i", { className: "fa fa-codepen fa-stack-1x blacktext" })
+	                    )
+	                ),
 	                React.createElement(
-	                    "p",
-	                    null,
-	                    "COPYRIGHT \xA9 2017 YUNLIN ZENG"
+	                    "li",
+	                    { style: { display: "block", padding: "0px" } },
+	                    React.createElement(
+	                        "p",
+	                        null,
+	                        "COPYRIGHT \xA9 2017 YUNLIN ZENG"
+	                    )
 	                )
 	            )
-	        )
-	    );
-	};
+	        );
+	    }
+	});
 
 	module.exports = Footer;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(286)))
 
 /***/ },
-/* 293 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(294);
+	var content = __webpack_require__(299);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -33915,7 +34119,7 @@
 	}
 
 /***/ },
-/* 294 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -33923,19 +34127,19 @@
 
 
 	// module
-	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\n\r\n#section-main {\r\n  height:700px;\r\n  background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;\r\n}\r\n\r\n#section-main:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 720px;\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.heading {\r\n  position: relative;\r\n  color: #fff;\r\n  padding-top:300px;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  text-align: center;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Big-in{\r\n  position: relative;\r\n  padding-top:  50px;\r\n  padding-left: 900px;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n\r\n/*\r\n#2-nav-bar {\r\n  margin-top: 50px;\r\n}*/\r\n", ""]);
+	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\n\r\n#section-main {\r\n  height:700px;\r\n  width:100%;\r\n  background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;\r\n}\r\n\r\n#section-main:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 700px;\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.heading {\r\n  position: relative;\r\n  color: #fff;\r\n  padding-top:300px;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  text-align: center;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: relative;\r\n  padding-top:  50px;\r\n  padding-left: 900px;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 295 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(296);
+	var content = __webpack_require__(301);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -33955,7 +34159,7 @@
 	}
 
 /***/ },
-/* 296 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -33963,19 +34167,19 @@
 
 
 	// module
-	exports.push([module.id, "\r\n#about {\r\n  padding-top: 100px;\r\n  padding-bottom: 100px;\r\n}\r\n", ""]);
+	exports.push([module.id, "\r\n#about {\r\n  padding-top: 100px;\r\n  padding-bottom: 100px;\r\n}\r\n\r\n.sec-about a {\r\n  color:black;\r\n  text-decoration: underline;\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 297 */
+/* 302 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(298);
+	var content = __webpack_require__(303);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -33995,7 +34199,7 @@
 	}
 
 /***/ },
-/* 298 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -34009,13 +34213,13 @@
 
 
 /***/ },
-/* 299 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(300);
+	var content = __webpack_require__(305);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -34035,7 +34239,7 @@
 	}
 
 /***/ },
-/* 300 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -34049,13 +34253,13 @@
 
 
 /***/ },
-/* 301 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(302);
+	var content = __webpack_require__(307);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -34075,7 +34279,7 @@
 	}
 
 /***/ },
-/* 302 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -34089,13 +34293,13 @@
 
 
 /***/ },
-/* 303 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(304);
+	var content = __webpack_require__(309);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -34115,7 +34319,7 @@
 	}
 
 /***/ },
-/* 304 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -34123,175 +34327,10 @@
 
 
 	// module
-	exports.push([module.id, "\r\n.sec-footer{\r\n  margin-top: 25px;\r\n  padding-bottom: 1px;\r\n}\r\n\r\n#footer {\r\n  width: 100%;\r\n  color: white;\r\n  background-color: #222;\r\n  opacity: 1;\r\n  a {\r\n    font-weight: 500;\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n#footer ul {\r\n  padding-top: 10px;\r\n  list-style-type: none;\r\n}\r\n\r\n#footer ul li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 6px 0px 6px;\r\n}\r\n\r\n#footer a {\r\n/*  color: #939393 !important; */\r\n  color: white !important;\r\n}\r\n\r\n.blacktext {\r\n  color: black;\r\n}\r\n\r\n.highlight {\r\n  opacity: 0.6;\r\n}\r\n\r\n.highlight:hover {\r\n  opacity: 1;\r\n}\r\n", ""]);
+	exports.push([module.id, "\r\n.sec-footer{\r\n  margin-top: 25px;\r\n  padding-bottom: 1px;\r\n}\r\n\r\n#footer {\r\n  margin-top:25px;\r\n  width: 100%;\r\n  color: white;\r\n  background-color: #222;\r\n  opacity: 1;\r\n  a {\r\n    font-weight: 500;\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n#footer ul {\r\n  padding-top: 10px;\r\n  list-style-type: none;\r\n}\r\n\r\n#footer ul li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 6px 0px 6px;\r\n}\r\n\r\n#footer a {\r\n/*  color: #939393 !important; */\r\n  color: white !important;\r\n}\r\n\r\n.blacktext {\r\n  color: black;\r\n}\r\n\r\n.highlight {\r\n  opacity: 0.6;\r\n}\r\n\r\n.highlight:hover {\r\n  opacity: 1;\r\n}\r\n", ""]);
 
 	// exports
 
-
-/***/ },
-/* 305 */
-/***/ function(module, exports) {
-
-	module.exports = jQuery;
-
-/***/ },
-/* 306 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	module.exports = __webpack_require__(307);
-
-/***/ },
-/* 307 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-
-	'use strict';
-
-	var ReactDefaultInjection = __webpack_require__(60);
-	var ReactServerRendering = __webpack_require__(308);
-	var ReactVersion = __webpack_require__(193);
-
-	ReactDefaultInjection.inject();
-
-	var ReactDOMServer = {
-	  renderToString: ReactServerRendering.renderToString,
-	  renderToStaticMarkup: ReactServerRendering.renderToStaticMarkup,
-	  version: ReactVersion
-	};
-
-	module.exports = ReactDOMServer;
-
-/***/ },
-/* 308 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {/**
-	 * Copyright 2013-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-	'use strict';
-
-	var _prodInvariant = __webpack_require__(57);
-
-	var React = __webpack_require__(24);
-	var ReactDOMContainerInfo = __webpack_require__(189);
-	var ReactDefaultBatchingStrategy = __webpack_require__(162);
-	var ReactInstrumentation = __webpack_require__(84);
-	var ReactMarkupChecksum = __webpack_require__(191);
-	var ReactReconciler = __webpack_require__(81);
-	var ReactServerBatchingStrategy = __webpack_require__(309);
-	var ReactServerRenderingTransaction = __webpack_require__(155);
-	var ReactUpdates = __webpack_require__(78);
-
-	var emptyObject = __webpack_require__(42);
-	var instantiateReactComponent = __webpack_require__(140);
-	var invariant = __webpack_require__(30);
-
-	var pendingTransactions = 0;
-
-	/**
-	 * @param {ReactElement} element
-	 * @return {string} the HTML markup
-	 */
-	function renderToStringImpl(element, makeStaticMarkup) {
-	  var transaction;
-	  try {
-	    ReactUpdates.injection.injectBatchingStrategy(ReactServerBatchingStrategy);
-
-	    transaction = ReactServerRenderingTransaction.getPooled(makeStaticMarkup);
-
-	    pendingTransactions++;
-
-	    return transaction.perform(function () {
-	      var componentInstance = instantiateReactComponent(element, true);
-	      var markup = ReactReconciler.mountComponent(componentInstance, transaction, null, ReactDOMContainerInfo(), emptyObject, 0 /* parentDebugID */
-	      );
-	      if (process.env.NODE_ENV !== 'production') {
-	        ReactInstrumentation.debugTool.onUnmountComponent(componentInstance._debugID);
-	      }
-	      if (!makeStaticMarkup) {
-	        markup = ReactMarkupChecksum.addChecksumToMarkup(markup);
-	      }
-	      return markup;
-	    }, null);
-	  } finally {
-	    pendingTransactions--;
-	    ReactServerRenderingTransaction.release(transaction);
-	    // Revert to the DOM batching strategy since these two renderers
-	    // currently share these stateful modules.
-	    if (!pendingTransactions) {
-	      ReactUpdates.injection.injectBatchingStrategy(ReactDefaultBatchingStrategy);
-	    }
-	  }
-	}
-
-	/**
-	 * Render a ReactElement to its initial HTML. This should only be used on the
-	 * server.
-	 * See https://facebook.github.io/react/docs/top-level-api.html#reactdomserver.rendertostring
-	 */
-	function renderToString(element) {
-	  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToString(): You must pass a valid ReactElement.') : _prodInvariant('46') : void 0;
-	  return renderToStringImpl(element, false);
-	}
-
-	/**
-	 * Similar to renderToString, except this doesn't create extra DOM attributes
-	 * such as data-react-id that React uses internally.
-	 * See https://facebook.github.io/react/docs/top-level-api.html#reactdomserver.rendertostaticmarkup
-	 */
-	function renderToStaticMarkup(element) {
-	  !React.isValidElement(element) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'renderToStaticMarkup(): You must pass a valid ReactElement.') : _prodInvariant('47') : void 0;
-	  return renderToStringImpl(element, true);
-	}
-
-	module.exports = {
-	  renderToString: renderToString,
-	  renderToStaticMarkup: renderToStaticMarkup
-	};
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(25)))
-
-/***/ },
-/* 309 */
-/***/ function(module, exports) {
-
-	/**
-	 * Copyright 2014-present, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 */
-
-	'use strict';
-
-	var ReactServerBatchingStrategy = {
-	  isBatchingUpdates: false,
-	  batchedUpdates: function batchedUpdates(callback) {
-	    // Don't do anything here. During the server rendering we don't want to
-	    // schedule any updates. We will simply ignore them.
-	  }
-	};
-
-	module.exports = ReactServerBatchingStrategy;
 
 /***/ }
 /******/ ]);

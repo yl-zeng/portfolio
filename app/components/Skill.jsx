@@ -19,7 +19,7 @@ var Skill = (props) =>{
               <img className="img-responsive" src="image/js.png"></img>
             </div>
             <div className="col-sm-2">
-              <img className="img-responsive" src="image/SQL.png"></img>
+              <img className="img-responsive" src="image/npm.png"></img>
             </div>
           </div>
           <br/>
@@ -51,7 +51,7 @@ var Skill = (props) =>{
               <img className="img-responsive" src="image/bootstrap.svg"></img>
             </div>
             <div className="col-sm-2">
-              <img className="img-responsive" src="image/npm.png"></img>
+              <img className="img-responsive" src="image/SQL.png"></img>
             </div>
           </div>
         </div>
