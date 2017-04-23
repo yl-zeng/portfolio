@@ -42,21 +42,21 @@ p {
 }
 
 .heading {
-  position: relative;
+  position: fixed;
   color: #fff;
-  padding-top:300px;
+  top:35%;
+  left:12%;
   font-family: 'Open sans', sans-serif;
   font-weight: 300;
-  text-align: center;
   letter-spacing: 5px;
   text-transform: uppercase;
   z-index: 1;
 }
 
 #Bigin{
-  position: relative;
-  padding-top:  50px;
-  padding-left: 900px;
+  position: fixed;
+  left:75%;
+  top:65%;
   z-index:1;
   color:white;
 }

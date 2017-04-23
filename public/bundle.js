@@ -33629,122 +33629,157 @@
 
 
 	  render: function render() {
-
 	    var data = [{
+	      title: 'Portfolio',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "My personal website, built with React and Bootstrap. Using webpack with loaders to manage all resource & modules. Breaking website into small components, using props and state to control action. "
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " React jQuery Bootstrap Node.js webpack",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/portfolio3.png'],
+	      site: [['Live Site', 'fa-link', 'http://yunlin.io/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/portfolio']]
+	    }, {
+	      title: 'Chat',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "A Node.js full stack app. Build Restful API with express.js & socket.io. Store Data with MongoDB and authenticate users with JSON web token. Create full test suite with Mocha framework and HTTP assertions via supertest."
+	        ),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " Node.js MongoDB Express.js Socket.io",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/chat.png'],
+	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
+	    }, {
+	      title: 'Todo List App',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "A React.js web application helps users to manage todo lists online. Create test suite with Karma and use Google firebase database to maintain data and authenticate users. Using Redux to manage state, babel to compile JSX and Webpack to handle third-party dependencies."
+	        ),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " React Node.js JSX Webpack ",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/todo.png'],
+	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
+	    }, {
+	      title: 'Weather App - Android',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "An android weather forecast application. Build maintainable back-end with SQLite database. Create full Junit test suite for debugging. leverage UI compatibility for both phones and tablets."
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " Android Junit SQlite ",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/weather-android.png'],
+	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
+	    }, {
+	      title: 'Weather App - React',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "A React.js weather forecast application, built with Foundation, SCSS and OpenWeatherMap API. "
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " React Foundation SCSS ",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/weather-react.png'],
+	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-weather']]
+	    }, {
 	      title: 'Quotes',
 	      text: React.createElement(
 	        "div",
 	        null,
 	        React.createElement(
 	          "p",
-	          null,
-	          "A FreeCodeCamp project, ",
-	          React.createElement(
-	            "a",
-	            { href: "http://www.freecodecamp.com/challenges/zipline-build-a-random-quote-machine", target: "_blank" },
-	            React.createElement(
-	              "i",
-	              null,
-	              "Build a Random Quote Machine"
-	            )
-	          ),
-	          ". The user is able to show a new random quote and send that quote to Twitter.",
-	          React.createElement(
-	            "strong",
-	            null,
-	            "Quotes"
-	          ),
-	          " was designed and optimized to be a mobile web app first."
+	          { style: { "padding-top": "10px" } },
+	          "Build a Random Quote Machine with random famous quotes api. The user is able to show a new random quote and send that quote to Twitter."
 	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
 	        React.createElement(
 	          "strong",
 	          null,
-	          "Code:"
+	          "Technology:"
 	        ),
 	        " HTML5, CSS3, Javascript, jQuery",
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Layout:"
-	        ),
-	        " Bootstrap",
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Graphics Editor:"
-	        ),
-	        " Gimp, pixlr.com",
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Images:"
-	        ),
-	        " lorempixel.com",
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Fonts:"
-	        ),
-	        " Font-awesome",
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Data:"
-	        ),
-	        " random famous quotes API"
+	        React.createElement("br", null)
 	      ),
-
-	      image: ['http://2am.ninja/img/quotes.jpg'],
-	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/dojjre'], ['Live Site', 'fa-link', 'http://2am.ninja/quotes/']]
+	      image: ['folio/quotes.png'],
+	      site: [['Live Site', 'fa-link', 'http://codepen.io/d26842684/full/oBzPwR/'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
 	    }, {
-	      title: 'Twitch TV',
-	      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-use-the-twitchtv-json-api" target="_blank"><i>Use the Twitchtv JSON API</i></a>. A user can see if Free Code Camp is currently streaming on Twitch.tv.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Fonts:</strong> Ubuntu Mono<br> <strong>Data:</strong> Twitchtv API',
-
-	      image: ['http://2am.ninja/img/twitch3.jpg'],
-	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/jrEBgq']
-	      //      ,['Live Site', 'fa-link', 'http://2am.ninja/twitch/']
-	      ]
-	    }, {
-	      title: 'Wiki Search',
-	      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-build-a-wikipedia-viewer" target="_blank"><i>Build a Wikipedia Viewer</i></a>. A user can search Wikipedia entries in a search box and see the resulting Wikipedia entries.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Graphics Editor:</strong> pixlr.com<br> <strong>Images:</strong> unsplash.com<br> <strong>Data:</strong> Wikipedia API',
-
-	      image: ['http://2am.ninja/img/wiki.jpg'],
-	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/rVRwor']]
-	    }, {
-	      title: 'Pomodoro Timer',
-	      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-build-a-pomodoro-clock" target="_blank"><i>Build a Pomodoro Clock</i></a>. A user can start a 25 minute pomodoro, and the timer will go off once 25 minutes has elapsed. <strong>Pomodoro Timer</strong> was designed and optimized to be a mobile web app first.</p> <strong>Code:</strong> HTML5, HTML5 Canvas, CSS3, Javascript, jQuery, ion.sound<br> <strong>Layout:</strong> Bootstrap, HTML5 Canvas<br> <strong>Fonts:</strong> IcoMoon',
-
-	      image: ['http://2am.ninja/img/timer.jpg'],
-	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/WvVZyM'], ['Live Site', 'fa-link', 'http://2am.ninja/timer/']]
-	    }, {
-	      title: 'Local Weather',
-	      text: '<p>A FreeCodeCamp project, <a href="http://www.freecodecamp.com/challenges/zipline-show-the-local-weather" target="_blank"><i>Show the Local Weather</i></a>. A user can see the weather in my current location.. <strong>Local Weather</strong> was designed and optimized to be a mobile web app first.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap<br> <strong>Images:</strong> flickr.com<br> <strong>Fonts:</strong> Climacons, Open Sans<br> <strong>Data:</strong> Open Weather Map API, IP-API.com Geolocation API',
-
-	      image: ['http://2am.ninja/img/weather.jpg'],
-	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/oXaoxb']]
-	    }, {
-	      title: 'Bar Graph',
-	      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/visualize-data-with-a-bar-chart" target="_blank"><i>Visualize Data with a Bar Chart </i></a>. The user can see US Gross Domestic Product by quarter, over time, with a mouse over tooltip.</p> <strong>Code:</strong> HTML5, CSS3, D3, SVG, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap',
-
-	      image: ['http://2am.ninja/img/bar-graph.jpg'],
-	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/PNJMpg']]
-	    }, {
-	      title: 'Heat Map',
-	      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/visualize-data-with-a-heat-map" target="_blank"><i>Visualize Data with a Heat Map</i></a>. The user can view a heat map with data represented both on the Y and X axis, with mouse over tooltip.</p> <strong>Code:</strong> HTML5, CSS3, D3, SVG, Javascript, jQuery<br> <strong>Layout:</strong> Bootstrap',
-
-	      image: ['http://2am.ninja/img/heat-map.jpg'],
-	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/VeKNEa']]
-	    }, {
-	      title: 'Tic-Tac-Toe',
-	      text: '<p>A FreeCodeCamp project, <a href="https://www.freecodecamp.com/challenges/build-a-tic-tac-toe-game" target="_blank"><i>Build a Tic Tac Toe Game</i></a>. The user can play a game of Tic Tac Toe with the computer.</p> <strong>Code:</strong> HTML5, CSS3, Javascript, jQuery<br> <strong>Layout:</strong> Materialize.css',
-
-	      image: ['http://2am.ninja/img/ttt.jpg'],
-	      site: [['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/jWWYLo']]
+	      title: 'Blog',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "A group project of Python course. Built with python jinja2 template, Bootstrap and Google App Engine. I am responsible for render html."
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " HTML5, CSS3, Javascript, Python",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/blog.png'],
+	      site: [['Live Site', 'fa-link', 'https://dotted-weft-151521.appspot.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
 	    }];
 
 	    return React.createElement(
@@ -33768,7 +33803,10 @@
 	            React.createElement(Card, { projectData: data[0] }),
 	            React.createElement(Card, { projectData: data[1] }),
 	            React.createElement(Card, { projectData: data[2] }),
-	            React.createElement(Card, { projectData: data[3] })
+	            React.createElement(Card, { projectData: data[3] }),
+	            React.createElement(Card, { projectData: data[4] }),
+	            React.createElement(Card, { projectData: data[5] }),
+	            React.createElement(Card, { projectData: data[6] })
 	          )
 	        )
 	      )
@@ -33782,7 +33820,7 @@
 /* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	/* WEBPACK VAR INJECTION */(function($) {'use strict';
 
 	var React = __webpack_require__(23);
 
@@ -33801,13 +33839,18 @@
 	    };
 	  },
 
+	  componentDidMount: function componentDidMount() {
+	    $('.js-toggle1').tooltip({ title: this.props.projectData.site[0][0], placement: "top" });
+	    $('.js-toggle2').tooltip({ title: this.props.projectData.site[1][0], placement: "top" });
+	  },
+
 	  getInitialState: function getInitialState() {
 	    return {
 	      flip: ""
 	    };
 	  },
 
-	  handleClick: function handleClick(e) {
+	  handleClickFlip: function handleClickFlip(e) {
 	    e.preventDefault();
 	    //alert("this LInk is clicked");
 	    if (this.state.flip === "") {
@@ -33820,6 +33863,14 @@
 	      });
 	    }
 	  },
+	  handleClickLink0: function handleClickLink0(e) {
+	    e.preventDefault();
+	    window.open(this.props.projectData.site[0][2]);
+	  },
+	  handleClickLink1: function handleClickLink1(e) {
+	    e.preventDefault();
+	    window.open(this.props.projectData.site[1][2]);
+	  },
 	  render: function render() {
 	    var project = this.props.projectData;
 
@@ -33828,7 +33879,7 @@
 	      { className: 'col-sm-6 col-md-4' },
 	      React.createElement(
 	        'div',
-	        { className: "card effect_click " + this.state.flip, onClick: this.handleClick },
+	        { className: "card effect_click " + this.state.flip, onClick: this.handleClickFlip },
 	        React.createElement(
 	          'div',
 	          { className: 'card_front' },
@@ -33867,8 +33918,13 @@
 	                null,
 	                React.createElement(
 	                  'a',
-	                  { 'data-toggle': 'tooltip', title: project.site[0][0], 'data-placement': 'top', href: project.site[0][2], target: '_blank', className: 'btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0' },
+	                  { onClick: this.handleClickLink0, className: 'js-toggle1 btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0' },
 	                  React.createElement('i', { className: "fa " + project.site[0][1], 'aria-hidden': 'true' })
+	                ),
+	                React.createElement(
+	                  'a',
+	                  { onClick: this.handleClickLink1, className: 'js-toggle2 btn btn-primary btn-lg btn-circle btn-lnk btn-lnk1' },
+	                  React.createElement('i', { className: "fa " + project.site[1][1], 'aria-hidden': 'true' })
 	                )
 	              )
 	            )
@@ -33880,6 +33936,7 @@
 	});
 
 	module.exports = Card;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(286)))
 
 /***/ },
 /* 295 */
@@ -34127,7 +34184,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\n\r\n#section-main {\r\n  height:700px;\r\n  width:100%;\r\n  background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;\r\n}\r\n\r\n#section-main:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 700px;\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.heading {\r\n  position: relative;\r\n  color: #fff;\r\n  padding-top:300px;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  text-align: center;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: relative;\r\n  padding-top:  50px;\r\n  padding-left: 900px;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
+	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\n\r\n#section-main {\r\n  height:700px;\r\n  width:100%;\r\n  background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;\r\n}\r\n\r\n#section-main:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 700px;\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.heading {\r\n  position: fixed;\r\n  color: #fff;\r\n  top:35%;\r\n  left:12%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: fixed;\r\n  left:75%;\r\n  top:65%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
 
 	// exports
 
