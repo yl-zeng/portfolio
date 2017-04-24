@@ -33518,9 +33518,10 @@
 	    e.preventDefault();
 	    swal({
 	      title: "",
-	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZTXF5Z2xNSjk1d0k/preview\" width=\"700px\" height=\"480px\" ></div>",
+	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZbzhWMS03NTU3ODg/preview\" width=\"700px\" height=\"480px\" ></div>",
 	      customClass: "resumeWindow",
-	      html: true
+	      html: true,
+	      allowOutsideClick: true
 	    });
 	  },
 
@@ -35032,7 +35033,7 @@
 	        React.createElement("br", null)
 	      ),
 	      image: ['folio/chat.png'],
-	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng/node-chat']]
+	      site: [['Live Site', 'fa-link', 'https://yunlin-chat-node.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/node-chat']]
 	    }, {
 	      title: 'Todo List App',
 	      text: React.createElement(
@@ -35052,7 +35053,7 @@
 	        React.createElement("br", null)
 	      ),
 	      image: ['folio/todo.png'],
-	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
+	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-todo']]
 	    }, {
 	      title: 'Weather App - Android',
 	      text: React.createElement(
@@ -35074,7 +35075,7 @@
 	        React.createElement("br", null)
 	      ),
 	      image: ['folio/weather-android.png'],
-	      site: [['Overview', 'fa-eye', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
+	      site: [['Demo', 'fa-eye', 'https://drive.google.com/file/d/0B1B6d6uqGpUZOVRKZXg1YlpiV3M/view?usp=sharing'], ['Github', 'fa-github', 'https://github.com/yl-zeng/android-weather']]
 	    }, {
 	      title: 'Weather App - React',
 	      text: React.createElement(
@@ -35096,7 +35097,7 @@
 	        React.createElement("br", null)
 	      ),
 	      image: ['folio/weather-react.png'],
-	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-weather']]
+	      site: [['Live Site', 'fa-link', 'https://yunlin69-react-weather.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-weather']]
 	    }, {
 	      title: 'Quotes',
 	      text: React.createElement(
@@ -35592,7 +35593,7 @@
 
 
 	// module
-	exports.push([module.id, "\r\n#about {\r\n  padding-top: 100px;\r\n  padding-bottom: 100px;\r\n}\r\n\r\n.sec-about a {\r\n  color:black;\r\n  text-decoration: underline;\r\n  cursor: pointer;\r\n}\r\n\r\n\r\n.resumeWindow{\r\n  position: fixed !important;\r\n  left: 540px;\r\n  width:740px;\r\n}\r\n", ""]);
+	exports.push([module.id, "\r\n#about {\r\n  padding-top: 100px;\r\n  padding-bottom: 100px;\r\n}\r\n\r\n.sec-about a {\r\n  color:black;\r\n  text-decoration: underline;\r\n  cursor: pointer;\r\n}\r\n\r\n\r\n.resumeWindow{\r\n  position: fixed !important;\r\n  left: 42%;\r\n  width:740px;\r\n}\r\n", ""]);
 
 	// exports
 

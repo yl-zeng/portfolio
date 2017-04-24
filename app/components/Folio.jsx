@@ -30,7 +30,7 @@ var Folio = React.createClass({
         </div>
       ),
       image: ['folio/chat.png'],
-      site: [['Live Site', 'fa-link', '#'],
+      site: [['Live Site', 'fa-link', 'https://yunlin-chat-node.herokuapp.com/'],
       ['Github','fa-github','https://github.com/yl-zeng/node-chat']]
     },
     {
@@ -45,7 +45,7 @@ var Folio = React.createClass({
       ),
       image: ['folio/todo.png'],
       site: [['Live Site', 'fa-link', '#'],
-      ['Github','fa-github','https://github.com/yl-zeng']]
+      ['Github','fa-github','https://github.com/yl-zeng/react-todo']]
     },{
       title: 'Weather App - Android',
       text: (
@@ -59,8 +59,8 @@ var Folio = React.createClass({
         </div>
       ),
       image: ['folio/weather-android.png'],
-      site: [['Overview', 'fa-eye', '#'],
-      ['Github','fa-github','https://github.com/yl-zeng']]
+      site: [['Demo', 'fa-eye', 'https://drive.google.com/file/d/0B1B6d6uqGpUZOVRKZXg1YlpiV3M/view?usp=sharing'],
+      ['Github','fa-github','https://github.com/yl-zeng/android-weather']]
     },{
       title: 'Weather App - React',
       text: (
@@ -72,7 +72,7 @@ var Folio = React.createClass({
         </div>
       ),
       image: ['folio/weather-react.png'],
-      site: [['Live Site', 'fa-link', '#'],
+      site: [['Live Site', 'fa-link', 'https://yunlin69-react-weather.herokuapp.com/'],
       ['Github','fa-github','https://github.com/yl-zeng/react-weather']]
     },{
       title: 'Quotes',

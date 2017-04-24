@@ -13,9 +13,10 @@ var About = React.createClass({
     e.preventDefault();
     swal({
       title: "",
-      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZTXF5Z2xNSjk1d0k/preview\" width=\"700px\" height=\"480px\" ></div>",
+      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZbzhWMS03NTU3ODg/preview\" width=\"700px\" height=\"480px\" ></div>",
       customClass: "resumeWindow",
-      html:true
+      html:true,
+      allowOutsideClick: true
     });
   },
 
