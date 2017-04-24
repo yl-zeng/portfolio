@@ -1,35 +1,51 @@
 var React = require("react");
 var Footer = require("Footer");
 
+var swal = require('sweetalert');
+
+
 var Contact = React.createClass({
+  handleSubmit:function(e){
+    e.preventDefault();
+    swal({
+      title: "",
+      text: 'I have received your message, I will contact with u soon.',
+      type:"success"
+    });
+    this.refs.name.value = "";
+    this.refs.mail.value = "";
+    this.refs.text.value = "";
+  },
+
+
   render: function (){
     return (
       <div>
         <section id="contact" className="sec-contact">
           <div className="container">
-            <h1>Hire me</h1>
+            <h1>Contact me</h1>
             <hr />
             <div className="row">
               <div className="col-sm-4 col-sm-offset-4">
-                <form className="center-block" action="#" method="post">
+                <form className="center-block" onSubmit={this.handleSubmit} >
                   <div className="form-group">
                     <label className="sr-only" for="inputName">Full name</label>
-                    <input id="inputName" className="form-control" type="text" placeholder="Yunlin Zeng" required />
+                    <input id="inputName" ref="name" className="form-control" type="text" placeholder="Yunlin Zeng" required />
                   </div>
                   <div className="form-group">
                     <label for="inputMail" className="sr-only">Email Address</label>
 
-                    <input id="inputMail" className="form-control" type="email" placeholder="ylinzeng69@gmail.com" required />
+                    <input id="inputMail" ref="mail" className="form-control" type="email" placeholder="ylinzeng69@gmail.com" required />
                   </div>
 
                   <div className="form-group">
                     <label for="inputMessage" className="sr-only">Your Message</label>
 
-                    <textarea id="inputMessage" className="form-control" name="message" cols="30" rows="8" required></textarea>
+                    <textarea id="inputMessage" ref="text" className="form-control" name="message" cols="30" rows="8" required></textarea>
                   </div>
 
                   <div className="form-group">
-                    <button className="btn btn-default center-block" type="submit" value="Hire me">Hire me</button>
+                    <button className="btn btn-default center-block" type="submit">Submit</button>
                   </div>
                 </form>
               </div>

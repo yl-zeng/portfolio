@@ -9,6 +9,7 @@ var Contact = require("Contact");
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
+import "sweetalert/dist/sweetalert.css";
 
 require("./style/app.css");
 require("./style/about.css");
@@ -16,6 +17,7 @@ require("./style/skill.css");
 require("./style/folio.css");
 require("./style/contact.css");
 require("./style/footer.css");
+
 
 ReactDOM.render(
   <Router history={hashHistory}>

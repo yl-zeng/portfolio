@@ -31,7 +31,7 @@ var Folio = React.createClass({
       ),
       image: ['folio/chat.png'],
       site: [['Live Site', 'fa-link', '#'],
-      ['Github','fa-github','https://github.com/yl-zeng']]
+      ['Github','fa-github','https://github.com/yl-zeng/node-chat']]
     },
     {
       title: 'Todo List App',
@@ -59,7 +59,7 @@ var Folio = React.createClass({
         </div>
       ),
       image: ['folio/weather-android.png'],
-      site: [['Live Site', 'fa-link', '#'],
+      site: [['Overview', 'fa-eye', '#'],
       ['Github','fa-github','https://github.com/yl-zeng']]
     },{
       title: 'Weather App - React',
@@ -85,8 +85,8 @@ var Folio = React.createClass({
         </div>
       ),
       image: ['folio/quotes.png'],
-      site: [['Live Site', 'fa-link', 'http://codepen.io/d26842684/full/oBzPwR/'],
-      ['Github','fa-github','https://github.com/yl-zeng']]
+      site: [['Codepen', 'fa-codepen', 'http://codepen.io/d26842684/full/oBzPwR/'],
+      ['Github','fa-github','https://github.com/yl-zeng/quotes']]
     },{
       title: 'Blog',
       text: (

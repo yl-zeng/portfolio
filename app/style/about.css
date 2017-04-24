@@ -7,4 +7,12 @@
 .sec-about a {
   color:black;
   text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.resumeWindow{
+  position: fixed !important;
+  left: 540px;
+  width:740px;
 }

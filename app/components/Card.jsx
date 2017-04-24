@@ -5,21 +5,13 @@ var Card = React.createClass({
   getDefaultProps: function(){
     return {
       projectData: {
-        title: 'Quotes',
-        text: 'HI',
 
-        image: ['http://2am.ninja/img/quotes.jpg'],
-        site: [
-          ['CodePen', 'fa-codepen', 'http://s.codepen.io/MutantSpore/debug/dojjre'],
-          ['Live Site', 'fa-link', 'http://2am.ninja/quotes/']
-        ]
       }
     }
   },
 
   componentDidMount: function(){
-    $('.js-toggle1').tooltip({title:this.props.projectData.site[0][0], placement:"top"});
-    $('.js-toggle2').tooltip({title:this.props.projectData.site[1][0], placement:"top"});
+    $('.js-toggle').tooltip();
   },
 
   getInitialState: function(){
@@ -67,10 +59,10 @@ var Card = React.createClass({
               <figcaption>
                 <div className="project-body">{project.text}</div>
                 <div>
-                  <a onClick={this.handleClickLink0} className="js-toggle1 btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0">
+                  <a onClick={this.handleClickLink0} title={project.site[0][0]} data-placement="top" className="js-toggle btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0">
                     <i className={"fa " + project.site[0][1]}  aria-hidden="true"></i>
                   </a>
-                  <a onClick={this.handleClickLink1} className="js-toggle2 btn btn-primary btn-lg btn-circle btn-lnk btn-lnk1">
+                  <a onClick={this.handleClickLink1} title={project.site[1][0]} data-placement="top" className="js-toggle btn btn-primary btn-lg btn-circle btn-lnk btn-lnk1">
                     <i className={"fa " + project.site[1][1]}  aria-hidden="true"></i>
                   </a>
                 </div>
