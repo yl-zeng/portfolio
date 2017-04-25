@@ -35356,9 +35356,21 @@
 	      text: 'I have received your message, I will contact with u soon.',
 	      type: "success"
 	    });
+	    this.sendFormData({
+	      name: this.refs.name.value,
+	      email: this.refs.mail.value,
+	      text: this.refs.text.value
+	    });
 	    this.refs.name.value = "";
 	    this.refs.mail.value = "";
 	    this.refs.text.value = "";
+	  },
+
+	  sendFormData: function sendFormData(data) {
+	    var xmlhttp = new XMLHttpRequest();
+	    xmlhttp.open('POST', 'send', true);
+	    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+	    xmlhttp.send("name=" + data.name + "&email=" + data.email + "&text=" + data.text);
 	  },
 
 	  render: function render() {

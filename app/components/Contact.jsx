@@ -12,9 +12,21 @@ var Contact = React.createClass({
       text: 'I have received your message, I will contact with u soon.',
       type:"success"
     });
+    this.sendFormData({
+      name:this.refs.name.value,
+      email:this.refs.mail.value,
+      text:this.refs.text.value
+    });
     this.refs.name.value = "";
     this.refs.mail.value = "";
     this.refs.text.value = "";
+  },
+
+  sendFormData:function(data){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open('POST', 'send', true);
+    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xmlhttp.send(`name=${data.name}&email=${data.email}&text=${data.text}`);
   },
 
 
@@ -27,7 +39,7 @@ var Contact = React.createClass({
             <hr />
             <div className="row">
               <div className="col-sm-4 col-sm-offset-4">
-                <form className="center-block" onSubmit={this.handleSubmit} >
+                <form className="center-block"  onSubmit={this.handleSubmit} >
                   <div className="form-group">
                     <label className="sr-only" for="inputName">Full name</label>
                     <input id="inputName" ref="name" className="form-control" type="text" placeholder="Yunlin Zeng" required />
