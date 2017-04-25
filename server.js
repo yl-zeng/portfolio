@@ -1,5 +1,6 @@
 const express = require("express");
-var nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer');
+const smtpTransport = require('nodemailer-smtp-transport');
 const bodyParser = require('body-parser')
 const fs = require("fs");
 
@@ -9,13 +10,13 @@ const PORT = process.env.PORT || 3000;
 
 const PASS = process.env.PASS || fs.readFileSync("./config.txt");
 
-var transporter = nodemailer.createTransport({
+var transporter = nodemailer.createTransport(smtpTransport({
     service: 'gmail',
     auth: {
         user: 'd26842684@gmail.com',
         pass: PASS
     }
-});
+}));
 
 
 
