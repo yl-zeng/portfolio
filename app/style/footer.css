@@ -5,6 +5,7 @@
 }
 
 #footer {
+  position: absolute;
   margin-top:25px;
   width: 100%;
   color: white;

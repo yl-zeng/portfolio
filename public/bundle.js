@@ -34899,22 +34899,22 @@
 	          { className: "row" },
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2 col-sm-offset-2" },
+	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
 	            React.createElement("img", { className: "img-responsive ", src: "image/html.png" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2" },
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/css.png" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2" },
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/js.png" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2" },
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/npm.png" })
 	          )
 	        ),
@@ -34925,22 +34925,22 @@
 	          { className: "row" },
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2 col-sm-offset-2" },
+	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
 	            React.createElement("img", { className: "img-responsive ", src: "image/react.png" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2" },
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/node.png" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2" },
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/mongodb.png" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2" },
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/git.png" })
 	          )
 	        ),
@@ -34951,22 +34951,22 @@
 	          { className: "row" },
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2 col-sm-offset-2" },
+	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
 	            React.createElement("img", { className: "img-responsive ", src: "image/java.png" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2" },
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/android.png" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2" },
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/bootstrap.svg" })
 	          ),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-2" },
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/SQL.png" })
 	          )
 	        )
@@ -35311,7 +35311,7 @@
 	  render: function render() {
 	    return React.createElement(
 	      "div",
-	      { id: "section-main", className: "container-fluid" },
+	      { id: "section-main", className: "container" },
 	      React.createElement(
 	        "h1",
 	        { className: "text-center heading" },
@@ -35765,7 +35765,7 @@
 
 
 	// module
-	exports.push([module.id, "\r\n.sec-footer{\r\n  margin-top: 25px;\r\n  padding-bottom: 1px;\r\n}\r\n\r\n#footer {\r\n  margin-top:25px;\r\n  width: 100%;\r\n  color: white;\r\n  background-color: #222;\r\n  opacity: 1;\r\n  a {\r\n    font-weight: 500;\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n#footer ul {\r\n  padding-top: 10px;\r\n  list-style-type: none;\r\n}\r\n\r\n#footer ul li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 6px 0px 6px;\r\n}\r\n\r\n#footer a {\r\n/*  color: #939393 !important; */\r\n  color: white !important;\r\n}\r\n\r\n.blacktext {\r\n  color: black;\r\n}\r\n\r\n.highlight {\r\n  opacity: 0.6;\r\n}\r\n\r\n.highlight:hover {\r\n  opacity: 1;\r\n}\r\n", ""]);
+	exports.push([module.id, "\r\n.sec-footer{\r\n  margin-top: 25px;\r\n  padding-bottom: 1px;\r\n}\r\n\r\n#footer {\r\n  position: absolute;\r\n  margin-top:25px;\r\n  width: 100%;\r\n  color: white;\r\n  background-color: #222;\r\n  opacity: 1;\r\n  a {\r\n    font-weight: 500;\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n#footer ul {\r\n  padding-top: 10px;\r\n  list-style-type: none;\r\n}\r\n\r\n#footer ul li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 6px 0px 6px;\r\n}\r\n\r\n#footer a {\r\n/*  color: #939393 !important; */\r\n  color: white !important;\r\n}\r\n\r\n.blacktext {\r\n  color: black;\r\n}\r\n\r\n.highlight {\r\n  opacity: 0.6;\r\n}\r\n\r\n.highlight:hover {\r\n  opacity: 1;\r\n}\r\n", ""]);
 
 	// exports
 
