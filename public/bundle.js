@@ -33518,7 +33518,7 @@
 	    e.preventDefault();
 	    swal({
 	      title: "",
-	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZbzhWMS03NTU3ODg/preview\" width=\"700px\" height=\"480px\" ></div>",
+	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZX0ZqNndsWnduc2M/preview\" width=\"700px\" height=\"480px\" ></div>",
 	      customClass: "resumeWindow",
 	      html: true,
 	      allowOutsideClick: true
