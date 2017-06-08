@@ -35014,6 +35014,26 @@
 	      image: ['folio/portfolio3.png'],
 	      site: [['Live Site', 'fa-link', 'http://yunlin.io/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/portfolio']]
 	    }, {
+	      title: 'Todo App',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "A React.js web application helps users to manage todo lists online. Create test suite with Karma and use Google firebase database to maintain data and authenticate users. Using Redux to manage state, babel to compile JSX and Webpack to handle third-party dependencies."
+	        ),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " React Node.js JSX Webpack ",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/todo.png'],
+	      site: [['Live Site', 'fa-link', 'https://yunlin-todo.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-todo']]
+	    }, {
 	      title: 'Chat',
 	      text: React.createElement(
 	        "div",
@@ -35034,26 +35054,6 @@
 	      ),
 	      image: ['folio/chat.png'],
 	      site: [['Live Site', 'fa-link', 'https://yunlin-chat-node.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/node-chat']]
-	    }, {
-	      title: 'Todo List App',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "A React.js web application helps users to manage todo lists online. Create test suite with Karma and use Google firebase database to maintain data and authenticate users. Using Redux to manage state, babel to compile JSX and Webpack to handle third-party dependencies."
-	        ),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " React Node.js JSX Webpack ",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/todo.png'],
-	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-todo']]
 	    }, {
 	      title: 'Weather App - Android',
 	      text: React.createElement(

@@ -19,7 +19,22 @@ var Folio = React.createClass({
       image: ['folio/portfolio3.png'],
       site: [['Live Site', 'fa-link', 'http://yunlin.io/'],
       ['Github','fa-github','https://github.com/yl-zeng/portfolio']]
-    },{
+    },
+    {
+      title: 'Todo App',
+      text: (
+        <div>
+          <p style={{"padding-top":"10px"}}>A React.js web application helps users to manage todo lists online.
+          Create test suite with Karma and use Google firebase database to maintain data and authenticate users.
+         Using Redux to manage state, babel to compile JSX and Webpack to handle third-party dependencies.</p>
+          <strong>Technology:</strong> React Node.js JSX Webpack <br/>
+        </div>
+      ),
+      image: ['folio/todo.png'],
+      site: [['Live Site', 'fa-link', 'https://yunlin-todo.herokuapp.com/'],
+      ['Github','fa-github','https://github.com/yl-zeng/react-todo']]
+    },
+    {
       title: 'Chat',
       text: (
         <div>
@@ -34,19 +49,6 @@ var Folio = React.createClass({
       ['Github','fa-github','https://github.com/yl-zeng/node-chat']]
     },
     {
-      title: 'Todo List App',
-      text: (
-        <div>
-          <p style={{"padding-top":"10px"}}>A React.js web application helps users to manage todo lists online.
-          Create test suite with Karma and use Google firebase database to maintain data and authenticate users.
-         Using Redux to manage state, babel to compile JSX and Webpack to handle third-party dependencies.</p>
-          <strong>Technology:</strong> React Node.js JSX Webpack <br/>
-        </div>
-      ),
-      image: ['folio/todo.png'],
-      site: [['Live Site', 'fa-link', '#'],
-      ['Github','fa-github','https://github.com/yl-zeng/react-todo']]
-    },{
       title: 'Weather App - Android',
       text: (
         <div>
