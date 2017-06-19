@@ -5,17 +5,23 @@ var Skill = require("Skill");
 var Folio = require("Folio");
 
 
-var Home = (props) =>{
+var Home = React.createClass({
 
+  componentDidMount:function(){
+    $(window).scrollTop(0);
+  },
 
-  return (
-    <div>
-      <Nav2></Nav2>
-      <About></About>
-      <Skill></Skill>
-      <Folio></Folio>
-    </div>
-  );
-};
+  render:function(){
+    return (
+      <div>
+        <Nav2></Nav2>
+        <About></About>
+        <Skill></Skill>
+        <Folio></Folio>
+      </div>
+    );
+  }
+
+});
 
 module.exports = Home;

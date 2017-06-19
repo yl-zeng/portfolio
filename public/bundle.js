@@ -33204,30 +33204,46 @@
 /* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
 	var React = __webpack_require__(260);
-	var Nav2 = __webpack_require__(287);
+	var Nav2 = __webpack_require__(288);
 	var About = __webpack_require__(293);
 	var Skill = __webpack_require__(303);
 	var Folio = __webpack_require__(304);
 
-	var Home = function Home(props) {
+	var Home = React.createClass({
+	  displayName: "Home",
 
-	  return React.createElement(
-	    "div",
-	    null,
-	    React.createElement(Nav2, null),
-	    React.createElement(About, null),
-	    React.createElement(Skill, null),
-	    React.createElement(Folio, null)
-	  );
-	};
+
+	  componentDidMount: function componentDidMount() {
+	    $(window).scrollTop(0);
+	  },
+
+	  render: function render() {
+	    return React.createElement(
+	      "div",
+	      null,
+	      React.createElement(Nav2, null),
+	      React.createElement(About, null),
+	      React.createElement(Skill, null),
+	      React.createElement(Folio, null)
+	    );
+	  }
+
+	});
 
 	module.exports = Home;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
 /* 287 */
+/***/ function(module, exports) {
+
+	module.exports = jQuery;
+
+/***/ },
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
@@ -33328,13 +33344,7 @@
 	});
 
 	module.exports = Nav2;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(288)))
-
-/***/ },
-/* 288 */
-/***/ function(module, exports) {
-
-	module.exports = jQuery;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
 /* 289 */
@@ -33512,13 +33522,11 @@
 	  displayName: "About",
 
 
-	  componentDidMount: function componentDidMount() {},
-
 	  handleClick: function handleClick(e) {
 	    e.preventDefault();
 	    swal({
 	      title: "",
-	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZX0ZqNndsWnduc2M/preview\" width=\"700px\" height=\"480px\" ></div>",
+	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZSko4aUVrR1B6aVE/preview\" width=\"700px\" height=\"480px\" ></div>",
 	      customClass: "resumeWindow",
 	      html: true,
 	      allowOutsideClick: true
@@ -35291,7 +35299,7 @@
 	});
 
 	module.exports = Card;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(288)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
 /* 306 */
@@ -35339,7 +35347,7 @@
 /* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
 	var React = __webpack_require__(25);
 	var Footer = __webpack_require__(308);
@@ -35348,6 +35356,10 @@
 
 	var Contact = React.createClass({
 	  displayName: "Contact",
+
+	  componentDidMount: function componentDidMount() {
+	    $(window).scrollTop(0);
+	  },
 
 	  handleSubmit: function handleSubmit(e) {
 	    e.preventDefault();
@@ -35448,6 +35460,7 @@
 	});
 
 	module.exports = Contact;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
 /* 308 */
@@ -35528,7 +35541,7 @@
 	});
 
 	module.exports = Footer;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(288)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
 /* 309 */

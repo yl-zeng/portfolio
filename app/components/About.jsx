@@ -5,15 +5,12 @@ var swal = require('sweetalert');
 
 var About = React.createClass({
 
-  componentDidMount:function(){
-
-  },
 
   handleClick:function(e){
     e.preventDefault();
     swal({
       title: "",
-      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZX0ZqNndsWnduc2M/preview\" width=\"700px\" height=\"480px\" ></div>",
+      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZSko4aUVrR1B6aVE/preview\" width=\"700px\" height=\"480px\" ></div>",
       customClass: "resumeWindow",
       html:true,
       allowOutsideClick: true

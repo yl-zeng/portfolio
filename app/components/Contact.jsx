@@ -5,6 +5,10 @@ var swal = require('sweetalert');
 
 
 var Contact = React.createClass({
+  componentDidMount:function(){
+    $(window).scrollTop(0);
+  },
+  
   handleSubmit:function(e){
     e.preventDefault();
     swal({
