@@ -35305,7 +35305,7 @@
 /* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	var React = __webpack_require__(25);
 
@@ -35313,28 +35313,36 @@
 	    Link = _require.Link;
 
 	var IndexPage = React.createClass({
-	  displayName: "IndexPage",
+	  displayName: 'IndexPage',
+	  componentDidMount: function componentDidMount() {
+	    document.getElementById('vid').play();
+	  },
 
 
 	  render: function render() {
 	    return React.createElement(
-	      "div",
-	      { id: "section-main", className: "container" },
+	      'div',
+	      { id: 'section-main', className: 'container' },
 	      React.createElement(
-	        "h1",
-	        { className: "text-center heading" },
-	        "Technology doesn't change the world ",
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        " people do."
+	        'video',
+	        { id: 'vid', playsinline: true, muted: true, loop: true },
+	        React.createElement('source', { src: 'http://thenewcode.com/assets/videos/polina.mp4', type: 'video/mp4' })
 	      ),
 	      React.createElement(
-	        "div",
-	        { id: "Bigin", className: "animated infinite slideInDown" },
+	        'h1',
+	        { className: 'text-center heading' },
+	        'Technology doesn\'t change the world ',
+	        React.createElement('br', null),
+	        React.createElement('br', null),
+	        ' people do.'
+	      ),
+	      React.createElement(
+	        'div',
+	        { id: 'Bigin', className: 'animated infinite slideInDown' },
 	        React.createElement(
 	          Link,
-	          { to: "/home", style: { color: "white" } },
-	          React.createElement("i", { className: "fa fa-angle-double-down fa-5x" })
+	          { to: '/home', style: { color: "white" } },
+	          React.createElement('i', { className: 'fa fa-angle-double-down fa-5x' })
 	        )
 	      )
 	    );
@@ -35578,7 +35586,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\n\r\n#section-main {\r\n  height:700px;\r\n  width:100%;\r\n  background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;\r\n}\r\n\r\n#section-main:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 700px;\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.heading {\r\n  position: fixed;\r\n  color: #fff;\r\n  top:35%;\r\n  left:12%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: fixed;\r\n  left:75%;\r\n  top:65%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
+	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo {\r\n    position: fixed;\r\n    top: 50%;\r\n    left: 50%;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    width: auto;\r\n    height: auto;\r\n    z-index: -100;\r\n    transform: translateX(-50%) translateY(-50%);\r\n  transition: 1s opacity;\r\n}\r\n\r\n#section-main {\r\n  width:100%;\r\n  /*background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;*/\r\n}\r\n\r\n#section-main:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 700px;\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.heading {\r\n  position: fixed;\r\n  color: #fff;\r\n  top:35%;\r\n  left:12%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: fixed;\r\n  left:75%;\r\n  top:65%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
 
 	// exports
 
