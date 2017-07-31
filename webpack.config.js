@@ -32,7 +32,8 @@ module.exports ={
       Skill:"app/components/Skill.jsx",
       Folio:"app/components/Folio.jsx",
       Contact:"app/components/Contact.jsx",
-      Card:"app/components/Card.jsx"
+      Card:"app/components/Card.jsx",
+      Video:"app/components/Video.jsx"
 
     },
     extensions:['','.js','.jsx']

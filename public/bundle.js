@@ -113,14 +113,14 @@
 	var Main = __webpack_require__(259);
 	var Home = __webpack_require__(286);
 	var IndexPage = __webpack_require__(306);
-	var Contact = __webpack_require__(307);
+	var Contact = __webpack_require__(308);
 
-	__webpack_require__(309);
-	__webpack_require__(311);
-	__webpack_require__(313);
-	__webpack_require__(315);
-	__webpack_require__(317);
-	__webpack_require__(319);
+	__webpack_require__(310);
+	__webpack_require__(312);
+	__webpack_require__(314);
+	__webpack_require__(316);
+	__webpack_require__(318);
+	__webpack_require__(320);
 
 	ReactDOM.render(React.createElement(
 	  Router,
@@ -35305,44 +35305,50 @@
 /* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(25);
 
 	var _require = __webpack_require__(202),
 	    Link = _require.Link;
 
+	var Video = __webpack_require__(307);
+
 	var IndexPage = React.createClass({
-	  displayName: 'IndexPage',
-	  componentDidMount: function componentDidMount() {
-	    document.getElementById('vid').play();
+	  displayName: "IndexPage",
+	  getInitialState: function getInitialState() {
+	    return {
+	      count: 3
+	    };
+	  },
+	  handleEnd: function handleEnd() {
+	    var nextCount = this.state.count == 4 ? 1 : this.state.count + 1;
+	    this.setState({
+	      count: nextCount
+	    });
 	  },
 
 
 	  render: function render() {
 	    return React.createElement(
-	      'div',
-	      { id: 'section-main', className: 'container' },
+	      "div",
+	      { id: "section-main", className: "container" },
+	      React.createElement(Video, { onEnd: this.handleEnd, count: this.state.count }),
 	      React.createElement(
-	        'video',
-	        { id: 'vid', playsinline: true, muted: true, loop: true },
-	        React.createElement('source', { src: 'http://thenewcode.com/assets/videos/polina.mp4', type: 'video/mp4' })
+	        "h1",
+	        { className: "text-center heading" },
+	        "Technology doesn't change the world ",
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        " people do."
 	      ),
 	      React.createElement(
-	        'h1',
-	        { className: 'text-center heading' },
-	        'Technology doesn\'t change the world ',
-	        React.createElement('br', null),
-	        React.createElement('br', null),
-	        ' people do.'
-	      ),
-	      React.createElement(
-	        'div',
-	        { id: 'Bigin', className: 'animated infinite slideInDown' },
+	        "div",
+	        { id: "Bigin", className: "animated infinite slideInDown" },
 	        React.createElement(
 	          Link,
-	          { to: '/home', style: { color: "white" } },
-	          React.createElement('i', { className: 'fa fa-angle-double-down fa-5x' })
+	          { to: "/home", style: { color: "white" } },
+	          React.createElement("i", { className: "fa fa-angle-double-down fa-5x" })
 	        )
 	      )
 	    );
@@ -35355,10 +35361,42 @@
 /* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	var React = __webpack_require__(25);
+
+	var _require = __webpack_require__(202),
+	    Link = _require.Link;
+
+	var Video = React.createClass({
+	  displayName: "Video",
+	  handleEnd: function handleEnd() {
+	    this.props.onEnd();
+	  },
+	  componentDidMount: function componentDidMount() {
+	    document.getElementById("vid").load();
+	  },
+
+
+	  render: function render() {
+	    return React.createElement(
+	      "div",
+	      null,
+	      React.createElement("video", { id: "vid", src: "/video/" + this.props.count + ".mp4", autoPlay: true, muted: true, onEnded: this.handleEnd })
+	    );
+	  }
+	});
+
+	module.exports = Video;
+
+/***/ },
+/* 308 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
 	var React = __webpack_require__(25);
-	var Footer = __webpack_require__(308);
+	var Footer = __webpack_require__(309);
 
 	var swal = __webpack_require__(294);
 
@@ -35471,7 +35509,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
-/* 308 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
@@ -35552,13 +35590,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
-/* 309 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(310);
+	var content = __webpack_require__(311);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -35578,7 +35616,7 @@
 	}
 
 /***/ },
-/* 310 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -35586,19 +35624,19 @@
 
 
 	// module
-	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo {\r\n    position: fixed;\r\n    top: 50%;\r\n    left: 50%;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    width: auto;\r\n    height: auto;\r\n    z-index: -100;\r\n    transform: translateX(-50%) translateY(-50%);\r\n  transition: 1s opacity;\r\n}\r\n\r\n#section-main {\r\n  width:100%;\r\n  /*background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;*/\r\n}\r\n\r\n#section-main:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 700px;\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.heading {\r\n  position: fixed;\r\n  color: #fff;\r\n  top:35%;\r\n  left:12%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: fixed;\r\n  left:75%;\r\n  top:65%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
+	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo {\r\n    position: fixed;\r\n    top: 90%;\r\n    left: 50%;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    width: auto;\r\n    height: auto;\r\n    z-index: -100;\r\n    transform: translateX(-50%) translateY(-50%);\r\n  transition: 1s opacity;\r\n}\r\n\r\n#section-main {\r\n  width:100%;\r\n  /*background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;*/\r\n}\r\n\r\n#section-main:after {\r\n  content: \"\";\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 700px;\r\n  background: rgba(0, 0, 0, 0.5);\r\n}\r\n\r\n.heading {\r\n  position: fixed;\r\n  color: #fff;\r\n  top:35%;\r\n  left:12%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: fixed;\r\n  left:75%;\r\n  top:65%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 311 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(312);
+	var content = __webpack_require__(313);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -35618,7 +35656,7 @@
 	}
 
 /***/ },
-/* 312 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -35632,13 +35670,13 @@
 
 
 /***/ },
-/* 313 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(314);
+	var content = __webpack_require__(315);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -35658,7 +35696,7 @@
 	}
 
 /***/ },
-/* 314 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -35672,13 +35710,13 @@
 
 
 /***/ },
-/* 315 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(316);
+	var content = __webpack_require__(317);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -35698,7 +35736,7 @@
 	}
 
 /***/ },
-/* 316 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -35712,13 +35750,13 @@
 
 
 /***/ },
-/* 317 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(318);
+	var content = __webpack_require__(319);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -35738,7 +35776,7 @@
 	}
 
 /***/ },
-/* 318 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
@@ -35752,13 +35790,13 @@
 
 
 /***/ },
-/* 319 */
+/* 320 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(320);
+	var content = __webpack_require__(321);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(19)(content, {});
@@ -35778,7 +35816,7 @@
 	}
 
 /***/ },
-/* 320 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(9)(undefined);
