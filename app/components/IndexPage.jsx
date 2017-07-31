@@ -7,12 +7,12 @@ var IndexPage = React.createClass({
 
   getInitialState(){
     return {
-      count:3
+      count:2
     };
   },
 
   handleEnd(){
-    var nextCount = this.state.count == 4? 1: this.state.count + 1;
+    var nextCount = this.state.count ==3? 1: this.state.count + 1;
     this.setState({
       count:nextCount
     });
