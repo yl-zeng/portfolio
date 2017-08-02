@@ -20,12 +20,12 @@ require("./style/footer.css");
 
 
 ReactDOM.render(
-  <Router history={hashHistory}>
-    <Route path="/" component={Main}>
-      <Route path="home" component={Home}/>
-      <Route path="contact" component={Contact}/>
-      <IndexRoute component={IndexPage}/>
-    </Route>
-  </Router>,
+    <Router history={hashHistory}>
+      <Route path="/" component={Main}>
+        <Route path="home" component={Home}/>
+        <Route path="contact" component={Contact}/>
+        <IndexRoute component={IndexPage}/>
+      </Route>
+    </Router>,
   document.getElementById("app")
 );

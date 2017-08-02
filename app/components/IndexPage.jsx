@@ -20,7 +20,6 @@ var IndexPage = React.createClass({
 
   render: function(){
     return (
-
         <div id="section-main" className="container">
             <Video onEnd={this.handleEnd} count={this.state.count}/>
             <h1 className="text-center heading">Technology doesn't change the world <br/><br/> people do.</h1>

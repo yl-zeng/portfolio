@@ -29528,7 +29528,11 @@
 	  return React.createElement(
 	    "div",
 	    null,
-	    React.createElement(Nav, null),
+	    React.createElement(
+	      "div",
+	      null,
+	      React.createElement(Nav, null)
+	    ),
 	    React.createElement(
 	      "div",
 	      null,
@@ -35624,7 +35628,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo {\r\n    position: fixed;\r\n    top: 60%;\r\n    left: 50%;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    width: auto;\r\n    height: auto;\r\n    z-index: -100;\r\n    transform: translateX(-50%) translateY(-50%);\r\n  transition: 1s opacity;\r\n}\r\n\r\n#section-main {\r\n  width:100%;\r\n  /*background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;*/\r\n}\r\n\r\n.heading {\r\n  position: fixed;\r\n  color: #fff;\r\n  top:35%;\r\n  left:12%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: fixed;\r\n  left:75%;\r\n  top:65%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
+	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n  padding: 0;\r\n  margin:0;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo {\r\n    position: fixed;\r\n    top: 50%;\r\n    left: 50%;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    width: auto;\r\n    height: auto;\r\n    z-index: -100;\r\n    transform: translateX(-50%) translateY(-50%);\r\n  transition: 1s opacity;\r\n}\r\n\n\r\n#section-main {\r\n  width:100%;\r\n  /*background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;*/\r\n}\r\n\r\n#section-main:after {\r\n  position: fixed;\r\n  top: 50%;\r\n  left: 50%;\r\n  min-width: 100%;\r\n  min-height: 100%;\r\n  width: auto;\r\n  height: auto;\r\n  background: rgba(0, 0, 0, 0.2);\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.heading {\r\n  position: fixed;\r\n  color: #fff;\r\n  top:35%;\r\n  left:12%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: fixed;\r\n  left:75%;\r\n  top:65%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n.navbar{\r\n  padding:0;\r\n  margin:0;\r\n}\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
 
 	// exports
 
