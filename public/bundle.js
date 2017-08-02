@@ -35504,7 +35504,11 @@
 	          )
 	        )
 	      ),
-	      React.createElement(Footer, null)
+	      React.createElement(
+	        "div",
+	        null,
+	        React.createElement(Footer, null)
+	      )
 	    );
 	  }
 	});
@@ -35628,7 +35632,7 @@
 
 
 	// module
-	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n  padding: 0;\r\n  margin:0;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo {\r\n    position: fixed;\r\n    top: 50%;\r\n    left: 50%;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    width: auto;\r\n    height: auto;\r\n    z-index: -100;\r\n    transform: translateX(-50%) translateY(-50%);\r\n  transition: 1s opacity;\r\n}\r\n\n\r\n#section-main {\r\n  width:100%;\r\n  /*background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;*/\r\n}\r\n\r\n#section-main:after {\r\n  position: fixed;\r\n  top: 50%;\r\n  left: 50%;\r\n  min-width: 100%;\r\n  min-height: 100%;\r\n  width: auto;\r\n  height: auto;\r\n  background: rgba(0, 0, 0, 0.2);\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.heading {\r\n  position: fixed;\r\n  color: #fff;\r\n  top:35%;\r\n  left:12%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: fixed;\r\n  left:75%;\r\n  top:65%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n.navbar{\r\n  padding:0;\r\n  margin:0;\r\n}\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
+	exports.push([module.id, "html {\r\n  font-size: 16px;\r\n  padding: 0;\r\n  margin:0;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  height: 100%;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo {\r\n    position: fixed;\r\n    top: 50%;\r\n    left: 50%;\r\n    min-width: 100%;\r\n    min-height: 100%;\r\n    width: auto;\r\n    height: auto;\r\n    z-index: -100;\r\n    transform: translateX(-50%) translateY(-50%);\r\n  transition: 1s opacity;\r\n}\r\n\n\r\n#section-main {\r\n  width:100%;\r\n  /*background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;*/\r\n}\r\n\r\n#section-main:after {\r\n  position: fixed;\r\n  top: 50%;\r\n  left: 50%;\r\n  min-width: 100%;\r\n  min-height: 100%;\r\n  width: auto;\r\n  height: auto;\r\n  background: rgba(0, 0, 0, 0.2);\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.heading {\r\n  position: fixed;\r\n  color: #fff;\r\n  top:35%;\r\n  left:12%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  letter-spacing: 5px;\r\n  text-transform: uppercase;\r\n  z-index: 1;\r\n}\r\n\r\n#Bigin{\r\n  position: fixed;\r\n  left:75%;\r\n  top:65%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n.navbar{\r\n  padding:0;\r\n  margin:0;\r\n}\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -35788,7 +35792,7 @@
 
 
 	// module
-	exports.push([module.id, "\r\n.sec-contact {\r\n  padding-top:60px;\r\n}\r\n\r\n\r\n.sec-contact .form-control:focus {\r\n  border-color: #ad0000;\r\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);\r\n}\r\n\r\n.sec-contact .btn {\r\n  padding: .5rem 1.75rem;\r\n  background: #000;\r\n  font-size: .95rem;\r\n  color: #fff;\r\n}\r\n.sec-contact .btn:hover, .sec-contact .btn:focus {\r\n  background: #ad0000;\r\n  border-color: #7a0000;\r\n}\r\n", ""]);
+	exports.push([module.id, "\r\n.sec-contact {\r\n  padding-top:60px;\r\n  padding-bottom: 70px;\r\n}\r\n\r\n\r\n.sec-contact .form-control:focus {\r\n  border-color: #ad0000;\r\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);\r\n}\r\n\r\n.sec-contact .btn {\r\n  padding: .5rem 1.75rem;\r\n  background: #000;\r\n  font-size: .95rem;\r\n  color: #fff;\r\n}\r\n.sec-contact .btn:hover, .sec-contact .btn:focus {\r\n  background: #ad0000;\r\n  border-color: #7a0000;\r\n}\r\n", ""]);
 
 	// exports
 
@@ -35828,7 +35832,7 @@
 
 
 	// module
-	exports.push([module.id, "\r\n.sec-footer{\r\n  margin-top: 25px;\r\n  padding-bottom: 1px;\r\n}\r\n\r\n#footer {\r\n  position: absolute;\r\n  margin-top:25px;\r\n  width: 100%;\r\n  color: white;\r\n  background-color: #222;\r\n  opacity: 1;\r\n  a {\r\n    font-weight: 500;\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n#footer ul {\r\n  padding-top: 10px;\r\n  list-style-type: none;\r\n}\r\n\r\n#footer ul li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 6px 0px 6px;\r\n}\r\n\r\n#footer a {\r\n/*  color: #939393 !important; */\r\n  color: white !important;\r\n}\r\n\r\n.blacktext {\r\n  color: black;\r\n}\r\n\r\n.highlight {\r\n  opacity: 0.6;\r\n}\r\n\r\n.highlight:hover {\r\n  opacity: 1;\r\n}\r\n", ""]);
+	exports.push([module.id, "\r\n.sec-footer{\r\n  margin-top: 25px;\r\n  padding-bottom: 1px;\r\n}\r\n\r\n#footer {\r\n  position: fixed;\r\n  bottom: 0;\r\n  width: 100%;\r\n  color: white;\r\n  background-color: #222;\r\n  opacity: 1;\r\n  a {\r\n    font-weight: 500;\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n#footer ul {\r\n  padding-top: 10px;\r\n  list-style-type: none;\r\n}\r\n\r\n#footer ul li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 6px 0px 6px;\r\n}\r\n\r\n#footer a {\r\n/*  color: #939393 !important; */\r\n  color: white !important;\r\n}\r\n\r\n.blacktext {\r\n  color: black;\r\n}\r\n\r\n.highlight {\r\n  opacity: 0.6;\r\n}\r\n\r\n.highlight:hover {\r\n  opacity: 1;\r\n}\r\n", ""]);
 
 	// exports
 

@@ -8,7 +8,7 @@ var Contact = React.createClass({
   componentDidMount:function(){
     $(window).scrollTop(0);
   },
-  
+
   handleSubmit:function(e){
     e.preventDefault();
     swal({
@@ -68,7 +68,9 @@ var Contact = React.createClass({
             </div>
           </div>
         </section>
-        <Footer></Footer>
+        <div>
+          <Footer></Footer>
+        </div>
       </div>
     );
   }
