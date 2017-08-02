@@ -42,18 +42,6 @@ video {
   background-size: cover;*/
 }
 
-#section-main:after {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  background: rgba(0, 0, 0, 0.2);
-  transform: translateX(-50%) translateY(-50%);
-}
-
 .heading {
   position: fixed;
   color: #fff;
