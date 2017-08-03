@@ -17,7 +17,7 @@ var Video = React.createClass({
   render: function(){
     return (
       <div>
-        <video id="vid" src={"/video/"+ this.props.count + ".mp4"} autoPlay muted onEnded={this.handleEnd}/>
+        <video id="vid" src={"/video/"+ this.props.count + ".mp4"} preload="auto" autoPlay muted onEnded={this.handleEnd}/>
       </div>
     );
   }

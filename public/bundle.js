@@ -35386,7 +35386,7 @@
 	    return React.createElement(
 	      "div",
 	      null,
-	      React.createElement("video", { id: "vid", src: "/video/" + this.props.count + ".mp4", autoPlay: true, muted: true, onEnded: this.handleEnd })
+	      React.createElement("video", { id: "vid", src: "/video/" + this.props.count + ".mp4", preload: "auto", autoPlay: true, muted: true, onEnded: this.handleEnd })
 	    );
 	  }
 	});
