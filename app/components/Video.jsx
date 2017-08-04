@@ -4,20 +4,11 @@ var {Link} = require("react-router")
 
 var Video = React.createClass({
 
-  handleEnd(){
-    this.props.onEnd();
-  },
-
-
-  componentDidMount(){
-    document.getElementById("vid").load();
-  },
-
-
   render: function(){
     return (
-      <div>
-        <video id="vid" src={"/video/"+ this.props.count + ".mp4"} preload="auto" autoPlay muted onEnded={this.handleEnd}/>
+      <div className="page">
+        <video id="vid" src="/video/video.mp4"
+          preload="auto" autoPlay muted loop/>
       </div>
     );
   }
