@@ -10,7 +10,7 @@ var About = React.createClass({
     e.preventDefault();
     swal({
       title: "",
-      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZdUlrRlVtY1VjNFk/preview\" width=\"700px\" height=\"480px\" ></div>",
+      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZS29wcHVXbmotSkk/preview\" width=\"700px\" height=\"480px\" ></div>",
       customClass: "resumeWindow",
       html:true,
       allowOutsideClick: true

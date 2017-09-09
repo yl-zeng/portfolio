@@ -21,7 +21,7 @@ var Folio = React.createClass({
       ['Github','fa-github','https://github.com/yl-zeng/portfolio']]
     },
     {
-      title: 'Todo App',
+      title: 'Todoist',
       text: (
         <div>
           <p style={{"padding-top":"10px"}}>A React.js web application helps users to manage todo lists online.
@@ -30,12 +30,39 @@ var Folio = React.createClass({
           <strong>Technology:</strong> React Node.js JSX Webpack <br/>
         </div>
       ),
-      image: ['folio/todo.png'],
+      image: ['folio/todo.jpg'],
       site: [['Live Site', 'fa-link', 'https://yunlin-todo.herokuapp.com/'],
       ['Github','fa-github','https://github.com/yl-zeng/react-todo']]
     },
     {
-      title: 'Chat',
+      title: 'OnlineBanking',
+      text: (
+        <div>
+          <p style={{"padding-top":"10px"}}>Developed admin portal as SPA with Angular and used angular http to interact with REST API via JSON.
+              Used Thymeleaf as Java template engine to develop user portal, deployed to AWS cloud platform.</p>
+            <strong>Technology:</strong> Spring Boot, Angular, Thymeleaf, Hibernate <br/><br/>
+        </div>
+      ),
+      image: ['folio/onlinebanking.jpg'],
+      site: [['Live Site', 'fa-link', '#'],
+      ['Github','fa-github','#']]
+    },
+    {
+      title: 'Chat Room',
+      text: (
+        <div>
+          <p style={{"padding-top":"10px"}}>Implemented WebSocket based real-time bidirectional communication with Socket.io API.
+            Used node redis client to store chat history in redis and used mongoose to save user credentials.</p>
+          <br/>
+          <strong>Technology:</strong> Node.js, MongoDB, Redis, Express.js, Socket.io<br/>
+        </div>
+      ),
+      image: ['folio/chat.jpg'],
+      site: [['Live Site', 'fa-link', 'https://yunlin-chat-node.herokuapp.com/'],
+      ['Github','fa-github','#']]
+    },
+    {
+      title: 'DevOps Buddy',
       text: (
         <div>
           <p style={{"padding-top":"10px"}}>A Node.js full stack app. Build Restful API with express.js & socket.io.
@@ -44,9 +71,9 @@ var Folio = React.createClass({
           <strong>Technology:</strong> Node.js MongoDB Express.js Socket.io<br/>
         </div>
       ),
-      image: ['folio/chat.png'],
-      site: [['Live Site', 'fa-link', 'https://yunlin-chat-node.herokuapp.com/'],
-      ['Github','fa-github','https://github.com/yl-zeng/node-chat']]
+      image: ['folio/buddy.jpg'],
+      site: [['Live Site', 'fa-link', '#'],
+      ['Github','fa-github','#']]
     },
     {
       title: 'Weather App - Android',
@@ -62,20 +89,21 @@ var Folio = React.createClass({
       ),
       image: ['folio/weather-android.png'],
       site: [['Demo', 'fa-eye', 'https://drive.google.com/file/d/0B1B6d6uqGpUZOVRKZXg1YlpiV3M/view?usp=sharing'],
-      ['Github','fa-github','https://github.com/yl-zeng/android-weather']]
+      ['Github','fa-github','#']]
     },{
-      title: 'Weather App - React',
+      title: 'E-Commerce Store',
       text: (
         <div>
-          <p style={{"padding-top":"10px"}}>A React.js weather forecast application, built with Foundation, SCSS and OpenWeatherMap API. </p>
+          <p style={{"padding-top":"10px"}}>Built up view layer with JSP with JSTL and used jQuery to fire AJAX request to consume REST API.
+            Implemented Payment feature with Stripe API and used spring web flow to wrap up confirmation steps.</p>
           <br/>
           <br/>
-          <strong>Technology:</strong> React Foundation SCSS <br/>
+          <strong>Technology:</strong> Spring MVC, Hibernate, JSP, MySQL <br/>
         </div>
       ),
-      image: ['folio/weather-react.png'],
-      site: [['Live Site', 'fa-link', 'https://yunlin69-react-weather.herokuapp.com/'],
-      ['Github','fa-github','https://github.com/yl-zeng/react-weather']]
+      image: ['folio/store.jpg'],
+      site: [['Live Site', 'fa-link', 'https://yunlin-e-store.herokuapp.com/'],
+      ['Github','fa-github','https://github.com/yl-zeng/E-Music-Store']]
     },{
       title: 'Quotes',
       text: (
@@ -103,6 +131,35 @@ var Folio = React.createClass({
       image: ['folio/blog.png'],
       site: [['Live Site', 'fa-link', 'https://dotted-weft-151521.appspot.com/'],
       ['Github','fa-github','https://github.com/yl-zeng']]
+    },{
+      title: 'Twitter Like',
+      text: (
+        <div>
+          <p style={{"padding-top":"10px"}}>A Twitter like social network website.
+            User can follow, unfollow, tweet and comment.
+            Implement News feed feature with Push model.
+          Implemented error handling by using RxJS Observable subscription with self-built Angular Error Service.</p>
+          <br/>
+          <br/>
+          <strong>Technology:</strong> MEAN stack <br/>
+        </div>
+      ),
+      image: ['folio/twitter.jpg'],
+      site: [['Demo', 'fa-eye', '#'],
+      ['Github','fa-github','#']]
+    },{
+      title: 'Weather App - React',
+      text: (
+        <div>
+          <p style={{"padding-top":"10px"}}>A React.js weather forecast application, built with Foundation, SCSS and OpenWeatherMap API. </p>
+          <br/>
+          <br/>
+          <strong>Technology:</strong> React Foundation SCSS <br/>
+        </div>
+      ),
+      image: ['folio/weather-react.png'],
+      site: [['Live Site', 'fa-link', 'https://yunlin69-react-weather.herokuapp.com/'],
+      ['Github','fa-github','https://github.com/yl-zeng/react-weather']]
     }
   ];
 
@@ -120,6 +177,8 @@ var Folio = React.createClass({
               <Card projectData={data[4]}></Card>
               <Card projectData={data[5]}></Card>
               <Card projectData={data[6]}></Card>
+              <Card projectData={data[8]}></Card>
+              <Card projectData={data[9]}></Card>
             </div>
           </div>
         </section>

@@ -33530,7 +33530,7 @@
 	    e.preventDefault();
 	    swal({
 	      title: "",
-	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZdUlrRlVtY1VjNFk/preview\" width=\"700px\" height=\"480px\" ></div>",
+	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZS29wcHVXbmotSkk/preview\" width=\"700px\" height=\"480px\" ></div>",
 	      customClass: "resumeWindow",
 	      html: true,
 	      allowOutsideClick: true
@@ -35068,7 +35068,7 @@
 	      image: ['folio/portfolio3.png'],
 	      site: [['Live Site', 'fa-link', 'http://yunlin.io/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/portfolio']]
 	    }, {
-	      title: 'Todo App',
+	      title: 'Todoist',
 	      text: React.createElement(
 	        "div",
 	        null,
@@ -35085,10 +35085,52 @@
 	        " React Node.js JSX Webpack ",
 	        React.createElement("br", null)
 	      ),
-	      image: ['folio/todo.png'],
+	      image: ['folio/todo.jpg'],
 	      site: [['Live Site', 'fa-link', 'https://yunlin-todo.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-todo']]
 	    }, {
-	      title: 'Chat',
+	      title: 'OnlineBanking',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "Developed admin portal as SPA with Angular and used angular http to interact with REST API via JSON. Used Thymeleaf as Java template engine to develop user portal, deployed to AWS cloud platform."
+	        ),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " Spring Boot, Angular, Thymeleaf, Hibernate ",
+	        React.createElement("br", null),
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/onlinebanking.jpg'],
+	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', '#']]
+	    }, {
+	      title: 'Chat Room',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "Implemented WebSocket based real-time bidirectional communication with Socket.io API. Used node redis client to store chat history in redis and used mongoose to save user credentials."
+	        ),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " Node.js, MongoDB, Redis, Express.js, Socket.io",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/chat.jpg'],
+	      site: [['Live Site', 'fa-link', 'https://yunlin-chat-node.herokuapp.com/'], ['Github', 'fa-github', '#']]
+	    }, {
+	      title: 'DevOps Buddy',
 	      text: React.createElement(
 	        "div",
 	        null,
@@ -35106,8 +35148,8 @@
 	        " Node.js MongoDB Express.js Socket.io",
 	        React.createElement("br", null)
 	      ),
-	      image: ['folio/chat.png'],
-	      site: [['Live Site', 'fa-link', 'https://yunlin-chat-node.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/node-chat']]
+	      image: ['folio/buddy.jpg'],
+	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', '#']]
 	    }, {
 	      title: 'Weather App - Android',
 	      text: React.createElement(
@@ -35129,16 +35171,16 @@
 	        React.createElement("br", null)
 	      ),
 	      image: ['folio/weather-android.png'],
-	      site: [['Demo', 'fa-eye', 'https://drive.google.com/file/d/0B1B6d6uqGpUZOVRKZXg1YlpiV3M/view?usp=sharing'], ['Github', 'fa-github', 'https://github.com/yl-zeng/android-weather']]
+	      site: [['Demo', 'fa-eye', 'https://drive.google.com/file/d/0B1B6d6uqGpUZOVRKZXg1YlpiV3M/view?usp=sharing'], ['Github', 'fa-github', '#']]
 	    }, {
-	      title: 'Weather App - React',
+	      title: 'E-Commerce Store',
 	      text: React.createElement(
 	        "div",
 	        null,
 	        React.createElement(
 	          "p",
 	          { style: { "padding-top": "10px" } },
-	          "A React.js weather forecast application, built with Foundation, SCSS and OpenWeatherMap API. "
+	          "Built up view layer with JSP with JSTL and used jQuery to fire AJAX request to consume REST API. Implemented Payment feature with Stripe API and used spring web flow to wrap up confirmation steps."
 	        ),
 	        React.createElement("br", null),
 	        React.createElement("br", null),
@@ -35147,11 +35189,11 @@
 	          null,
 	          "Technology:"
 	        ),
-	        " React Foundation SCSS ",
+	        " Spring MVC, Hibernate, JSP, MySQL ",
 	        React.createElement("br", null)
 	      ),
-	      image: ['folio/weather-react.png'],
-	      site: [['Live Site', 'fa-link', 'https://yunlin69-react-weather.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-weather']]
+	      image: ['folio/store.jpg'],
+	      site: [['Live Site', 'fa-link', 'https://yunlin-e-store.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/E-Music-Store']]
 	    }, {
 	      title: 'Quotes',
 	      text: React.createElement(
@@ -35196,6 +35238,50 @@
 	      ),
 	      image: ['folio/blog.png'],
 	      site: [['Live Site', 'fa-link', 'https://dotted-weft-151521.appspot.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
+	    }, {
+	      title: 'Twitter Like',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "A Twitter like social network website. User can follow, unfollow, tweet and comment. Implement News feed feature with Push model. Implemented error handling by using RxJS Observable subscription with self-built Angular Error Service."
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " MEAN stack ",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/twitter.jpg'],
+	      site: [['Demo', 'fa-eye', '#'], ['Github', 'fa-github', '#']]
+	    }, {
+	      title: 'Weather App - React',
+	      text: React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "p",
+	          { style: { "padding-top": "10px" } },
+	          "A React.js weather forecast application, built with Foundation, SCSS and OpenWeatherMap API. "
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "strong",
+	          null,
+	          "Technology:"
+	        ),
+	        " React Foundation SCSS ",
+	        React.createElement("br", null)
+	      ),
+	      image: ['folio/weather-react.png'],
+	      site: [['Live Site', 'fa-link', 'https://yunlin69-react-weather.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-weather']]
 	    }];
 
 	    return React.createElement(
@@ -35222,7 +35308,9 @@
 	            React.createElement(Card, { projectData: data[3] }),
 	            React.createElement(Card, { projectData: data[4] }),
 	            React.createElement(Card, { projectData: data[5] }),
-	            React.createElement(Card, { projectData: data[6] })
+	            React.createElement(Card, { projectData: data[6] }),
+	            React.createElement(Card, { projectData: data[8] }),
+	            React.createElement(Card, { projectData: data[9] })
 	          )
 	        )
 	      )
