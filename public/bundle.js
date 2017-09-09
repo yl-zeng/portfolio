@@ -34928,12 +34928,12 @@
 	          React.createElement(
 	            "div",
 	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
-	            React.createElement("img", { className: "img-responsive ", src: "image/html.png" })
+	            React.createElement("img", { className: "img-responsive ", src: "image/java.png" })
 	          ),
 	          React.createElement(
 	            "div",
 	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/css.png" })
+	            React.createElement("img", { className: "img-responsive", src: "image/python.png" })
 	          ),
 	          React.createElement(
 	            "div",
@@ -34943,7 +34943,7 @@
 	          React.createElement(
 	            "div",
 	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/npm.png" })
+	            React.createElement("img", { className: "img-responsive", src: "image/typescript.png" })
 	          )
 	        ),
 	        React.createElement("br", null),
@@ -34959,17 +34959,17 @@
 	          React.createElement(
 	            "div",
 	            { className: "col-xs-3 col-sm-2" },
+	            React.createElement("img", { className: "img-responsive ", src: "image/angular.png" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/node.png" })
 	          ),
 	          React.createElement(
 	            "div",
 	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/mongodb.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/git.png" })
 	          )
 	        ),
 	        React.createElement("br", null),
@@ -34980,22 +34980,48 @@
 	          React.createElement(
 	            "div",
 	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
-	            React.createElement("img", { className: "img-responsive ", src: "image/java.png" })
+	            React.createElement("img", { className: "img-responsive ", src: "image/spring.png" })
 	          ),
 	          React.createElement(
 	            "div",
 	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/android.png" })
+	            React.createElement("img", { className: "img-responsive", src: "image/hibernate.png" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "col-xs-3 col-sm-2" },
+	            React.createElement("img", { className: "img-responsive", src: "image/mysql.svg" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "col-xs-3 col-sm-2" },
+	            React.createElement("img", { className: "img-responsive", src: "image/jsp.svg" })
+	          )
+	        ),
+	        React.createElement("br", null),
+	        React.createElement("br", null),
+	        React.createElement(
+	          "div",
+	          { className: "row" },
+	          React.createElement(
+	            "div",
+	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
+	            React.createElement("img", { className: "img-responsive ", src: "image/html.png" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "col-xs-3 col-sm-2" },
+	            React.createElement("img", { className: "img-responsive", src: "image/css.png" })
+	          ),
+	          React.createElement(
+	            "div",
+	            { className: "col-xs-3 col-sm-2" },
+	            React.createElement("img", { className: "img-responsive", src: "image/sass.png" })
 	          ),
 	          React.createElement(
 	            "div",
 	            { className: "col-xs-3 col-sm-2" },
 	            React.createElement("img", { className: "img-responsive", src: "image/bootstrap.svg" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/SQL.png" })
 	          )
 	        )
 	      )

@@ -10,16 +10,16 @@ var Skill = (props) =>{
           <hr />
           <div className="row">
             <div className="col-xs-3 col-sm-2 col-sm-offset-2">
-              <img className="img-responsive " src="image/html.png"></img>
+              <img className="img-responsive " src="image/java.png"></img>
             </div>
             <div className="col-xs-3 col-sm-2">
-              <img className="img-responsive" src="image/css.png"></img>
+              <img className="img-responsive" src="image/python.png"></img>
             </div>
             <div className="col-xs-3 col-sm-2">
               <img className="img-responsive" src="image/js.png"></img>
             </div>
             <div className="col-xs-3 col-sm-2">
-              <img className="img-responsive" src="image/npm.png"></img>
+              <img className="img-responsive" src="image/typescript.png"></img>
             </div>
           </div>
           <br/>
@@ -29,29 +29,45 @@ var Skill = (props) =>{
               <img className="img-responsive " src="image/react.png"></img>
             </div>
             <div className="col-xs-3 col-sm-2">
+              <img className="img-responsive " src="image/angular.png"></img>
+            </div>
+            <div className="col-xs-3 col-sm-2">
               <img className="img-responsive" src="image/node.png"></img>
             </div>
             <div className="col-xs-3 col-sm-2">
               <img className="img-responsive" src="image/mongodb.png"></img>
-            </div>
-            <div className="col-xs-3 col-sm-2">
-              <img className="img-responsive" src="image/git.png"></img>
             </div>
           </div>
           <br/>
           <br/>
           <div className="row">
             <div className="col-xs-3 col-sm-2 col-sm-offset-2">
-              <img className="img-responsive " src="image/java.png"></img>
+              <img className="img-responsive " src="image/spring.png"></img>
             </div>
             <div className="col-xs-3 col-sm-2">
-              <img className="img-responsive" src="image/android.png"></img>
+              <img className="img-responsive" src="image/hibernate.png"></img>
+            </div>
+            <div className="col-xs-3 col-sm-2">
+              <img className="img-responsive" src="image/mysql.svg"></img>
+            </div>
+            <div className="col-xs-3 col-sm-2">
+              <img className="img-responsive" src="image/jsp.svg"></img>
+            </div>
+          </div>
+          <br/>
+          <br/>
+          <div className="row">
+            <div className="col-xs-3 col-sm-2 col-sm-offset-2">
+              <img className="img-responsive " src="image/html.png"></img>
+            </div>
+            <div className="col-xs-3 col-sm-2">
+              <img className="img-responsive" src="image/css.png"></img>
+            </div>
+            <div className="col-xs-3 col-sm-2">
+              <img className="img-responsive" src="image/sass.png"></img>
             </div>
             <div className="col-xs-3 col-sm-2">
               <img className="img-responsive" src="image/bootstrap.svg"></img>
-            </div>
-            <div className="col-xs-3 col-sm-2">
-              <img className="img-responsive" src="image/SQL.png"></img>
             </div>
           </div>
         </div>
