@@ -33303,8 +33303,8 @@
 	          ),
 	          React.createElement(
 	            "a",
-	            { href: "https://www.linkedin.com/in/yunlin-zeng-99a862115/", target: "_block" },
-	            React.createElement("i", { className: "navbar-brand fa fa-linkedin animated flip" })
+	            { href: "https://github.com/yl-zeng/", target: "_block" },
+	            React.createElement("i", { className: "navbar-brand fa fa-github animated flip" })
 	          )
 	        ),
 	        React.createElement(
@@ -33530,7 +33530,7 @@
 	    e.preventDefault();
 	    swal({
 	      title: "",
-	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZSko4aUVrR1B6aVE/preview\" width=\"700px\" height=\"480px\" ></div>",
+	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZdUlrRlVtY1VjNFk/preview\" width=\"700px\" height=\"480px\" ></div>",
 	      customClass: "resumeWindow",
 	      html: true,
 	      allowOutsideClick: true
@@ -33559,17 +33559,33 @@
 	            React.createElement(
 	              "p",
 	              null,
-	              "Hi, my name is Yunlin Zeng and I am an upcoming Master of Science graduate major in Computer Engineering. I love crafting beautiful web pages with fantastic technology. You can grab my ",
+	              "Hi all! I am Yunlin, a recent graduate with Masters in Computer Engineering."
+	            ),
+	            React.createElement(
+	              "p",
+	              null,
+	              "I am experienced with web development and enjoy working with cutting-edge technology. I am a fast learner and self-starter who can combine knowledge learned from university with frameworks into real product! "
+	            ),
+	            React.createElement(
+	              "p",
+	              null,
+	              "You can grab my ",
 	              React.createElement(
 	                "a",
 	                { onClick: this.handleClick },
 	                "Resume"
 	              ),
-	              " here. If you want to hire me or just to talk, ",
+	              " here and also visit my ",
+	              React.createElement(
+	                "a",
+	                { target: "_blank", href: "https://github.com/yl-zeng" },
+	                "Github"
+	              ),
+	              ". If you want to hire me or just to talk, ",
 	              React.createElement(
 	                Link,
 	                { to: "/contact" },
-	                "connect"
+	                "Contact"
 	              ),
 	              " with me."
 	            )
@@ -35522,10 +35538,10 @@
 	    render: function render() {
 	        return React.createElement(
 	            "footer",
-	            { id: "footer", className: "text-center sec-footer" },
+	            { id: "footer", className: "sec-footer" },
 	            React.createElement(
 	                "ul",
-	                null,
+	                { className: "text-center" },
 	                React.createElement(
 	                    "li",
 	                    { className: "highlight" },
@@ -35552,16 +35568,6 @@
 	                        "a",
 	                        { className: "fa-stack fa-1x", id: "togglegithub", href: "https://github.com/yl-zeng", target: "_blank" },
 	                        React.createElement("i", { className: "fa fa-github-square fa-stack-2x" })
-	                    )
-	                ),
-	                React.createElement(
-	                    "li",
-	                    { className: "highlight" },
-	                    React.createElement(
-	                        "a",
-	                        { className: "fa-stack fa-1x", id: "togglecodepen", href: "http://codepen.io/d26842684/", target: "_blank" },
-	                        React.createElement("i", { className: "fa fa-square fa-stack-2x" }),
-	                        React.createElement("i", { className: "fa fa-codepen fa-stack-1x blacktext" })
 	                    )
 	                ),
 	                React.createElement(

@@ -38,7 +38,7 @@ var Nav2 = React.createClass({
 
                   <span className="icon-bar"></span>
                 </button>
-                <a href="https://www.linkedin.com/in/yunlin-zeng-99a862115/" target="_block"><i className="navbar-brand fa fa-linkedin animated flip"></i></a>
+                <a href="https://github.com/yl-zeng/" target="_block"><i className="navbar-brand fa fa-github animated flip"></i></a>
               </div>
 
               <div className="collapse navbar-collapse">
