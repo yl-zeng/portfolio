@@ -1,11 +1,11 @@
 var React = require("react");
 var {Link} = require('react-router');
-var Video = require("Video");
+import Video from "Video";
 
 
-var IndexPage = React.createClass({
+export default class IndexPage extends React.Component {
 
-  render: function(){
+  render() {
     return (
       <div>
         <div id="section-main" className="container">
@@ -18,7 +18,4 @@ var IndexPage = React.createClass({
       </div>
     );
   }
-});
-
-
-module.exports = IndexPage;
+}

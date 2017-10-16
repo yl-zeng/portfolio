@@ -1,17 +1,17 @@
 var React = require("React");
-var Nav2 = require("Nav2");
-var About = require("About");
-var Skill = require("Skill");
-var Folio = require("Folio");
+import Nav2 from "Nav2";
+import About from "About";
+import Skill from "Skill";
+import Folio from "Folio";
 
 
-var Home = React.createClass({
+export default class Home extends React.Component {
 
-  componentDidMount:function(){
+  componentDidMount() {
     $(window).scrollTop(0);
-  },
+  }
 
-  render:function(){
+  render() {
     return (
       <div>
         <Nav2></Nav2>
@@ -22,6 +22,4 @@ var Home = React.createClass({
     );
   }
 
-});
-
-module.exports = Home;
+}

@@ -2,17 +2,19 @@ var React = require("React");
 var Nav = require("Nav");
 
 
-var Main = (props) =>{
-  return (
-    <div>
-      <div>
-        <Nav/>
-      </div>
-      <div>
-        {props.children}
-      </div>
-    </div>
-  );
-}
+export default class Main extends React.Component {
 
-module.exports = Main;
+  render() {
+    return (
+      <div>
+        <div>
+          <Nav/>
+        </div>
+        <div>
+          {this.props.children}
+        </div>
+      </div>
+    );
+  }
+
+}

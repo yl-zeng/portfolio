@@ -2,9 +2,9 @@ var React = require("react");
 var {Link} = require("react-router")
 
 
-var Video = React.createClass({
+export default class Video extends React.Component {
 
-  render: function(){
+  render() {
     return (
       <div className="page">
         <video id="vid" src="/video/video.mp4"
@@ -12,7 +12,4 @@ var Video = React.createClass({
       </div>
     );
   }
-});
-
-
-module.exports = Video;
+}

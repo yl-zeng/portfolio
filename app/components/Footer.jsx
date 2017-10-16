@@ -1,15 +1,15 @@
 var React = require("React");
 
-var Footer = React.createClass({
+export default class Footer extends React.Component {
 
-  componentDidMount:function(){
+  componentDidMount() {
     $('#togglemail').tooltip({title: "Email", placement: "top"});
     $('#togglelinkedin').tooltip({title: "Linkedin", placement: "top"});
     $('#togglegithub').tooltip({title: "Github", placement: "top"});
     $('#togglecodepen').tooltip({title: "Codepen", placement: "top"});
-  },
+  }
 
-  render: function(){
+  render() {
     return (
         <footer id='footer' className="sec-footer">
             <ul className="text-center">
@@ -37,6 +37,4 @@ var Footer = React.createClass({
 
     );
   }
-});
-
-module.exports = Footer;
+}

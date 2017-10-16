@@ -3,10 +3,10 @@ var {Link} = require("react-router")
 
 var swal = require('sweetalert');
 
-var About = React.createClass({
+export default class About extends React.Component {
 
 
-  handleClick:function(e){
+  handleClick(e) {
     e.preventDefault();
     swal({
       title: "",
@@ -15,10 +15,10 @@ var About = React.createClass({
       html:true,
       allowOutsideClick: true
     });
-  },
+  }
 
 
-  render: function(){
+  render() {
     return (
         <section id="about" className="sec-about">
           <div className="container">
@@ -36,7 +36,4 @@ var About = React.createClass({
         </section>
     );
   }
-});
-
-
-module.exports = About;
+}

@@ -1,26 +1,26 @@
 var React = require("react");
 
 
-var Card = React.createClass({
-  getDefaultProps: function(){
+export default class Card extends React.Component{
+  getDefaultProps() {
     return {
       projectData: {
 
       }
     }
-  },
+  }
 
-  componentDidMount: function(){
+  componentDidMount() {
     $('.js-toggle').tooltip();
-  },
+  }
 
-  getInitialState: function(){
+  getInitialState() {
     return{
       flip:"",
     }
-  },
+  }
 
-  handleClickFlip: function(e){
+  handleClickFlip(e) {
     e.preventDefault();
     //alert("this LInk is clicked");
     if(this.state.flip === ""){
@@ -32,16 +32,19 @@ var Card = React.createClass({
         flip:""
       });
     }
-  },
-  handleClickLink0:function(e){
+  }
+
+  handleClickLink0(e) {
     e.preventDefault();
     window.open(this.props.projectData.site[0][2]);
-  },
-  handleClickLink1:function(e){
+  }
+
+  handleClickLink1(e) {
     e.preventDefault();
     window.open(this.props.projectData.site[1][2]);
-  },
-  render: function (){
+  }
+
+  render() {
     var project = this.props.projectData;
 
     return (
@@ -73,6 +76,4 @@ var Card = React.createClass({
       </div>
     );
   }
-});
-
-module.exports = Card;
+};

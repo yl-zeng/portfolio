@@ -1,15 +1,15 @@
 var React = require("react");
-var Footer = require("Footer");
+import Footer from "Footer";
 
 var swal = require('sweetalert');
 
 
-var Contact = React.createClass({
-  componentDidMount:function(){
+export default class Contact extends React.Component{
+  componentDidMount() {
     $(window).scrollTop(0);
-  },
+  }
 
-  handleSubmit:function(e){
+  handleSubmit(e) {
     e.preventDefault();
     swal({
       title: "",
@@ -24,17 +24,17 @@ var Contact = React.createClass({
     this.refs.name.value = "";
     this.refs.mail.value = "";
     this.refs.text.value = "";
-  },
+  }
 
-  sendFormData:function(data){
+  sendFormData(data) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open('POST', 'send', true);
     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xmlhttp.send(`name=${data.name}&email=${data.email}&text=${data.text}`);
-  },
+  }
 
 
-  render: function (){
+  render() {
     return (
       <div>
         <section id="contact" className="sec-contact">
@@ -74,8 +74,4 @@ var Contact = React.createClass({
       </div>
     );
   }
-});
-
-
-
-module.exports = Contact;
+}

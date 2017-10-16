@@ -1,10 +1,10 @@
 var React = require("react");
-var Card = require("Card");
+import Card from "Card";
 
 
-var Folio = React.createClass({
+export default class Folio extends React.Component {
 
-  render: function(){
+  render() {
     var data = [{
       title: 'Portfolio',
       text: (
@@ -185,7 +185,7 @@ var Folio = React.createClass({
       </div>
     );
   }
-});
+}
 
 
 module.exports = Folio;

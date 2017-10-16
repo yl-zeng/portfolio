@@ -95,11 +95,29 @@
 
 	'use strict';
 
+	var _Main = __webpack_require__(259);
+
+	var _Main2 = _interopRequireDefault(_Main);
+
+	var _Home = __webpack_require__(286);
+
+	var _Home2 = _interopRequireDefault(_Home);
+
+	var _IndexPage = __webpack_require__(306);
+
+	var _IndexPage2 = _interopRequireDefault(_IndexPage);
+
+	var _Contact = __webpack_require__(308);
+
+	var _Contact2 = _interopRequireDefault(_Contact);
+
 	__webpack_require__(7);
 
 	__webpack_require__(21);
 
 	__webpack_require__(23);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var React = __webpack_require__(25);
 	var ReactDOM = __webpack_require__(56);
@@ -109,11 +127,6 @@
 	    Router = _require.Router,
 	    IndexRoute = _require.IndexRoute,
 	    hashHistory = _require.hashHistory;
-
-	var Main = __webpack_require__(259);
-	var Home = __webpack_require__(286);
-	var IndexPage = __webpack_require__(306);
-	var Contact = __webpack_require__(308);
 
 	__webpack_require__(310);
 	__webpack_require__(312);
@@ -127,10 +140,10 @@
 	  { history: hashHistory },
 	  React.createElement(
 	    Route,
-	    { path: '/', component: Main },
-	    React.createElement(Route, { path: 'home', component: Home }),
-	    React.createElement(Route, { path: 'contact', component: Contact }),
-	    React.createElement(IndexRoute, { component: IndexPage })
+	    { path: '/', component: _Main2.default },
+	    React.createElement(Route, { path: 'home', component: _Home2.default }),
+	    React.createElement(Route, { path: 'contact', component: _Contact2.default }),
+	    React.createElement(IndexRoute, { component: _IndexPage2.default })
 	  )
 	), document.getElementById("app"));
 
@@ -29521,27 +29534,54 @@
 
 	"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(260);
 	var Nav = __webpack_require__(285);
 
-	var Main = function Main(props) {
-	  return React.createElement(
-	    "div",
-	    null,
-	    React.createElement(
-	      "div",
-	      null,
-	      React.createElement(Nav, null)
-	    ),
-	    React.createElement(
-	      "div",
-	      null,
-	      props.children
-	    )
-	  );
-	};
+	var Main = function (_React$Component) {
+	  _inherits(Main, _React$Component);
 
-	module.exports = Main;
+	  function Main() {
+	    _classCallCheck(this, Main);
+
+	    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+	  }
+
+	  _createClass(Main, [{
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "div",
+	          null,
+	          React.createElement(Nav, null)
+	        ),
+	        React.createElement(
+	          "div",
+	          null,
+	          this.props.children
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Main;
+	}(React.Component);
+
+	exports.default = Main;
 
 /***/ },
 /* 260 */
@@ -33133,76 +33173,98 @@
 
 	"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(25);
 
 	var _require = __webpack_require__(202),
 	    Link = _require.Link,
 	    IndexLink = _require.IndexLink;
 
-	var Nav = React.createClass({
-	  displayName: "Nav",
+	var Nav = function (_React$Component) {
+	  _inherits(Nav, _React$Component);
 
+	  function Nav() {
+	    _classCallCheck(this, Nav);
 
-	  render: function render() {
-	    return React.createElement(
-	      "nav",
-	      { className: "navbar navbar-default navbar-fixed-top" },
-	      React.createElement(
-	        "div",
-	        { className: "container-fluid" },
+	    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
+	  }
+
+	  _createClass(Nav, [{
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        "nav",
+	        { className: "navbar navbar-default navbar-fixed-top" },
 	        React.createElement(
 	          "div",
-	          { className: "navbar-header" },
+	          { className: "container-fluid" },
 	          React.createElement(
-	            "button",
-	            { className: "navbar-toggle collapsed", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse", role: "button" },
+	            "div",
+	            { className: "navbar-header" },
 	            React.createElement(
-	              "span",
-	              { className: "sr-only" },
-	              "Toggle Navigation"
+	              "button",
+	              { className: "navbar-toggle collapsed", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse", role: "button" },
+	              React.createElement(
+	                "span",
+	                { className: "sr-only" },
+	                "Toggle Navigation"
+	              ),
+	              React.createElement("span", { className: "icon-bar" }),
+	              React.createElement("span", { className: "icon-bar" }),
+	              React.createElement("span", { className: "icon-bar" })
 	            ),
-	            React.createElement("span", { className: "icon-bar" }),
-	            React.createElement("span", { className: "icon-bar" }),
-	            React.createElement("span", { className: "icon-bar" })
+	            React.createElement(
+	              "a",
+	              { className: "navbar-brand", href: "/" },
+	              "YUNLIN's PORTFOLIO"
+	            )
 	          ),
 	          React.createElement(
-	            "a",
-	            { className: "navbar-brand", href: "/" },
-	            "YUNLIN's PORTFOLIO"
-	          )
-	        ),
-	        React.createElement(
-	          "div",
-	          { className: "collapse navbar-collapse" },
-	          React.createElement(
-	            "ul",
-	            { className: "nav navbar-nav navbar-right" },
+	            "div",
+	            { className: "collapse navbar-collapse" },
 	            React.createElement(
-	              "li",
-	              null,
+	              "ul",
+	              { className: "nav navbar-nav navbar-right" },
 	              React.createElement(
-	                Link,
-	                { to: "/home", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
-	                "Home"
-	              )
-	            ),
-	            React.createElement(
-	              "li",
-	              null,
+	                "li",
+	                null,
+	                React.createElement(
+	                  Link,
+	                  { to: "/home", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
+	                  "Home"
+	                )
+	              ),
 	              React.createElement(
-	                Link,
-	                { to: "/contact", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
-	                "Contact"
+	                "li",
+	                null,
+	                React.createElement(
+	                  Link,
+	                  { to: "/contact", className: "nav2-link-title", activeClassName: "active", activeStyle: { fontWeight: "bold" } },
+	                  "Contact"
+	                )
 	              )
 	            )
 	          )
 	        )
-	      )
-	    );
-	  }
-	});
+	      );
+	    }
+	  }]);
 
-	module.exports = Nav;
+	  return Nav;
+	}(React.Component);
+
+	exports.default = Nav;
 
 /***/ },
 /* 286 */
@@ -33210,34 +33272,70 @@
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
-	var React = __webpack_require__(260);
-	var Nav2 = __webpack_require__(288);
-	var About = __webpack_require__(293);
-	var Skill = __webpack_require__(303);
-	var Folio = __webpack_require__(304);
-
-	var Home = React.createClass({
-	  displayName: "Home",
-
-
-	  componentDidMount: function componentDidMount() {
-	    $(window).scrollTop(0);
-	  },
-
-	  render: function render() {
-	    return React.createElement(
-	      "div",
-	      null,
-	      React.createElement(Nav2, null),
-	      React.createElement(About, null),
-	      React.createElement(Skill, null),
-	      React.createElement(Folio, null)
-	    );
-	  }
-
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
 	});
 
-	module.exports = Home;
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _Nav = __webpack_require__(288);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	var _About = __webpack_require__(293);
+
+	var _About2 = _interopRequireDefault(_About);
+
+	var _Skill = __webpack_require__(303);
+
+	var _Skill2 = _interopRequireDefault(_Skill);
+
+	var _Folio = __webpack_require__(304);
+
+	var _Folio2 = _interopRequireDefault(_Folio);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var React = __webpack_require__(260);
+
+	var Home = function (_React$Component) {
+	  _inherits(Home, _React$Component);
+
+	  function Home() {
+	    _classCallCheck(this, Home);
+
+	    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+	  }
+
+	  _createClass(Home, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      $(window).scrollTop(0);
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        "div",
+	        null,
+	        React.createElement(_Nav2.default, null),
+	        React.createElement(_About2.default, null),
+	        React.createElement(_Skill2.default, null),
+	        React.createElement(_Folio2.default, null)
+	      );
+	    }
+	  }]);
+
+	  return Home;
+	}(React.Component);
+
+	exports.default = Home;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
@@ -33252,102 +33350,129 @@
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(260);
 	var ReactDOM = __webpack_require__(56);
 	var ReactDOMServer = __webpack_require__(289);
 
-	var Nav2 = React.createClass({
-	  displayName: "Nav2",
+	var Nav2 = function (_React$Component) {
+	  _inherits(Nav2, _React$Component);
 
+	  function Nav2() {
+	    _classCallCheck(this, Nav2);
 
-	  handleClick1: function handleClick1(e) {
-	    e.preventDefault();
-	    $('body, html').animate({
-	      scrollTop: $("#about").offset().top + 50
-	    }, 750);
-	  },
-	  handleClick2: function handleClick2(e) {
-	    e.preventDefault();
-	    $('body, html').animate({
-	      scrollTop: $("#skill").offset().top + 50
-	    }, 750);
-	  },
-	  handleClick3: function handleClick3(e) {
-	    e.preventDefault();
-	    $('body, html').animate({
-	      scrollTop: $("#folio").offset().top + 50
-	    }, 750);
-	  },
+	    return _possibleConstructorReturn(this, (Nav2.__proto__ || Object.getPrototypeOf(Nav2)).apply(this, arguments));
+	  }
 
-	  render: function render() {
-	    return React.createElement(
-	      "nav",
-	      { id: "2-nav-bar", className: "navbar navbar-inverse navbar-fixed-bottom", role: "navigation" },
-	      React.createElement(
-	        "div",
-	        { className: "container-fluid" },
+	  _createClass(Nav2, [{
+	    key: "handleClick1",
+	    value: function handleClick1(e) {
+	      e.preventDefault();
+	      $('body, html').animate({
+	        scrollTop: $("#about").offset().top + 50
+	      }, 750);
+	    }
+	  }, {
+	    key: "handleClick2",
+	    value: function handleClick2(e) {
+	      e.preventDefault();
+	      $('body, html').animate({
+	        scrollTop: $("#skill").offset().top + 50
+	      }, 750);
+	    }
+	  }, {
+	    key: "handleClick3",
+	    value: function handleClick3(e) {
+	      e.preventDefault();
+	      $('body, html').animate({
+	        scrollTop: $("#folio").offset().top + 50
+	      }, 750);
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        "nav",
+	        { id: "2-nav-bar", className: "navbar navbar-inverse navbar-fixed-bottom", role: "navigation" },
 	        React.createElement(
 	          "div",
-	          { className: "navbar-header" },
+	          { className: "container-fluid" },
 	          React.createElement(
-	            "button",
-	            { className: "navbar-toggle collapsed", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse", role: "button" },
+	            "div",
+	            { className: "navbar-header" },
 	            React.createElement(
-	              "span",
-	              { className: "sr-only" },
-	              "Toggle Navigation"
+	              "button",
+	              { className: "navbar-toggle collapsed", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse", role: "button" },
+	              React.createElement(
+	                "span",
+	                { className: "sr-only" },
+	                "Toggle Navigation"
+	              ),
+	              React.createElement("span", { className: "icon-bar" }),
+	              React.createElement("span", { className: "icon-bar" }),
+	              React.createElement("span", { className: "icon-bar" })
 	            ),
-	            React.createElement("span", { className: "icon-bar" }),
-	            React.createElement("span", { className: "icon-bar" }),
-	            React.createElement("span", { className: "icon-bar" })
+	            React.createElement(
+	              "a",
+	              { href: "https://github.com/yl-zeng/", target: "_block" },
+	              React.createElement("i", { className: "navbar-brand fa fa-github animated flip" })
+	            )
 	          ),
 	          React.createElement(
-	            "a",
-	            { href: "https://github.com/yl-zeng/", target: "_block" },
-	            React.createElement("i", { className: "navbar-brand fa fa-github animated flip" })
-	          )
-	        ),
-	        React.createElement(
-	          "div",
-	          { className: "collapse navbar-collapse" },
-	          React.createElement(
-	            "ul",
-	            { className: "nav navbar-nav navbar-center js-nav" },
+	            "div",
+	            { className: "collapse navbar-collapse" },
 	            React.createElement(
-	              "li",
-	              null,
+	              "ul",
+	              { className: "nav navbar-nav navbar-center js-nav" },
 	              React.createElement(
-	                "a",
-	                { href: "#about", className: "nav2-link-title", onClick: this.handleClick1 },
-	                "About"
-	              )
-	            ),
-	            React.createElement(
-	              "li",
-	              null,
+	                "li",
+	                null,
+	                React.createElement(
+	                  "a",
+	                  { href: "#about", className: "nav2-link-title", onClick: this.handleClick1 },
+	                  "About"
+	                )
+	              ),
 	              React.createElement(
-	                "a",
-	                { href: "#skill", className: "nav2-link-title", onClick: this.handleClick2 },
-	                "Skill"
-	              )
-	            ),
-	            React.createElement(
-	              "li",
-	              null,
+	                "li",
+	                null,
+	                React.createElement(
+	                  "a",
+	                  { href: "#skill", className: "nav2-link-title", onClick: this.handleClick2 },
+	                  "Skill"
+	                )
+	              ),
 	              React.createElement(
-	                "a",
-	                { href: "#folio", className: "nav2-link-title", onClick: this.handleClick3 },
-	                "Folio"
+	                "li",
+	                null,
+	                React.createElement(
+	                  "a",
+	                  { href: "#folio", className: "nav2-link-title", onClick: this.handleClick3 },
+	                  "Folio"
+	                )
 	              )
 	            )
 	          )
 	        )
-	      )
-	    );
-	  }
-	});
+	      );
+	    }
+	  }]);
 
-	module.exports = Nav2;
+	  return Nav2;
+	}(React.Component);
+
+	exports.default = Nav2;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
@@ -33515,6 +33640,18 @@
 
 	"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(25);
 
 	var _require = __webpack_require__(202),
@@ -33522,81 +33659,92 @@
 
 	var swal = __webpack_require__(294);
 
-	var About = React.createClass({
-	  displayName: "About",
+	var About = function (_React$Component) {
+	  _inherits(About, _React$Component);
 
+	  function About() {
+	    _classCallCheck(this, About);
 
-	  handleClick: function handleClick(e) {
-	    e.preventDefault();
-	    swal({
-	      title: "",
-	      text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZS29wcHVXbmotSkk/preview\" width=\"700px\" height=\"480px\" ></div>",
-	      customClass: "resumeWindow",
-	      html: true,
-	      allowOutsideClick: true
-	    });
-	  },
+	    return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+	  }
 
-	  render: function render() {
-	    return React.createElement(
-	      "section",
-	      { id: "about", className: "sec-about" },
-	      React.createElement(
-	        "div",
-	        { className: "container" },
-	        React.createElement(
-	          "h1",
-	          { className: "text-center" },
-	          "ABOUT ME"
-	        ),
-	        React.createElement("hr", null),
+	  _createClass(About, [{
+	    key: "handleClick",
+	    value: function handleClick(e) {
+	      e.preventDefault();
+	      swal({
+	        title: "",
+	        text: "<div className=\"text-center\"><iframe src=\"https://drive.google.com/file/d/0B1B6d6uqGpUZS29wcHVXbmotSkk/preview\" width=\"700px\" height=\"480px\" ></div>",
+	        customClass: "resumeWindow",
+	        html: true,
+	        allowOutsideClick: true
+	      });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        "section",
+	        { id: "about", className: "sec-about" },
 	        React.createElement(
 	          "div",
-	          { className: "row" },
+	          { className: "container" },
+	          React.createElement(
+	            "h1",
+	            { className: "text-center" },
+	            "ABOUT ME"
+	          ),
+	          React.createElement("hr", null),
 	          React.createElement(
 	            "div",
-	            { className: "col-sm-6 col-sm-offset-3" },
+	            { className: "row" },
 	            React.createElement(
-	              "p",
-	              null,
-	              "Hi all! I am Yunlin, a recent graduate with Masters in Computer Engineering."
-	            ),
-	            React.createElement(
-	              "p",
-	              null,
-	              "I am experienced with web development and enjoy working with cutting-edge technology. I am a fast learner and self-starter who can combine knowledge learned from university with frameworks into real product! "
-	            ),
-	            React.createElement(
-	              "p",
-	              null,
-	              "You can grab my ",
+	              "div",
+	              { className: "col-sm-6 col-sm-offset-3" },
 	              React.createElement(
-	                "a",
-	                { onClick: this.handleClick },
-	                "Resume"
+	                "p",
+	                null,
+	                "Hi all! I am Yunlin, a recent graduate with Masters in Computer Engineering."
 	              ),
-	              " here and also visit my ",
 	              React.createElement(
-	                "a",
-	                { target: "_blank", href: "https://github.com/yl-zeng" },
-	                "Github"
+	                "p",
+	                null,
+	                "I am experienced with web development and enjoy working with cutting-edge technology. I am a fast learner and self-starter who can combine knowledge learned from university with frameworks into real product! "
 	              ),
-	              ". If you want to hire me or just to talk, ",
 	              React.createElement(
-	                Link,
-	                { to: "/contact" },
-	                "Contact"
-	              ),
-	              " with me."
+	                "p",
+	                null,
+	                "You can grab my ",
+	                React.createElement(
+	                  "a",
+	                  { onClick: this.handleClick },
+	                  "Resume"
+	                ),
+	                " here and also visit my ",
+	                React.createElement(
+	                  "a",
+	                  { target: "_blank", href: "https://github.com/yl-zeng" },
+	                  "Github"
+	                ),
+	                ". If you want to hire me or just to talk, ",
+	                React.createElement(
+	                  Link,
+	                  { to: "/contact" },
+	                  "Contact"
+	                ),
+	                " with me."
+	              )
 	            )
 	          )
 	        )
-	      )
-	    );
-	  }
-	});
+	      );
+	    }
+	  }]);
 
-	module.exports = About;
+	  return About;
+	}(React.Component);
+
+	exports.default = About;
 
 /***/ },
 /* 294 */
@@ -34904,132 +35052,159 @@
 
 	"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(260);
 
-	var Skill = function Skill(props) {
-	  return React.createElement(
-	    "div",
-	    null,
-	    React.createElement(
-	      "section",
-	      { id: "skill", className: "sec-skill" },
-	      React.createElement(
+	var Skill = function (_React$Component) {
+	  _inherits(Skill, _React$Component);
+
+	  function Skill() {
+	    _classCallCheck(this, Skill);
+
+	    return _possibleConstructorReturn(this, (Skill.__proto__ || Object.getPrototypeOf(Skill)).apply(this, arguments));
+	  }
+
+	  _createClass(Skill, [{
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
 	        "div",
-	        { className: "container" },
+	        null,
 	        React.createElement(
-	          "h1",
-	          { className: "text-center" },
-	          "SKILLS"
-	        ),
-	        React.createElement("hr", null),
-	        React.createElement(
-	          "div",
-	          { className: "row" },
+	          "section",
+	          { id: "skill", className: "sec-skill" },
 	          React.createElement(
 	            "div",
-	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
-	            React.createElement("img", { className: "img-responsive ", src: "image/java.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/python.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/js.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/typescript.png" })
-	          )
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "div",
-	          { className: "row" },
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
-	            React.createElement("img", { className: "img-responsive ", src: "image/react.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive ", src: "image/angular.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/node.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/mongodb.png" })
-	          )
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "div",
-	          { className: "row" },
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
-	            React.createElement("img", { className: "img-responsive ", src: "image/spring.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/hibernate.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/mysql.svg" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/jsp.svg" })
-	          )
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "div",
-	          { className: "row" },
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
-	            React.createElement("img", { className: "img-responsive ", src: "image/html.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/css.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/sass.png" })
-	          ),
-	          React.createElement(
-	            "div",
-	            { className: "col-xs-3 col-sm-2" },
-	            React.createElement("img", { className: "img-responsive", src: "image/bootstrap.svg" })
+	            { className: "container" },
+	            React.createElement(
+	              "h1",
+	              { className: "text-center" },
+	              "SKILLS"
+	            ),
+	            React.createElement("hr", null),
+	            React.createElement(
+	              "div",
+	              { className: "row" },
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
+	                React.createElement("img", { className: "img-responsive ", src: "image/java.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/python.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/js.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/typescript.png" })
+	              )
+	            ),
+	            React.createElement("br", null),
+	            React.createElement("br", null),
+	            React.createElement(
+	              "div",
+	              { className: "row" },
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
+	                React.createElement("img", { className: "img-responsive ", src: "image/react.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive ", src: "image/angular.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/node.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/mongodb.png" })
+	              )
+	            ),
+	            React.createElement("br", null),
+	            React.createElement("br", null),
+	            React.createElement(
+	              "div",
+	              { className: "row" },
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
+	                React.createElement("img", { className: "img-responsive ", src: "image/spring.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/hibernate.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/mysql.svg" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/jsp.svg" })
+	              )
+	            ),
+	            React.createElement("br", null),
+	            React.createElement("br", null),
+	            React.createElement(
+	              "div",
+	              { className: "row" },
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2 col-sm-offset-2" },
+	                React.createElement("img", { className: "img-responsive ", src: "image/html.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/css.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/sass.png" })
+	              ),
+	              React.createElement(
+	                "div",
+	                { className: "col-xs-3 col-sm-2" },
+	                React.createElement("img", { className: "img-responsive", src: "image/bootstrap.svg" })
+	              )
+	            )
 	          )
 	        )
-	      )
-	    )
-	  );
-	};
+	      );
+	    }
+	  }]);
 
-	module.exports = Skill;
+	  return Skill;
+	}(React.Component);
+
+	exports.default = Skill;
 
 /***/ },
 /* 304 */
@@ -35037,286 +35212,316 @@
 
 	"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _Card = __webpack_require__(305);
+
+	var _Card2 = _interopRequireDefault(_Card);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(25);
-	var Card = __webpack_require__(305);
 
-	var Folio = React.createClass({
-	  displayName: "Folio",
+	var Folio = function (_React$Component) {
+	  _inherits(Folio, _React$Component);
 
+	  function Folio() {
+	    _classCallCheck(this, Folio);
 
-	  render: function render() {
-	    var data = [{
-	      title: 'Portfolio',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "My personal website, built with React and Bootstrap. Using webpack with loaders to manage all resource & modules. Breaking website into small components, using props and state to control action. "
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " React jQuery Bootstrap Node.js webpack",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/portfolio3.png'],
-	      site: [['Live Site', 'fa-link', 'http://yunlin.io/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/portfolio']]
-	    }, {
-	      title: 'Todoist',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "A React.js web application helps users to manage todo lists online. Create test suite with Karma and use Google firebase database to maintain data and authenticate users. Using Redux to manage state, babel to compile JSX and Webpack to handle third-party dependencies."
-	        ),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " React Node.js JSX Webpack ",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/todo.jpg'],
-	      site: [['Live Site', 'fa-link', 'https://yunlin-todo.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-todo']]
-	    }, {
-	      title: 'OnlineBanking',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "Developed admin portal as SPA with Angular and used angular http to interact with REST API via JSON. Used Thymeleaf as Java template engine to develop user portal, deployed to AWS cloud platform."
-	        ),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " Spring Boot, Angular, Thymeleaf, Hibernate ",
-	        React.createElement("br", null),
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/onlinebanking.jpg'],
-	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', '#']]
-	    }, {
-	      title: 'Chat Room',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "Implemented WebSocket based real-time bidirectional communication with Socket.io API. Used node redis client to store chat history in redis and used mongoose to save user credentials."
-	        ),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " Node.js, MongoDB, Redis, Express.js, Socket.io",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/chat.jpg'],
-	      site: [['Live Site', 'fa-link', 'https://yunlin-chat-node.herokuapp.com/'], ['Github', 'fa-github', '#']]
-	    }, {
-	      title: 'DevOps Buddy',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "A Node.js full stack app. Build Restful API with express.js & socket.io. Store Data with MongoDB and authenticate users with JSON web token. Create full test suite with Mocha framework and HTTP assertions via supertest."
-	        ),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " Node.js MongoDB Express.js Socket.io",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/buddy.jpg'],
-	      site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', '#']]
-	    }, {
-	      title: 'Weather App - Android',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "An android weather forecast application. Build maintainable back-end with SQLite database. Create full Junit test suite for debugging. leverage UI compatibility for both phones and tablets."
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " Android Junit SQlite ",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/weather-android.png'],
-	      site: [['Demo', 'fa-eye', 'https://drive.google.com/file/d/0B1B6d6uqGpUZOVRKZXg1YlpiV3M/view?usp=sharing'], ['Github', 'fa-github', '#']]
-	    }, {
-	      title: 'E-Commerce Store',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "Built up view layer with JSP with JSTL and used jQuery to fire AJAX request to consume REST API. Implemented Payment feature with Stripe API and used spring web flow to wrap up confirmation steps."
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " Spring MVC, Hibernate, JSP, MySQL ",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/store.jpg'],
-	      site: [['Live Site', 'fa-link', 'https://yunlin-e-store.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/E-Music-Store']]
-	    }, {
-	      title: 'Quotes',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "Build a Random Quote Machine with random famous quotes api. The user is able to show a new random quote and send that quote to Twitter."
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " HTML5, CSS3, Javascript, jQuery",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/quotes.png'],
-	      site: [['Codepen', 'fa-codepen', 'http://codepen.io/d26842684/full/oBzPwR/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/quotes']]
-	    }, {
-	      title: 'Blog',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "A group project of Python course. Built with python jinja2 template, Bootstrap and Google App Engine. I am responsible for render html."
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " HTML5, CSS3, Javascript, Python",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/blog.png'],
-	      site: [['Live Site', 'fa-link', 'https://dotted-weft-151521.appspot.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
-	    }, {
-	      title: 'Twitter Like',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "A Twitter like social network website. User can follow, unfollow, tweet and comment. Implement News feed feature with Push model. Implemented error handling by using RxJS Observable subscription with self-built Angular Error Service."
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " MEAN stack ",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/twitter.jpg'],
-	      site: [['Demo', 'fa-eye', '#'], ['Github', 'fa-github', '#']]
-	    }, {
-	      title: 'Weather App - React',
-	      text: React.createElement(
-	        "div",
-	        null,
-	        React.createElement(
-	          "p",
-	          { style: { "padding-top": "10px" } },
-	          "A React.js weather forecast application, built with Foundation, SCSS and OpenWeatherMap API. "
-	        ),
-	        React.createElement("br", null),
-	        React.createElement("br", null),
-	        React.createElement(
-	          "strong",
-	          null,
-	          "Technology:"
-	        ),
-	        " React Foundation SCSS ",
-	        React.createElement("br", null)
-	      ),
-	      image: ['folio/weather-react.png'],
-	      site: [['Live Site', 'fa-link', 'https://yunlin69-react-weather.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-weather']]
-	    }];
+	    return _possibleConstructorReturn(this, (Folio.__proto__ || Object.getPrototypeOf(Folio)).apply(this, arguments));
+	  }
 
-	    return React.createElement(
-	      "div",
-	      null,
-	      React.createElement(
-	        "section",
-	        { id: "folio", className: "sec-folio" },
-	        React.createElement(
+	  _createClass(Folio, [{
+	    key: "render",
+	    value: function render() {
+	      var data = [{
+	        title: 'Portfolio',
+	        text: React.createElement(
 	          "div",
-	          { className: "container" },
+	          null,
 	          React.createElement(
-	            "h1",
-	            { className: "text-center" },
-	            "FOLIO"
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "My personal website, built with React and Bootstrap. Using webpack with loaders to manage all resource & modules. Breaking website into small components, using props and state to control action. "
 	          ),
-	          React.createElement("hr", null),
+	          React.createElement("br", null),
+	          React.createElement("br", null),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " React jQuery Bootstrap Node.js webpack",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/portfolio3.png'],
+	        site: [['Live Site', 'fa-link', 'http://yunlin.io/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/portfolio']]
+	      }, {
+	        title: 'Todoist',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "A React.js web application helps users to manage todo lists online. Create test suite with Karma and use Google firebase database to maintain data and authenticate users. Using Redux to manage state, babel to compile JSX and Webpack to handle third-party dependencies."
+	          ),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " React Node.js JSX Webpack ",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/todo.jpg'],
+	        site: [['Live Site', 'fa-link', 'https://yunlin-todo.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-todo']]
+	      }, {
+	        title: 'OnlineBanking',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "Developed admin portal as SPA with Angular and used angular http to interact with REST API via JSON. Used Thymeleaf as Java template engine to develop user portal, deployed to AWS cloud platform."
+	          ),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " Spring Boot, Angular, Thymeleaf, Hibernate ",
+	          React.createElement("br", null),
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/onlinebanking.jpg'],
+	        site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', '#']]
+	      }, {
+	        title: 'Chat Room',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "Implemented WebSocket based real-time bidirectional communication with Socket.io API. Used node redis client to store chat history in redis and used mongoose to save user credentials."
+	          ),
+	          React.createElement("br", null),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " Node.js, MongoDB, Redis, Express.js, Socket.io",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/chat.jpg'],
+	        site: [['Live Site', 'fa-link', 'https://yunlin-chat-node.herokuapp.com/'], ['Github', 'fa-github', '#']]
+	      }, {
+	        title: 'DevOps Buddy',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "A Node.js full stack app. Build Restful API with express.js & socket.io. Store Data with MongoDB and authenticate users with JSON web token. Create full test suite with Mocha framework and HTTP assertions via supertest."
+	          ),
+	          React.createElement("br", null),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " Node.js MongoDB Express.js Socket.io",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/buddy.jpg'],
+	        site: [['Live Site', 'fa-link', '#'], ['Github', 'fa-github', '#']]
+	      }, {
+	        title: 'Weather App - Android',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "An android weather forecast application. Build maintainable back-end with SQLite database. Create full Junit test suite for debugging. leverage UI compatibility for both phones and tablets."
+	          ),
+	          React.createElement("br", null),
+	          React.createElement("br", null),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " Android Junit SQlite ",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/weather-android.png'],
+	        site: [['Demo', 'fa-eye', 'https://drive.google.com/file/d/0B1B6d6uqGpUZOVRKZXg1YlpiV3M/view?usp=sharing'], ['Github', 'fa-github', '#']]
+	      }, {
+	        title: 'E-Commerce Store',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "Built up view layer with JSP with JSTL and used jQuery to fire AJAX request to consume REST API. Implemented Payment feature with Stripe API and used spring web flow to wrap up confirmation steps."
+	          ),
+	          React.createElement("br", null),
+	          React.createElement("br", null),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " Spring MVC, Hibernate, JSP, MySQL ",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/store.jpg'],
+	        site: [['Live Site', 'fa-link', 'https://yunlin-e-store.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/E-Music-Store']]
+	      }, {
+	        title: 'Quotes',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "Build a Random Quote Machine with random famous quotes api. The user is able to show a new random quote and send that quote to Twitter."
+	          ),
+	          React.createElement("br", null),
+	          React.createElement("br", null),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " HTML5, CSS3, Javascript, jQuery",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/quotes.png'],
+	        site: [['Codepen', 'fa-codepen', 'http://codepen.io/d26842684/full/oBzPwR/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/quotes']]
+	      }, {
+	        title: 'Blog',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "A group project of Python course. Built with python jinja2 template, Bootstrap and Google App Engine. I am responsible for render html."
+	          ),
+	          React.createElement("br", null),
+	          React.createElement("br", null),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " HTML5, CSS3, Javascript, Python",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/blog.png'],
+	        site: [['Live Site', 'fa-link', 'https://dotted-weft-151521.appspot.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng']]
+	      }, {
+	        title: 'Twitter Like',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "A Twitter like social network website. User can follow, unfollow, tweet and comment. Implement News feed feature with Push model. Implemented error handling by using RxJS Observable subscription with self-built Angular Error Service."
+	          ),
+	          React.createElement("br", null),
+	          React.createElement("br", null),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " MEAN stack ",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/twitter.jpg'],
+	        site: [['Demo', 'fa-eye', '#'], ['Github', 'fa-github', '#']]
+	      }, {
+	        title: 'Weather App - React',
+	        text: React.createElement(
+	          "div",
+	          null,
+	          React.createElement(
+	            "p",
+	            { style: { "padding-top": "10px" } },
+	            "A React.js weather forecast application, built with Foundation, SCSS and OpenWeatherMap API. "
+	          ),
+	          React.createElement("br", null),
+	          React.createElement("br", null),
+	          React.createElement(
+	            "strong",
+	            null,
+	            "Technology:"
+	          ),
+	          " React Foundation SCSS ",
+	          React.createElement("br", null)
+	        ),
+	        image: ['folio/weather-react.png'],
+	        site: [['Live Site', 'fa-link', 'https://yunlin69-react-weather.herokuapp.com/'], ['Github', 'fa-github', 'https://github.com/yl-zeng/react-weather']]
+	      }];
+
+	      return React.createElement(
+	        "div",
+	        null,
+	        React.createElement(
+	          "section",
+	          { id: "folio", className: "sec-folio" },
 	          React.createElement(
 	            "div",
-	            { className: "row", id: "theProjects" },
-	            React.createElement(Card, { projectData: data[0] }),
-	            React.createElement(Card, { projectData: data[1] }),
-	            React.createElement(Card, { projectData: data[2] }),
-	            React.createElement(Card, { projectData: data[3] }),
-	            React.createElement(Card, { projectData: data[4] }),
-	            React.createElement(Card, { projectData: data[5] }),
-	            React.createElement(Card, { projectData: data[6] }),
-	            React.createElement(Card, { projectData: data[8] }),
-	            React.createElement(Card, { projectData: data[9] })
+	            { className: "container" },
+	            React.createElement(
+	              "h1",
+	              { className: "text-center" },
+	              "FOLIO"
+	            ),
+	            React.createElement("hr", null),
+	            React.createElement(
+	              "div",
+	              { className: "row", id: "theProjects" },
+	              React.createElement(_Card2.default, { projectData: data[0] }),
+	              React.createElement(_Card2.default, { projectData: data[1] }),
+	              React.createElement(_Card2.default, { projectData: data[2] }),
+	              React.createElement(_Card2.default, { projectData: data[3] }),
+	              React.createElement(_Card2.default, { projectData: data[4] }),
+	              React.createElement(_Card2.default, { projectData: data[5] }),
+	              React.createElement(_Card2.default, { projectData: data[6] }),
+	              React.createElement(_Card2.default, { projectData: data[8] }),
+	              React.createElement(_Card2.default, { projectData: data[9] })
+	            )
 	          )
 	        )
-	      )
-	    );
-	  }
-	});
+	      );
+	    }
+	  }]);
+
+	  return Folio;
+	}(React.Component);
+
+	exports.default = Folio;
+
 
 	module.exports = Folio;
 
@@ -35326,113 +35531,146 @@
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(25);
 
-	var Card = React.createClass({
-	  displayName: "Card",
+	var Card = function (_React$Component) {
+	  _inherits(Card, _React$Component);
 
-	  getDefaultProps: function getDefaultProps() {
-	    return {
-	      projectData: {}
-	    };
-	  },
+	  function Card() {
+	    _classCallCheck(this, Card);
 
-	  componentDidMount: function componentDidMount() {
-	    $('.js-toggle').tooltip();
-	  },
+	    return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).apply(this, arguments));
+	  }
 
-	  getInitialState: function getInitialState() {
-	    return {
-	      flip: ""
-	    };
-	  },
-
-	  handleClickFlip: function handleClickFlip(e) {
-	    e.preventDefault();
-	    //alert("this LInk is clicked");
-	    if (this.state.flip === "") {
-	      this.setState({
-	        flip: "flipped"
-	      });
-	    } else {
-	      this.setState({
-	        flip: ""
-	      });
+	  _createClass(Card, [{
+	    key: "getDefaultProps",
+	    value: function getDefaultProps() {
+	      return {
+	        projectData: {}
+	      };
 	    }
-	  },
-	  handleClickLink0: function handleClickLink0(e) {
-	    e.preventDefault();
-	    window.open(this.props.projectData.site[0][2]);
-	  },
-	  handleClickLink1: function handleClickLink1(e) {
-	    e.preventDefault();
-	    window.open(this.props.projectData.site[1][2]);
-	  },
-	  render: function render() {
-	    var project = this.props.projectData;
+	  }, {
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      $('.js-toggle').tooltip();
+	    }
+	  }, {
+	    key: "getInitialState",
+	    value: function getInitialState() {
+	      return {
+	        flip: ""
+	      };
+	    }
+	  }, {
+	    key: "handleClickFlip",
+	    value: function handleClickFlip(e) {
+	      e.preventDefault();
+	      //alert("this LInk is clicked");
+	      if (this.state.flip === "") {
+	        this.setState({
+	          flip: "flipped"
+	        });
+	      } else {
+	        this.setState({
+	          flip: ""
+	        });
+	      }
+	    }
+	  }, {
+	    key: "handleClickLink0",
+	    value: function handleClickLink0(e) {
+	      e.preventDefault();
+	      window.open(this.props.projectData.site[0][2]);
+	    }
+	  }, {
+	    key: "handleClickLink1",
+	    value: function handleClickLink1(e) {
+	      e.preventDefault();
+	      window.open(this.props.projectData.site[1][2]);
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      var project = this.props.projectData;
 
-	    return React.createElement(
-	      "div",
-	      { className: "col-sm-6 col-md-4" },
-	      React.createElement(
+	      return React.createElement(
 	        "div",
-	        { className: "card effect_click " + this.state.flip, onClick: this.handleClickFlip },
+	        { className: "col-sm-6 col-md-4" },
 	        React.createElement(
 	          "div",
-	          { className: "card_front" },
+	          { className: "card effect_click " + this.state.flip, onClick: this.handleClickFlip },
 	          React.createElement(
-	            "figure",
-	            null,
-	            React.createElement("img", { className: "img-responsive", src: project.image[0] }),
+	            "div",
+	            { className: "card_front" },
 	            React.createElement(
-	              "figcaption",
-	              { className: "project-title" },
-	              project.title
+	              "figure",
+	              null,
+	              React.createElement("img", { className: "img-responsive", src: project.image[0] }),
+	              React.createElement(
+	                "figcaption",
+	                { className: "project-title" },
+	                project.title
+	              )
 	            )
-	          )
-	        ),
-	        React.createElement(
-	          "div",
-	          { className: "card_back" },
+	          ),
 	          React.createElement(
-	            "figure",
-	            null,
+	            "div",
+	            { className: "card_back" },
 	            React.createElement(
-	              "div",
-	              { className: "project-title" },
-	              project.title
-	            ),
-	            React.createElement(
-	              "figcaption",
+	              "figure",
 	              null,
 	              React.createElement(
 	                "div",
-	                { className: "project-body" },
-	                project.text
+	                { className: "project-title" },
+	                project.title
 	              ),
 	              React.createElement(
-	                "div",
+	                "figcaption",
 	                null,
 	                React.createElement(
-	                  "a",
-	                  { onClick: this.handleClickLink0, title: project.site[0][0], "data-placement": "top", className: "js-toggle btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0" },
-	                  React.createElement("i", { className: "fa " + project.site[0][1], "aria-hidden": "true" })
+	                  "div",
+	                  { className: "project-body" },
+	                  project.text
 	                ),
 	                React.createElement(
-	                  "a",
-	                  { onClick: this.handleClickLink1, title: project.site[1][0], "data-placement": "top", className: "js-toggle btn btn-primary btn-lg btn-circle btn-lnk btn-lnk1" },
-	                  React.createElement("i", { className: "fa " + project.site[1][1], "aria-hidden": "true" })
+	                  "div",
+	                  null,
+	                  React.createElement(
+	                    "a",
+	                    { onClick: this.handleClickLink0, title: project.site[0][0], "data-placement": "top", className: "js-toggle btn btn-primary btn-lg btn-circle btn-lnk btn-lnk0" },
+	                    React.createElement("i", { className: "fa " + project.site[0][1], "aria-hidden": "true" })
+	                  ),
+	                  React.createElement(
+	                    "a",
+	                    { onClick: this.handleClickLink1, title: project.site[1][0], "data-placement": "top", className: "js-toggle btn btn-primary btn-lg btn-circle btn-lnk btn-lnk1" },
+	                    React.createElement("i", { className: "fa " + project.site[1][1], "aria-hidden": "true" })
+	                  )
 	                )
 	              )
 	            )
 	          )
 	        )
-	      )
-	    );
-	  }
-	});
+	      );
+	    }
+	  }]);
 
-	module.exports = Card;
+	  return Card;
+	}(React.Component);
+
+	exports.default = Card;
+	;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
@@ -35441,45 +35679,71 @@
 
 	"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _Video = __webpack_require__(307);
+
+	var _Video2 = _interopRequireDefault(_Video);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(25);
 
 	var _require = __webpack_require__(202),
 	    Link = _require.Link;
 
-	var Video = __webpack_require__(307);
+	var IndexPage = function (_React$Component) {
+	  _inherits(IndexPage, _React$Component);
 
-	var IndexPage = React.createClass({
-	  displayName: "IndexPage",
+	  function IndexPage() {
+	    _classCallCheck(this, IndexPage);
 
+	    return _possibleConstructorReturn(this, (IndexPage.__proto__ || Object.getPrototypeOf(IndexPage)).apply(this, arguments));
+	  }
 
-	  render: function render() {
-	    return React.createElement(
-	      "div",
-	      null,
-	      React.createElement(
+	  _createClass(IndexPage, [{
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
 	        "div",
-	        { id: "section-main", className: "container" },
-	        React.createElement(Video, null),
+	        null,
 	        React.createElement(
 	          "div",
-	          { id: "Bigin", className: "animated infinite slideInDown" },
+	          { id: "section-main", className: "container" },
+	          React.createElement(_Video2.default, null),
 	          React.createElement(
-	            Link,
-	            { to: "/home", style: { color: "white" } },
-	            React.createElement("i", { className: "fa fa-angle-double-down fa-5x" })
+	            "div",
+	            { id: "Bigin", className: "animated infinite slideInDown" },
+	            React.createElement(
+	              Link,
+	              { to: "/home", style: { color: "white" } },
+	              React.createElement("i", { className: "fa fa-angle-double-down fa-5x" })
+	            )
 	          )
+	        ),
+	        React.createElement(
+	          "h1",
+	          { className: "heading" },
+	          "Technology doesn't change the world people do."
 	        )
-	      ),
-	      React.createElement(
-	        "h1",
-	        { className: "heading" },
-	        "Technology doesn't change the world people do."
-	      )
-	    );
-	  }
-	});
+	      );
+	    }
+	  }]);
 
-	module.exports = IndexPage;
+	  return IndexPage;
+	}(React.Component);
+
+	exports.default = IndexPage;
 
 /***/ },
 /* 307 */
@@ -35487,26 +35751,48 @@
 
 	"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(25);
 
 	var _require = __webpack_require__(202),
 	    Link = _require.Link;
 
-	var Video = React.createClass({
-	  displayName: "Video",
+	var Video = function (_React$Component) {
+	  _inherits(Video, _React$Component);
 
+	  function Video() {
+	    _classCallCheck(this, Video);
 
-	  render: function render() {
-	    return React.createElement(
-	      "div",
-	      { className: "page" },
-	      React.createElement("video", { id: "vid", src: "/video/video.mp4",
-	        preload: "auto", autoPlay: true, muted: true, loop: true })
-	    );
+	    return _possibleConstructorReturn(this, (Video.__proto__ || Object.getPrototypeOf(Video)).apply(this, arguments));
 	  }
-	});
 
-	module.exports = Video;
+	  _createClass(Video, [{
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        "div",
+	        { className: "page" },
+	        React.createElement("video", { id: "vid", src: "/video/video.mp4",
+	          preload: "auto", autoPlay: true, muted: true, loop: true })
+	      );
+	    }
+	  }]);
+
+	  return Video;
+	}(React.Component);
+
+	exports.default = Video;
 
 /***/ },
 /* 308 */
@@ -35514,121 +35800,153 @@
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _Footer = __webpack_require__(309);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var React = __webpack_require__(25);
-	var Footer = __webpack_require__(309);
+
 
 	var swal = __webpack_require__(294);
 
-	var Contact = React.createClass({
-	  displayName: "Contact",
+	var Contact = function (_React$Component) {
+	  _inherits(Contact, _React$Component);
 
-	  componentDidMount: function componentDidMount() {
-	    $(window).scrollTop(0);
-	  },
+	  function Contact() {
+	    _classCallCheck(this, Contact);
 
-	  handleSubmit: function handleSubmit(e) {
-	    e.preventDefault();
-	    swal({
-	      title: "",
-	      text: 'I have received your message, I will contact with u soon.',
-	      type: "success"
-	    });
-	    this.sendFormData({
-	      name: this.refs.name.value,
-	      email: this.refs.mail.value,
-	      text: this.refs.text.value
-	    });
-	    this.refs.name.value = "";
-	    this.refs.mail.value = "";
-	    this.refs.text.value = "";
-	  },
+	    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+	  }
 
-	  sendFormData: function sendFormData(data) {
-	    var xmlhttp = new XMLHttpRequest();
-	    xmlhttp.open('POST', 'send', true);
-	    xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-	    xmlhttp.send("name=" + data.name + "&email=" + data.email + "&text=" + data.text);
-	  },
-
-	  render: function render() {
-	    return React.createElement(
-	      "div",
-	      null,
-	      React.createElement(
-	        "section",
-	        { id: "contact", className: "sec-contact" },
+	  _createClass(Contact, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      $(window).scrollTop(0);
+	    }
+	  }, {
+	    key: "handleSubmit",
+	    value: function handleSubmit(e) {
+	      e.preventDefault();
+	      swal({
+	        title: "",
+	        text: 'I have received your message, I will contact with u soon.',
+	        type: "success"
+	      });
+	      this.sendFormData({
+	        name: this.refs.name.value,
+	        email: this.refs.mail.value,
+	        text: this.refs.text.value
+	      });
+	      this.refs.name.value = "";
+	      this.refs.mail.value = "";
+	      this.refs.text.value = "";
+	    }
+	  }, {
+	    key: "sendFormData",
+	    value: function sendFormData(data) {
+	      var xmlhttp = new XMLHttpRequest();
+	      xmlhttp.open('POST', 'send', true);
+	      xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+	      xmlhttp.send("name=" + data.name + "&email=" + data.email + "&text=" + data.text);
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return React.createElement(
+	        "div",
+	        null,
 	        React.createElement(
-	          "div",
-	          { className: "container" },
-	          React.createElement(
-	            "h1",
-	            null,
-	            "Contact me"
-	          ),
-	          React.createElement("hr", null),
+	          "section",
+	          { id: "contact", className: "sec-contact" },
 	          React.createElement(
 	            "div",
-	            { className: "row" },
+	            { className: "container" },
+	            React.createElement(
+	              "h1",
+	              null,
+	              "Contact me"
+	            ),
+	            React.createElement("hr", null),
 	            React.createElement(
 	              "div",
-	              { className: "col-sm-4 col-sm-offset-4" },
+	              { className: "row" },
 	              React.createElement(
-	                "form",
-	                { className: "center-block", onSubmit: this.handleSubmit },
+	                "div",
+	                { className: "col-sm-4 col-sm-offset-4" },
 	                React.createElement(
-	                  "div",
-	                  { className: "form-group" },
+	                  "form",
+	                  { className: "center-block", onSubmit: this.handleSubmit },
 	                  React.createElement(
-	                    "label",
-	                    { className: "sr-only", "for": "inputName" },
-	                    "Full name"
+	                    "div",
+	                    { className: "form-group" },
+	                    React.createElement(
+	                      "label",
+	                      { className: "sr-only", "for": "inputName" },
+	                      "Full name"
+	                    ),
+	                    React.createElement("input", { id: "inputName", ref: "name", className: "form-control", type: "text", placeholder: "Yunlin Zeng", required: true })
 	                  ),
-	                  React.createElement("input", { id: "inputName", ref: "name", className: "form-control", type: "text", placeholder: "Yunlin Zeng", required: true })
-	                ),
-	                React.createElement(
-	                  "div",
-	                  { className: "form-group" },
 	                  React.createElement(
-	                    "label",
-	                    { "for": "inputMail", className: "sr-only" },
-	                    "Email Address"
+	                    "div",
+	                    { className: "form-group" },
+	                    React.createElement(
+	                      "label",
+	                      { "for": "inputMail", className: "sr-only" },
+	                      "Email Address"
+	                    ),
+	                    React.createElement("input", { id: "inputMail", ref: "mail", className: "form-control", type: "email", placeholder: "ylinzeng69@gmail.com", required: true })
 	                  ),
-	                  React.createElement("input", { id: "inputMail", ref: "mail", className: "form-control", type: "email", placeholder: "ylinzeng69@gmail.com", required: true })
-	                ),
-	                React.createElement(
-	                  "div",
-	                  { className: "form-group" },
 	                  React.createElement(
-	                    "label",
-	                    { "for": "inputMessage", className: "sr-only" },
-	                    "Your Message"
+	                    "div",
+	                    { className: "form-group" },
+	                    React.createElement(
+	                      "label",
+	                      { "for": "inputMessage", className: "sr-only" },
+	                      "Your Message"
+	                    ),
+	                    React.createElement("textarea", { id: "inputMessage", ref: "text", className: "form-control", name: "message", cols: "30", rows: "8", required: true })
 	                  ),
-	                  React.createElement("textarea", { id: "inputMessage", ref: "text", className: "form-control", name: "message", cols: "30", rows: "8", required: true })
-	                ),
-	                React.createElement(
-	                  "div",
-	                  { className: "form-group" },
 	                  React.createElement(
-	                    "button",
-	                    { className: "btn btn-default center-block", type: "submit" },
-	                    "Submit"
+	                    "div",
+	                    { className: "form-group" },
+	                    React.createElement(
+	                      "button",
+	                      { className: "btn btn-default center-block", type: "submit" },
+	                      "Submit"
+	                    )
 	                  )
 	                )
 	              )
 	            )
 	          )
+	        ),
+	        React.createElement(
+	          "div",
+	          null,
+	          React.createElement(_Footer2.default, null)
 	        )
-	      ),
-	      React.createElement(
-	        "div",
-	        null,
-	        React.createElement(Footer, null)
-	      )
-	    );
-	  }
-	});
+	      );
+	    }
+	  }]);
 
-	module.exports = Contact;
+	  return Contact;
+	}(React.Component);
+
+	exports.default = Contact;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },
@@ -35637,69 +35955,92 @@
 
 	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
-	var React = __webpack_require__(260);
-
-	var Footer = React.createClass({
-	    displayName: "Footer",
-
-
-	    componentDidMount: function componentDidMount() {
-	        $('#togglemail').tooltip({ title: "Email", placement: "top" });
-	        $('#togglelinkedin').tooltip({ title: "Linkedin", placement: "top" });
-	        $('#togglegithub').tooltip({ title: "Github", placement: "top" });
-	        $('#togglecodepen').tooltip({ title: "Codepen", placement: "top" });
-	    },
-
-	    render: function render() {
-	        return React.createElement(
-	            "footer",
-	            { id: "footer", className: "sec-footer" },
-	            React.createElement(
-	                "ul",
-	                { className: "text-center" },
-	                React.createElement(
-	                    "li",
-	                    { className: "highlight" },
-	                    React.createElement(
-	                        "a",
-	                        { className: "fa-stack fa-1x", id: "togglemail", href: "mailto:ylinzeng69@gmail.com" },
-	                        React.createElement("i", { className: "fa fa-square fa-stack-2x" }),
-	                        React.createElement("i", { className: "fa fa-envelope fa-stack-1x blacktext" })
-	                    )
-	                ),
-	                React.createElement(
-	                    "li",
-	                    { className: "highlight" },
-	                    React.createElement(
-	                        "a",
-	                        { className: "fa-stack fa-1x", id: "togglelinkedin", href: "https://www.linkedin.com/in/yunlin-zeng-99a862115/", target: "_blank" },
-	                        React.createElement("i", { className: "fa fa-linkedin-square fa-stack-2x" })
-	                    )
-	                ),
-	                React.createElement(
-	                    "li",
-	                    { className: "highlight" },
-	                    React.createElement(
-	                        "a",
-	                        { className: "fa-stack fa-1x", id: "togglegithub", href: "https://github.com/yl-zeng", target: "_blank" },
-	                        React.createElement("i", { className: "fa fa-github-square fa-stack-2x" })
-	                    )
-	                ),
-	                React.createElement(
-	                    "li",
-	                    { style: { display: "block", padding: "0px" } },
-	                    React.createElement(
-	                        "p",
-	                        null,
-	                        "COPYRIGHT \xA9 2017 YUNLIN ZENG"
-	                    )
-	                )
-	            )
-	        );
-	    }
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
 	});
 
-	module.exports = Footer;
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var React = __webpack_require__(260);
+
+	var Footer = function (_React$Component) {
+	    _inherits(Footer, _React$Component);
+
+	    function Footer() {
+	        _classCallCheck(this, Footer);
+
+	        return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+	    }
+
+	    _createClass(Footer, [{
+	        key: "componentDidMount",
+	        value: function componentDidMount() {
+	            $('#togglemail').tooltip({ title: "Email", placement: "top" });
+	            $('#togglelinkedin').tooltip({ title: "Linkedin", placement: "top" });
+	            $('#togglegithub').tooltip({ title: "Github", placement: "top" });
+	            $('#togglecodepen').tooltip({ title: "Codepen", placement: "top" });
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            return React.createElement(
+	                "footer",
+	                { id: "footer", className: "sec-footer" },
+	                React.createElement(
+	                    "ul",
+	                    { className: "text-center" },
+	                    React.createElement(
+	                        "li",
+	                        { className: "highlight" },
+	                        React.createElement(
+	                            "a",
+	                            { className: "fa-stack fa-1x", id: "togglemail", href: "mailto:ylinzeng69@gmail.com" },
+	                            React.createElement("i", { className: "fa fa-square fa-stack-2x" }),
+	                            React.createElement("i", { className: "fa fa-envelope fa-stack-1x blacktext" })
+	                        )
+	                    ),
+	                    React.createElement(
+	                        "li",
+	                        { className: "highlight" },
+	                        React.createElement(
+	                            "a",
+	                            { className: "fa-stack fa-1x", id: "togglelinkedin", href: "https://www.linkedin.com/in/yunlin-zeng-99a862115/", target: "_blank" },
+	                            React.createElement("i", { className: "fa fa-linkedin-square fa-stack-2x" })
+	                        )
+	                    ),
+	                    React.createElement(
+	                        "li",
+	                        { className: "highlight" },
+	                        React.createElement(
+	                            "a",
+	                            { className: "fa-stack fa-1x", id: "togglegithub", href: "https://github.com/yl-zeng", target: "_blank" },
+	                            React.createElement("i", { className: "fa fa-github-square fa-stack-2x" })
+	                        )
+	                    ),
+	                    React.createElement(
+	                        "li",
+	                        { style: { display: "block", padding: "0px" } },
+	                        React.createElement(
+	                            "p",
+	                            null,
+	                            "COPYRIGHT \xA9 2017 YUNLIN ZENG"
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Footer;
+	}(React.Component);
+
+	exports.default = Footer;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(287)))
 
 /***/ },

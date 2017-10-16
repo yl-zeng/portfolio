@@ -2,9 +2,9 @@ var React = require("react");
 var {Link,IndexLink} = require("react-router");
 
 
-var Nav = React.createClass({
+export default class Nav extends React.Component{
 
-  render: function(){
+  render() {
     return (
         <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container-fluid">
@@ -30,6 +30,4 @@ var Nav = React.createClass({
         </nav>
     );
   }
-})
-
-module.exports = Nav;
+}

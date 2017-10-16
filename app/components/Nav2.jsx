@@ -2,28 +2,30 @@ var React = require("React");
 var ReactDOM = require("react-dom");
 var ReactDOMServer = require("react-dom/server");
 
-var Nav2 = React.createClass({
+export default class Nav2 extends React.Component {
 
-  handleClick1: function(e){
+  handleClick1(e) {
     e.preventDefault();
     $('body, html').animate({
       scrollTop: $("#about").offset().top+50
     }, 750);
-  },
-  handleClick2: function(e){
+  }
+
+  handleClick2(e) {
     e.preventDefault();
     $('body, html').animate({
       scrollTop: $("#skill").offset().top+50
     }, 750);
-  },
-  handleClick3: function(e){
+  }
+
+  handleClick3(e) {
     e.preventDefault();
     $('body, html').animate({
       scrollTop: $("#folio").offset().top+50
     }, 750);
-  },
+  }
 
-  render: function(){
+  render() {
     return (
         <nav id="2-nav-bar" className="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
             <div className="container-fluid">
@@ -54,6 +56,4 @@ var Nav2 = React.createClass({
     );
 
   }
-});
-
-module.exports = Nav2;
+}

@@ -1,10 +1,10 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route,Router,IndexRoute,hashHistory} = require('react-router');
-var Main = require("Main");
-var Home = require("Home");
-var IndexPage = require("IndexPage");
-var Contact = require("Contact");
+import Main from "Main";
+import Home from "Home";
+import IndexPage from "IndexPage";
+import Contact from "Contact";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
