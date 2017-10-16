@@ -1,6 +1,5 @@
 var React = require("React");
 var ReactDOM = require("react-dom");
-var ReactDOMServer = require("react-dom/server");
 
 export default class Nav2 extends React.Component {
 

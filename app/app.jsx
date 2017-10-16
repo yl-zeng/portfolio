@@ -1,22 +1,21 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var {Route,Router,IndexRoute,hashHistory} = require('react-router');
-import Main from "Main";
-import Home from "Home";
-import IndexPage from "IndexPage";
-import Contact from "Contact";
+import Main from "Components/Main.jsx";
+import Home from "Components/Home.jsx";
+import IndexPage from "Components/IndexPage.jsx";
+import Contact from "Components/Contact.jsx";
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
 import "sweetalert/dist/sweetalert.css";
 
-require("./style/app.css");
-require("./style/about.css");
-require("./style/skill.css");
-require("./style/folio.css");
-require("./style/contact.css");
-require("./style/footer.css");
+import "Styles/app.css";
+import "Styles/about.css";
+import "Styles/skill.css";
+import "Styles/folio.css";
+import "Styles/contact.css";
+import "Styles/footer.css";
 
 
 ReactDOM.render(

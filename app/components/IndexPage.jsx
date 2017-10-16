@@ -1,6 +1,6 @@
 var React = require("react");
 var {Link} = require('react-router');
-import Video from "Video";
+import Video from "Components/Video.jsx";
 
 
 export default class IndexPage extends React.Component {

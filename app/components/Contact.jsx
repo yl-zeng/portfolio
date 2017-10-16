@@ -1,7 +1,7 @@
 var React = require("react");
-import Footer from "Footer";
+import Footer from "Components/Footer.jsx";
 
-var swal = require('sweetalert');
+import swal from 'sweetalert';
 
 
 export default class Contact extends React.Component{

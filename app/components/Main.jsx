@@ -1,8 +1,12 @@
 var React = require("React");
-var Nav = require("Nav");
+import Nav from "Components/Nav.jsx";
 
 
 export default class Main extends React.Component {
+
+  constructor(props) {
+    super(props);
+  }
 
   render() {
     return (

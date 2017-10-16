@@ -1,8 +1,8 @@
 var React = require("React");
-import Nav2 from "Nav2";
-import About from "About";
-import Skill from "Skill";
-import Folio from "Folio";
+import Nav2 from "Components/Nav2.jsx";
+import About from "Components/About.jsx";
+import Skill from "Components/Skill.jsx";
+import Folio from "Components/Folio.jsx";
 
 
 export default class Home extends React.Component {

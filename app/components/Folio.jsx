@@ -1,5 +1,5 @@
 var React = require("react");
-import Card from "Card";
+import Card from "Components/Card.jsx";
 
 
 export default class Folio extends React.Component {
@@ -186,6 +186,3 @@ export default class Folio extends React.Component {
     );
   }
 }
-
-
-module.exports = Folio;
