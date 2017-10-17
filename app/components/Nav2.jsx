@@ -10,7 +10,7 @@ export default class Nav2 extends React.Component {
   handleClick1(e) {
     e.preventDefault();
     $('body, html').animate({
-      scrollTop: $("#about").offset().top+50
+      scrollTop: $("#about").offset().top
     }, 750);
   }
 

@@ -22143,7 +22143,7 @@ var Nav2 = function (_React$Component) {
     value: function handleClick1(e) {
       e.preventDefault();
       $('body, html').animate({
-        scrollTop: $("#about").offset().top + 50
+        scrollTop: $("#about").offset().top
       }, 750);
     }
   }, {
@@ -34014,7 +34014,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, ".navbar-inverse {\r\n    background-color: rgba(0, 0, 0, 0.8) !important;\r\n}\r\n\r\n.navbar{\r\n  z-index: 10;\r\n}\r\n\r\n#top-nav {\r\n  position: absolute;\r\n  width: 90%;\r\n  left: 50%;\r\n  top: 3%;\r\n  transform: translateX(-50%);\r\n  padding:0;\r\n  margin:0;\r\n}\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n\r\n.navbar a {\r\n  color: #1daadf !important;\r\n  font-weight: 600 !important;\r\n}\r\n\r\n.navbar a:hover {\r\n  color: white !important;\r\n  background-color: #1daadf !important;\r\n  transition: all 0.5s ease;\r\n}\r\n\r\n.navbar-brand {\r\n  display: block;\r\n}\r\n\r\n#logo {\r\n  font-weight: 400;\r\n  font-size: 40px;\r\n  font-family: 'Vibur', cursive;\r\n}\r\n", ""]);
+exports.push([module.i, ".navbar-inverse {\r\n    background-color: rgba(0, 0, 0, 0.8) !important;\r\n}\r\n\r\n.navbar{\r\n  z-index: 10;\r\n}\r\n\r\n#top-nav {\r\n  position: absolute;\r\n  width: 90%;\r\n  left: 50%;\r\n  top: 3%;\r\n  transform: translateX(-50%);\r\n  padding:0;\r\n  margin:0;\r\n}\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n\r\n.navbar a {\r\n  color: #1daadf !important;\r\n  font-weight: 600 !important;\r\n}\r\n\r\n/*#logo {\r\n  background-color: #222 !important;\r\n}*/\r\n\r\n.navbar a:not(#logo):hover {\r\n  color: white !important;\r\n  background-color: #1daadf !important;\r\n  transition: all 0.3s ease;\r\n}\r\n\r\n#logo:hover {\r\n  color: white !important;\r\n  transition: all 0.2s ease;\r\n}\r\n\r\n.navbar-brand {\r\n  display: block;\r\n}\r\n\r\n#logo {\r\n  font-weight: 400;\r\n  font-size: 40px;\r\n  font-family: 'Vibur', cursive;\r\n}\r\n", ""]);
 
 // exports
 
