@@ -121,7 +121,7 @@ video{
 
 .index-right{
   position: absolute;
-  right:75%;
+  left:65%;
   top:80%;
   z-index:1;
   color:white;
@@ -129,7 +129,7 @@ video{
 
 .index-left{
   position: absolute;
-  left:75%;
+  right:65%;
   top:80%;
   z-index:1;
   color:white;

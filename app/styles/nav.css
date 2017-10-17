@@ -40,3 +40,13 @@
 .nav2-link-title{
   font-size: 20px;
 }
+
+.navbar a {
+  color: #1daadf !important;
+  font-weight: 600 !important;
+}
+
+.navbar a:hover {
+  color: white !important;
+  background-color: #1daadf !important;
+}

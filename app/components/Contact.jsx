@@ -65,7 +65,8 @@ export default class Contact extends React.Component{
                   </div>
 
                   <div className="form-group">
-                    <button className="btn btn-default center-block" type="submit">Submit</button>
+                    <button className="btn btn-default center-block"
+                      style={{"width":"160px", "height": "40px", "fontWeight":"400", "font-size":"20px"}} type="submit">Submit</button>
                   </div>
                 </form>
               </div>

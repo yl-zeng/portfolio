@@ -30,7 +30,7 @@ export default class Nav2 extends React.Component {
 
   render() {
     return (
-        <nav id="2-nav-bar" className="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <nav id="bottom-nav" className="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
             <div className="container-fluid">
 
               <div className="navbar-header">
