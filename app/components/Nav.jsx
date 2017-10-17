@@ -19,7 +19,7 @@ export default class Nav extends React.Component{
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <a className="navbar-brand" href="/">YUNLIN's PORTFOLIO</a>
+              <a className="navbar-brand" id="logo" href="/">yunlin.io</a>
             </div>
             <div className="collapse navbar-collapse">
               <ul className="nav navbar-nav navbar-right">

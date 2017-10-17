@@ -50,3 +50,13 @@
   color: white !important;
   background-color: #1daadf !important;
 }
+
+.navbar-brand {
+  display: block;
+}
+
+#logo {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: 'Vibur', cursive;
+}
