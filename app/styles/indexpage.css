@@ -34,21 +34,22 @@ p {
 }
 
 video{
-  display: none;
   z-index: -100;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: 1s opacity;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 100px) {
+@media screen and (max-width: 1080px) {
   video {
-      display: block;
-      position: relative;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-      transition: 1s opacity;
-      object-fit: cover;
-      overflow: hidden;
+      width: auto;
+      height: 700px;
   }
 }
 
@@ -74,6 +75,7 @@ video{
 .heading {
   padding-top: 160px;
   text-align: center;
+  margin: 0 auto;
   line-height: 50px;
   color: #fff;
   font-family: 'Open sans', sans-serif;
@@ -100,6 +102,20 @@ video{
   margin: 0 auto;
   text-align: center;
   z-index: 30;
+}
+
+@media screen and (max-width: 900px) {
+  .heading {
+    padding-top: 80px;
+    width: 80%;
+    font-size: 30px;
+  }
+
+  .heading2 {
+    padding-top: 20px;
+    width: 60%;
+    font-size: 15px;
+  }
 }
 
 .index-right {

@@ -21,8 +21,7 @@ export default class IndexPage extends React.Component {
                 <div className="hero-content">
                   <h1 className="heading">Talk is cheap, show me the code</h1>
                   <p className="heading2">Experienced in web development, enjoyed learning and working with cutting-edge
-                    technology. Mainly focus on Java, JavaScript and Nod
-                    e.js. A fast learner, a team player.</p>
+                    technology. Mainly focus on Java, JavaScript and Node.js. A fast learner, a team player.</p>
                   <div className="heading3">
                     <i className="index-left animated infinite slideInRight fa fa-angle-double-right fa-5x"></i>
                     <button className="btn-learn btn btn-primary">
