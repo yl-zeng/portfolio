@@ -50,12 +50,10 @@ video{
   overflow: hidden;
 }
 
-@media screen and (max-width: 1080px) {
-  video {
-      width: auto;
-      height: 700px;
-  }
+#poster {
+  display: none;
 }
+
 
 .video-wrapper {
   position: relative;
@@ -108,7 +106,51 @@ video{
   z-index: 30;
 }
 
-@media screen and (max-width: 900px) {
+.index-right {
+  margin-left: 80px;
+  z-index: 5;
+  color: white;
+}
+
+.index-left {
+  margin-right: 70px;
+  z-index:5;
+  color:white;
+}
+
+/* mobile phone*/
+@media screen and (max-device-width: 767px) {
+
+  video {
+    display: none;
+  }
+
+  #poster {
+    display: block;
+    width: auto;
+    height: 880px;
+    filter: brightness(70%);
+  }
+
+  .heading {
+    padding-top: 250px;
+  }
+
+  .heading2 {
+    padding-top:  130px;
+  }
+
+  .heading3-top{
+    padding-top: 130px;
+  }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 800px) {
+  video {
+    width: auto;
+    height: 600px;
+  }
+
   .heading {
     padding-top: 120px;
     width: 80%;
@@ -136,17 +178,6 @@ video{
   }
 }
 
-.index-right {
-  margin-left: 40px;
-  z-index: 5;
-  color: white;
-}
-
-.index-left {
-  margin-right: 40px;
-  z-index:5;
-  color:white;
-}
 
 .btn-learn {
   display: inline-block;

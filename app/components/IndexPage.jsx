@@ -15,7 +15,8 @@ export default class IndexPage extends React.Component {
         <div id="section-main" className="container-fluid">
             <div className="row video-wrapper" style={{"display":"relative"}}>
               <div className="cell">
-                <Video autoplay muted loop/>
+                <Video poster="image/b.jpg" autoplay muted loop/>
+                <img src="image/b.jpg" id="poster"/>
               </div>
               <div className="hero">
                 <div className="hero-content">
