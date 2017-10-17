@@ -13,7 +13,7 @@ export default class Nav extends React.Component{
         <nav id="top-nav" className="navbar navbar-inverse">
           <div className="container-fluid">
             <div className="navbar-header">
-              <button className="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
+              <button className="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".top-navbar-collapse" role="button">
                 <span className="sr-only">Toggle Navigation</span>
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
@@ -21,7 +21,7 @@ export default class Nav extends React.Component{
               </button>
               <a className="navbar-brand" id="logo" href="/">yunlin.io</a>
             </div>
-            <div className="collapse navbar-collapse">
+            <div className="collapse navbar-collapse top-navbar-collapse">
               <ul className="nav navbar-nav navbar-right">
                 <li><Link to="/home" className="nav2-link-title" activeClassName="active" activeStyle={{fontWeight:"bold"}}>HOME</Link></li>
                 <li><Link to="/contact" className="nav2-link-title" activeClassName="active" activeStyle={{fontWeight:"bold"}}>CONTACT</Link></li>

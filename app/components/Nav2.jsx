@@ -32,26 +32,11 @@ export default class Nav2 extends React.Component {
     return (
         <nav id="bottom-nav" className="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
             <div className="container-fluid">
-
-              <div className="navbar-header">
-                <button className="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
-                  <span className="sr-only">Toggle Navigation</span>
-
-                  <span className="icon-bar"></span>
-
-                  <span className="icon-bar"></span>
-
-                  <span className="icon-bar"></span>
-                </button>
-              </div>
-
-              <div className="collapse navbar-collapse">
-                <ul className="nav navbar-nav navbar-center js-nav">
-                  <li><a href="#about" className="nav2-link-title" onClick={this.handleClick1}>About</a></li>
-                  <li><a href="#skill" className="nav2-link-title" onClick={this.handleClick2}>Skill</a></li>
-                  <li><a href="#folio" className="nav2-link-title" onClick={this.handleClick3}>Folio</a></li>
-                </ul>
-              </div>
+              <ul className="nav navbar-nav navbar-center js-nav">
+                <li><a href="#about" className="nav2-link-title" onClick={this.handleClick1}>About</a></li>
+                <li><a href="#skill" className="nav2-link-title" onClick={this.handleClick2}>Skill</a></li>
+                <li><a href="#folio" className="nav2-link-title" onClick={this.handleClick3}>Folio</a></li>
+              </ul>
             </div>
           </nav>
 

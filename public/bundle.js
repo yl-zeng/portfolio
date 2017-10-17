@@ -16759,7 +16759,7 @@ var Nav = function (_React$Component) {
             { className: "navbar-header" },
             React.createElement(
               "button",
-              { className: "navbar-toggle collapsed", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse", role: "button" },
+              { className: "navbar-toggle collapsed", type: "button", "data-toggle": "collapse", "data-target": ".top-navbar-collapse", role: "button" },
               React.createElement(
                 "span",
                 { className: "sr-only" },
@@ -16777,7 +16777,7 @@ var Nav = function (_React$Component) {
           ),
           React.createElement(
             "div",
-            { className: "collapse navbar-collapse" },
+            { className: "collapse navbar-collapse top-navbar-collapse" },
             React.createElement(
               "ul",
               { className: "nav navbar-nav navbar-right" },
@@ -22172,53 +22172,33 @@ var Nav2 = function (_React$Component) {
           "div",
           { className: "container-fluid" },
           React.createElement(
-            "div",
-            { className: "navbar-header" },
+            "ul",
+            { className: "nav navbar-nav navbar-center js-nav" },
             React.createElement(
-              "button",
-              { className: "navbar-toggle collapsed", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse", role: "button" },
+              "li",
+              null,
               React.createElement(
-                "span",
-                { className: "sr-only" },
-                "Toggle Navigation"
-              ),
-              React.createElement("span", { className: "icon-bar" }),
-              React.createElement("span", { className: "icon-bar" }),
-              React.createElement("span", { className: "icon-bar" })
-            )
-          ),
-          React.createElement(
-            "div",
-            { className: "collapse navbar-collapse" },
+                "a",
+                { href: "#about", className: "nav2-link-title", onClick: this.handleClick1 },
+                "About"
+              )
+            ),
             React.createElement(
-              "ul",
-              { className: "nav navbar-nav navbar-center js-nav" },
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#about", className: "nav2-link-title", onClick: this.handleClick1 },
-                  "About"
-                )
-              ),
+                "a",
+                { href: "#skill", className: "nav2-link-title", onClick: this.handleClick2 },
+                "Skill"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#skill", className: "nav2-link-title", onClick: this.handleClick2 },
-                  "Skill"
-                )
-              ),
-              React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#folio", className: "nav2-link-title", onClick: this.handleClick3 },
-                  "Folio"
-                )
+                "a",
+                { href: "#folio", className: "nav2-link-title", onClick: this.handleClick3 },
+                "Folio"
               )
             )
           )
