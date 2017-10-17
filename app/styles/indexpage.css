@@ -118,34 +118,9 @@ video{
   color:white;
 }
 
-/* mobile phone*/
-@media screen and (max-device-width: 767px) {
 
-  video {
-    display: none;
-  }
-
-  #poster {
-    display: block;
-    width: auto;
-    height: 880px;
-    filter: brightness(70%);
-  }
-
-  .heading {
-    padding-top: 250px;
-  }
-
-  .heading2 {
-    padding-top:  130px;
-  }
-
-  .heading3-top{
-    padding-top: 130px;
-  }
-}
-
-@media screen and (max-width: 1080px) and (min-width: 800px) {
+/* responsive */
+@media screen and (max-width: 1080px){
   video {
     width: auto;
     height: 600px;
