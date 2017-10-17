@@ -16449,24 +16449,40 @@ var Footer = function (_React$Component) {
             "ul",
             { className: "socials" },
             React.createElement(
-              "li",
-              null,
-              React.createElement("i", { className: "fa fa-twitter fa-3x", "aria-hidden": "true" })
+              "a",
+              { href: "#", target: "_blank" },
+              React.createElement(
+                "li",
+                null,
+                React.createElement("i", { className: "fa fa-twitter fa-3x", "aria-hidden": "true" })
+              )
             ),
             React.createElement(
-              "li",
-              null,
-              React.createElement("i", { className: "fa fa-linkedin fa-3x", "aria-hidden": "true" })
+              "a",
+              { href: "https://www.linkedin.com/in/yunlin-zeng-99a862115/", target: "_blank" },
+              React.createElement(
+                "li",
+                null,
+                React.createElement("i", { className: "fa fa-linkedin fa-3x", "aria-hidden": "true" })
+              )
             ),
             React.createElement(
-              "li",
-              null,
-              React.createElement("i", { className: "fa fa-github fa-3x", "aria-hidden": "true" })
+              "a",
+              { href: "https://github.com/yl-zeng", target: "_blank" },
+              React.createElement(
+                "li",
+                null,
+                React.createElement("i", { className: "fa fa-github fa-3x", "aria-hidden": "true" })
+              )
             ),
             React.createElement(
-              "li",
-              null,
-              React.createElement("i", { className: "fa fa-google fa-3x", "aria-hidden": "true" })
+              "a",
+              { href: "#", target: "_blank" },
+              React.createElement(
+                "li",
+                null,
+                React.createElement("i", { className: "fa fa-google fa-3x", "aria-hidden": "true" })
+              )
             )
           )
         ),
@@ -33516,11 +33532,11 @@ var IndexPage = function (_React$Component) {
                   { className: "heading3" },
                   React.createElement("i", { className: "index-left animated infinite slideInRight fa fa-angle-double-right fa-5x" }),
                   React.createElement(
-                    "button",
-                    { className: "btn-learn btn btn-primary" },
+                    Link,
+                    { to: "/home", style: { color: "white" }, className: "index-mid" },
                     React.createElement(
-                      Link,
-                      { to: "/home", style: { color: "white" }, className: "index-mid" },
+                      "button",
+                      { className: "btn-learn btn btn-primary" },
                       "LEARN MORE"
                     )
                   ),
@@ -33972,7 +33988,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, "\r\nhtml {\r\n  padding: 0;\r\n  margin:0;\r\n  height: 100%;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  height:100%;\r\n  width:100%;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\nul {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo{\r\n  z-index: -100;\r\n  display: block;\r\n  position: relative;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: auto;\r\n  transition: 1s opacity;\r\n  object-fit: cover;\r\n  overflow: hidden;\r\n}\r\n\r\n@media screen and (max-width: 1080px) {\r\n  video {\r\n      width: auto;\r\n      height: 700px;\r\n  }\r\n}\r\n\r\n.video-wrapper {\r\n  position: relative;\r\n  background-color: rgba(0, 0, 0, 0.5);\r\n  overflow: hidden;\r\n}\n\n.hero {\n  position: absolute;\n  left: 0;\n\ttop: 0;\n\twidth: 100%;\n\theight: 100%;\n}\n\n\r\n#section-main {\r\n  position: relative;\r\n}\r\n\r\n.heading {\r\n  padding-top: 170px;\r\n  text-align: center;\r\n  margin: 0 auto;\r\n  line-height: 70px;\r\n  color: #fff;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 70px;\r\n  z-index: 5;\r\n}\r\n\r\n.heading2 {\r\n  padding-top: 60px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  line-height: 30px;\r\n  color: #fff;\r\n  width: 50%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n  z-index: 5;\r\n}\r\n\r\n.heading3 {\r\n  position: relative;\r\n  padding-top: 80px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  z-index: 30;\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n  .heading {\r\n    padding-top: 120px;\r\n    width: 80%;\r\n    font-size: 30px;\r\n    line-height: 50px;\r\n  }\r\n\r\n  .heading2 {\r\n    padding-top: 40px;\r\n    width: 60%;\r\n    font-size: 15px;\r\n  }\r\n\r\n  .index-right {\r\n    font-size: 40px;\r\n  }\r\n\r\n  .index-left {\r\n    font-size: 40px;\r\n  }\r\n\r\n  .btn-learn {\r\n    padding: 8px 20px !important;\r\n    border-radius: 7px !important;\r\n  }\r\n}\r\n\r\n.index-right {\r\n  margin-left: 40px;\r\n  z-index: 5;\r\n  color: white;\r\n}\r\n\r\n.index-left {\r\n  margin-right: 40px;\r\n  z-index:5;\r\n  color:white;\r\n}\r\n\r\n.btn-learn{\r\n  display: inline-block;\r\n  padding: 17px 50px;\r\n  border-radius: 10px;\r\n  z-index:5;\r\n  background-color: #1daadf;\r\n  color:white;\r\n  transform: translateY(-30%);\r\n}\r\n", ""]);
+exports.push([module.i, "\r\nhtml {\r\n  padding: 0;\r\n  margin:0;\r\n  height: 100%;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  height:100%;\r\n  width:100%;\r\n}\r\n\r\na:link, a:visited {\r\n  text-decoration: none;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\nul {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo{\r\n  z-index: -100;\r\n  display: block;\r\n  position: relative;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: auto;\r\n  transition: 1s opacity;\r\n  object-fit: cover;\r\n  overflow: hidden;\r\n}\r\n\r\n@media screen and (max-width: 1080px) {\r\n  video {\r\n      width: auto;\r\n      height: 700px;\r\n  }\r\n}\r\n\r\n.video-wrapper {\r\n  position: relative;\r\n  background-color: rgba(0, 0, 0, 0.5);\r\n  overflow: hidden;\r\n}\n\n.hero {\n  position: absolute;\n  left: 0;\n\ttop: 0;\n\twidth: 100%;\n\theight: 100%;\n}\n\n\r\n#section-main {\r\n  position: relative;\r\n}\r\n\r\n.heading {\r\n  padding-top: 170px;\r\n  text-align: center;\r\n  margin: 0 auto;\r\n  line-height: 70px;\r\n  color: #fff;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 70px;\r\n  z-index: 5;\r\n}\r\n\r\n.heading2 {\r\n  padding-top: 60px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  line-height: 30px;\r\n  color: #fff;\r\n  width: 50%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n  z-index: 5;\r\n}\r\n\r\n.heading3 {\r\n  position: relative;\r\n  padding-top: 62px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  z-index: 30;\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n  .heading {\r\n    padding-top: 120px;\r\n    width: 80%;\r\n    font-size: 30px;\r\n    line-height: 50px;\r\n  }\r\n\r\n  .heading2 {\r\n    padding-top: 40px;\r\n    width: 60%;\r\n    font-size: 15px;\r\n  }\r\n\r\n  .index-right {\r\n    font-size: 40px;\r\n  }\r\n\r\n  .index-left {\r\n    font-size: 40px;\r\n  }\r\n\r\n  .btn-learn {\r\n    padding: 8px 20px !important;\r\n    border-radius: 7px !important;\r\n  }\r\n}\r\n\r\n.index-right {\r\n  margin-left: 40px;\r\n  z-index: 5;\r\n  color: white;\r\n}\r\n\r\n.index-left {\r\n  margin-right: 40px;\r\n  z-index:5;\r\n  color:white;\r\n}\r\n\r\n.btn-learn {\r\n  display: inline-block;\r\n  padding: 17px 50px;\r\n  border-radius: 10px;\r\n  z-index:5;\r\n  background-color: #1daadf;\r\n  color:white;\r\n  transform: translateY(-30%);\r\n}\r\n\r\n.btn-learn:hover {\r\n  transition: all 0.3s ease;\r\n}\r\n", ""]);
 
 // exports
 
@@ -34017,7 +34033,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, ".navbar-inverse {\r\n    background-color: rgba(0, 0, 0, 0.8) !important;\r\n}\r\n\r\n.navbar{\r\n  z-index: 10;\r\n}\r\n\r\n#top-nav {\r\n  position: absolute;\r\n  width: 90%;\r\n  left: 50%;\r\n  top: 3%;\r\n  transform: translateX(-50%);\r\n  padding:0;\r\n  margin:0;\r\n}\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n\r\n.navbar a {\r\n  color: #1daadf !important;\r\n  font-weight: 600 !important;\r\n}\r\n\r\n.navbar a:hover {\r\n  color: white !important;\r\n  background-color: #1daadf !important;\r\n}\r\n\r\n.navbar-brand {\r\n  display: block;\r\n}\r\n\r\n#logo {\r\n  font-weight: 400;\r\n  font-size: 40px;\r\n  font-family: 'Vibur', cursive;\r\n}\r\n", ""]);
+exports.push([module.i, ".navbar-inverse {\r\n    background-color: rgba(0, 0, 0, 0.8) !important;\r\n}\r\n\r\n.navbar{\r\n  z-index: 10;\r\n}\r\n\r\n#top-nav {\r\n  position: absolute;\r\n  width: 90%;\r\n  left: 50%;\r\n  top: 3%;\r\n  transform: translateX(-50%);\r\n  padding:0;\r\n  margin:0;\r\n}\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n\r\n.navbar a {\r\n  color: #1daadf !important;\r\n  font-weight: 600 !important;\r\n}\r\n\r\n.navbar a:hover {\r\n  color: white !important;\r\n  background-color: #1daadf !important;\r\n  transition: all 0.5s ease;\r\n}\r\n\r\n.navbar-brand {\r\n  display: block;\r\n}\r\n\r\n#logo {\r\n  font-weight: 400;\r\n  font-size: 40px;\r\n  font-family: 'Vibur', cursive;\r\n}\r\n", ""]);
 
 // exports
 
@@ -34242,7 +34258,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, "\r\n#footer {\r\n  position: relative !important;\r\n  top: 0;\r\n  width: 100%;\r\n  background-color: white;\r\n  opacity: 1;\r\n  list-style-type: none;\r\n  a {\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n.footer-row1 {\r\n  position: relative;\r\n  height: 120px;\r\n}\r\n\r\n.socials {\r\n  position: relative !important;\r\n  display: block;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  text-align: center;\r\n}\r\n\r\n.footer-row1 ul li {\r\n  border: 2px hidden white;\r\n  display: inline-block;\r\n  margin:0px;\r\n  width: 87px;\r\n  padding: 20px 20px;\r\n  text-align: center;\r\n  margin: 0px 20px;\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n  .footer-row1 ul li {\r\n    font-size: 10px;\r\n    padding: 5px 5px;\r\n    width: 45px;\r\n    margin: 0px 15px;\r\n  }\r\n}\r\n\r\n\r\n.footer-row1 ul li:hover{\r\n  border: 2px solid #1daadf;\r\n  border-radius: 50%;\r\n}\r\n\r\n.footer-row2 {\r\n  position: relative !important;\r\n  float: none;\r\n  display: block;\r\n  background-color: #eeeeee;\r\n  height: 200px;\r\n}\r\n\r\n.footer-category {\r\n  display: block;\r\n  text-align: center;\r\n  position: relative;\r\n  font-weight: 400;\r\n  font-size: 18px;\r\n  top: 30px;\r\n}\r\n\r\n.footer-category li {\r\n  display: inline-block;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy {\r\n  position: relative !important;\r\n  text-align: center;\r\n  background-color: #eeeeee;\r\n  font-weight: 400;\r\n  top: 50px;\r\n  font-size: 18px;\r\n  color: #444;\r\n}\r\n\r\n.privacy li {\r\n  display: inline-block;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy li a{\r\n  color: #aaaacc !important;\r\n}\r\n\r\n.copyright {\r\n  font-weight: 400;\r\n  position: relative !important;\r\n  text-align: center;\r\n  color: #aaaaaa;\r\n  top: 70px;\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  .footer-row2 div p {\r\n    font-size: 12px !important;\r\n  }\r\n}\r\n", ""]);
+exports.push([module.i, "\r\n#footer {\r\n  position: relative !important;\r\n  top: 0;\r\n  width: 100%;\r\n  background-color: white;\r\n  opacity: 1;\r\n  list-style-type: none;\r\n}\r\n\r\n.footer-row1 {\r\n  position: relative;\r\n  height: 120px;\r\n}\r\n\r\n.socials {\r\n  position: relative !important;\r\n  display: block;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  text-align: center;\r\n}\r\n\r\n.footer-row1 ul li {\r\n  border: 2px solid transparent;\r\n  cursor: pointer;\r\n  display: inline-block;\r\n  margin:0px;\r\n  width: 87px;\r\n  padding: 20px 20px;\r\n  border-radius: 50%;\r\n  text-align: center;\r\n  margin: 0px 20px;\r\n}\r\n\r\n.footer-row1 ul a {\r\n  color: #666666;\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n  .footer-row1 ul li {\r\n    font-size: 10px;\r\n    padding: 5px 5px;\r\n    width: 45px;\r\n    margin: 0px 15px;\r\n  }\r\n}\r\n\r\n\r\n.footer-row1 ul li:hover{\r\n  border: 2px solid #1daadf;\r\n  transition: all .5s ease;\r\n}\r\n\r\n.footer-row2 {\r\n  position: relative !important;\r\n  float: none;\r\n  display: block;\r\n  background-color: #eeeeee;\r\n  height: 200px;\r\n}\r\n\r\n.footer-category {\r\n  display: block;\r\n  text-align: center;\r\n  position: relative;\r\n  font-weight: 400;\r\n  font-size: 18px;\r\n  top: 30px;\r\n}\r\n\r\n.footer-category li {\r\n  display: inline-block;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy {\r\n  position: relative !important;\r\n  text-align: center;\r\n  background-color: #eeeeee;\r\n  font-weight: 400;\r\n  top: 50px;\r\n  font-size: 18px;\r\n  color: #444;\r\n}\r\n\r\n.privacy li {\r\n  display: inline-block;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy li a{\r\n  color: #aaaacc !important;\r\n}\r\n\r\n.copyright {\r\n  font-weight: 400;\r\n  position: relative !important;\r\n  text-align: center;\r\n  color: #aaaaaa;\r\n  top: 70px;\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  .footer-row2 div p {\r\n    font-size: 12px !important;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 

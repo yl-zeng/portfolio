@@ -18,10 +18,18 @@ export default class Footer extends React.Component {
         <div id='footer'>
             <div className="row footer-row1">
               <ul className="socials">
-                <li><i className="fa fa-twitter fa-3x" aria-hidden="true"></i></li>
-                <li><i className="fa fa-linkedin fa-3x" aria-hidden="true"></i></li>
-                <li><i className="fa fa-github fa-3x" aria-hidden="true"></i></li>
-                <li><i className="fa fa-google fa-3x" aria-hidden="true"></i></li>
+                <a href="#" target="_blank"><li>
+                  <i className="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </li></a>
+                <a href="https://www.linkedin.com/in/yunlin-zeng-99a862115/" target="_blank"><li>
+                  <i className="fa fa-linkedin fa-3x" aria-hidden="true"></i></li>
+                </a>
+                <a href="https://github.com/yl-zeng" target="_blank"><li>
+                  <i className="fa fa-github fa-3x" aria-hidden="true"></i>
+                </li></a>
+                <a href="#" target="_blank"><li>
+                  <i className="fa fa-google fa-3x" aria-hidden="true"></i>
+                </li></a>
               </ul>
             </div>
             <div className="footer-row2 row">

@@ -24,11 +24,11 @@ export default class IndexPage extends React.Component {
                     technology. Mainly focus on Java, JavaScript and Node.js. A fast learner, a team player.</p>
                   <div className="heading3">
                     <i className="index-left animated infinite slideInRight fa fa-angle-double-right fa-5x"></i>
-                    <button className="btn-learn btn btn-primary">
                       <Link to="/home" style={{color:"white"}} className="index-mid">
-                        LEARN MORE
+                        <button className="btn-learn btn btn-primary">
+                          LEARN MORE
+                        </button>
                       </Link>
-                    </button>
                     <i className="index-right animated infinite slideInLeft fa fa-angle-double-left fa-5x"></i>
                   </div>
                 </div>

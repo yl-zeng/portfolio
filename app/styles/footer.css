@@ -6,9 +6,6 @@
   background-color: white;
   opacity: 1;
   list-style-type: none;
-  a {
-    text-decoration: none;
-  }
 }
 
 .footer-row1 {
@@ -25,13 +22,19 @@
 }
 
 .footer-row1 ul li {
-  border: 2px hidden white;
+  border: 2px solid transparent;
+  cursor: pointer;
   display: inline-block;
   margin:0px;
   width: 87px;
   padding: 20px 20px;
+  border-radius: 50%;
   text-align: center;
   margin: 0px 20px;
+}
+
+.footer-row1 ul a {
+  color: #666666;
 }
 
 @media screen and (max-width: 900px) {
@@ -46,7 +49,7 @@
 
 .footer-row1 ul li:hover{
   border: 2px solid #1daadf;
-  border-radius: 50%;
+  transition: all .5s ease;
 }
 
 .footer-row2 {
