@@ -50,8 +50,9 @@ video{
   overflow: hidden;
 }
 
-#poster {
+#video-placeholder {
   display: none;
+  filter: brightness(50%);
 }
 
 
@@ -150,6 +151,17 @@ video{
   .btn-learn {
     padding: 8px 20px !important;
     border-radius: 7px !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  video {
+    display: none;
+  }
+  #video-placeholder {
+    display: block;
+    width: auto;
+    height: 600px;
   }
 }
 
