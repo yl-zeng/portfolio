@@ -2,25 +2,19 @@ var React = require("react");
 
 
 export default class Card extends React.Component{
-  getDefaultProps() {
-    return {
-      projectData: {
 
-      }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      flip: ""
+    };
   }
 
   componentDidMount() {
     $('.js-toggle').tooltip();
   }
 
-  getInitialState() {
-    return{
-      flip:"",
-    }
-  }
-
-  handleClickFlip(e) {
+  handleClickFlip = (e) => {
     e.preventDefault();
     //alert("this LInk is clicked");
     if(this.state.flip === ""){
@@ -34,12 +28,12 @@ export default class Card extends React.Component{
     }
   }
 
-  handleClickLink0(e) {
+  handleClickLink0 = (e) => {
     e.preventDefault();
     window.open(this.props.projectData.site[0][2]);
   }
 
-  handleClickLink1(e) {
+  handleClickLink1 = (e) => {
     e.preventDefault();
     window.open(this.props.projectData.site[1][2]);
   }

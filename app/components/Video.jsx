@@ -4,6 +4,10 @@ var {Link} = require("react-router")
 
 export default class Video extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div className="page">

@@ -2,38 +2,49 @@ var React = require("React");
 
 export default class Footer extends React.Component {
 
-  componentDidMount() {
-    $('#togglemail').tooltip({title: "Email", placement: "top"});
-    $('#togglelinkedin').tooltip({title: "Linkedin", placement: "top"});
-    $('#togglegithub').tooltip({title: "Github", placement: "top"});
-    $('#togglecodepen').tooltip({title: "Codepen", placement: "top"});
+  constructor(props) {
+    super(props);
   }
+
+  // componentDidMount() {
+  //   $('#togglemail').tooltip({title: "Email", placement: "top"});
+  //   $('#togglelinkedin').tooltip({title: "Linkedin", placement: "top"});
+  //   $('#togglegithub').tooltip({title: "Github", placement: "top"});
+  //   $('#togglecodepen').tooltip({title: "Codepen", placement: "top"});
+  // }
 
   render() {
     return (
-        <footer id='footer' className="sec-footer">
-            <ul className="text-center">
-                <li className='highlight'>
-                    <a className="fa-stack fa-1x" id="togglemail" href="mailto:ylinzeng69@gmail.com">
-                        <i className="fa fa-square fa-stack-2x"></i>
-                        <i className="fa fa-envelope fa-stack-1x blacktext"></i>
-                    </a>
-                </li>
-                <li className='highlight'>
-                    <a className="fa-stack fa-1x" id="togglelinkedin" href="https://www.linkedin.com/in/yunlin-zeng-99a862115/" target="_blank">
-                      <i className="fa fa-linkedin-square fa-stack-2x"></i>
-                    </a>
-                </li>
-
-                <li className='highlight'>
-                    <a className="fa-stack fa-1x" id="togglegithub" href="https://github.com/yl-zeng" target="_blank">
-                      <i className="fa fa-github-square fa-stack-2x"></i>
-                    </a>
-                </li>
-
-                <li style={{display:"block",padding:"0px"}}><p>COPYRIGHT © 2017 YUNLIN ZENG</p></li>
-            </ul>
-        </footer>
+        <div id='footer'>
+            <div className="row footer-row1">
+              <ul>
+                <li><i className="fa fa-twitter fa-3x" aria-hidden="true"></i></li>
+                <li><i className="fa fa-linkedin fa-3x" aria-hidden="true"></i></li>
+                <li><i className="fa fa-github fa-3x" aria-hidden="true"></i></li>
+                <li><i className="fa fa-google fa-3x" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+            <div className="row footer-row2">
+              <div className="row">
+                <ul className="footer-category">
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">CAREER</a></li>
+                  <li><a href="#">UPCOMING</a></li>
+                </ul>
+              </div>
+              <div className="row">
+                <ul className="privacy">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Copyright</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Licenses</a></li>
+                </ul>
+              </div>
+              <div className="copyright">
+                <p>Copyright © 2017–2018 Yunlin. All rights reserved.</p>
+              </div>
+            </div>
+        </div>
 
     );
   }

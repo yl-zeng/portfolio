@@ -4,6 +4,10 @@ import Card from "Components/Card.jsx";
 
 export default class Folio extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     var data = [{
       title: 'Portfolio',

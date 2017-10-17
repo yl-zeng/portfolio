@@ -35,6 +35,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 app.post('/send',(req,res)=>{
+  console.log("receieve email");
   var data = req.body;
   var mailOptions = {
       from: `"Yunlin.io 👻" <${data.email}>`, // sender address

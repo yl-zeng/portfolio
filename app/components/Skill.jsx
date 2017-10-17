@@ -3,6 +3,10 @@ var React = require("React");
 
 export default class Skill extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>

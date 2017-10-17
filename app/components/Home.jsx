@@ -7,6 +7,10 @@ import Folio from "Components/Folio.jsx";
 
 export default class Home extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
+
   componentDidMount() {
     $(window).scrollTop(0);
   }

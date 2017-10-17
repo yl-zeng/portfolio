@@ -5,8 +5,11 @@ var swal = require('sweetalert');
 
 export default class About extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
 
-  handleClick(e) {
+  handleClick = (e) => {
     e.preventDefault();
     swal({
       title: "",

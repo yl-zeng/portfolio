@@ -1,15 +1,19 @@
 var React = require("react");
 import Footer from "Components/Footer.jsx";
-
 import swal from 'sweetalert';
 
 
 export default class Contact extends React.Component{
+
+  constructor(props) {
+    super(props);
+  }
+
   componentDidMount() {
     $(window).scrollTop(0);
   }
 
-  handleSubmit(e) {
+  handleSubmit = (e) => {
     e.preventDefault();
     swal({
       title: "",
@@ -26,7 +30,7 @@ export default class Contact extends React.Component{
     this.refs.text.value = "";
   }
 
-  sendFormData(data) {
+  sendFormData = (data) => {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open('POST', 'send', true);
     xmlhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');

@@ -3,6 +3,10 @@ var ReactDOM = require("react-dom");
 
 export default class Nav2 extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
+
   handleClick1(e) {
     e.preventDefault();
     $('body, html').animate({

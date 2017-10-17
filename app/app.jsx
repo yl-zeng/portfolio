@@ -10,7 +10,8 @@ import Contact from "Components/Contact.jsx";
 import 'animate.css/animate.min.css';
 import "sweetalert/dist/sweetalert.css";
 
-import "Styles/app.css";
+import "Styles/indexpage.css";
+import "Styles/nav.css";
 import "Styles/about.css";
 import "Styles/skill.css";
 import "Styles/folio.css";
