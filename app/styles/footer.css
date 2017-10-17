@@ -1,7 +1,6 @@
 
 #footer {
-  position: relative;
-  float: none;
+  position: relative !important;
   top: 0;
   width: 100%;
   background-color: white;
@@ -18,7 +17,7 @@
 }
 
 .socials {
-  position: relative;
+  position: relative !important;
   display: block;
   top: 50%;
   transform: translateY(-50%);
@@ -51,44 +50,40 @@
 }
 
 .footer-row2 {
-  position: relative;
+  position: relative !important;
+  float: none;
+  display: block;
   background-color: #eeeeee;
   height: 200px;
 }
 
 .footer-category {
-  position: absolute;
+  display: block;
+  text-align: center;
+  position: relative;
   font-weight: 400;
   font-size: 18px;
-  left: 50%;
-  top: 30%;
-  transform: translateX(-50%) translateY(-50%);
+  top: 30px;
 }
 
 .footer-category li {
-  display: inline;
+  display: inline-block;
   margin:0px;
   padding: 0px 20px 0px 20px;
 }
 
 .privacy {
-  position: relative;
+  position: relative !important;
+  text-align: center;
   background-color: #eeeeee;
-  height: 40px;
-}
-
-.privacy {
-  position: absolute;
   font-weight: 400;
+  top: 50px;
   font-size: 18px;
-  left: 50%;
-  top: 60%;
   color: #444;
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .privacy li {
-  display: inline;
+  display: inline-block;
   margin:0px;
   padding: 0px 20px 0px 20px;
 }
@@ -99,9 +94,14 @@
 
 .copyright {
   font-weight: 400;
-  position: absolute;
-  top:70%;
-  left: 50%;
+  position: relative !important;
+  text-align: center;
   color: #aaaaaa;
-  transform: translateX(-50%);
+  top: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-row2 div p {
+    font-size: 12px !important;
+  }
 }

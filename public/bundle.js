@@ -16472,83 +16472,75 @@ var Footer = function (_React$Component) {
         ),
         React.createElement(
           "div",
-          { className: "row footer-row2" },
+          { className: "footer-row2 row" },
           React.createElement(
-            "div",
-            { className: "row" },
+            "ul",
+            { className: "footer-category" },
             React.createElement(
-              "ul",
-              { className: "footer-category" },
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#" },
-                  "ABOUT"
-                )
-              ),
+                "a",
+                { href: "#" },
+                "ABOUT"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#" },
-                  "CAREER"
-                )
-              ),
+                "a",
+                { href: "#" },
+                "CAREER"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#" },
-                  "UPCOMING"
-                )
+                "a",
+                { href: "#" },
+                "UPCOMING"
               )
             )
           ),
           React.createElement(
-            "div",
-            { className: "row" },
+            "ul",
+            { className: "privacy" },
             React.createElement(
-              "ul",
-              { className: "privacy" },
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#" },
-                  "Privacy Policy"
-                )
-              ),
+                "a",
+                { href: "#" },
+                "Privacy Policy"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#" },
-                  "Copyright"
-                )
-              ),
+                "a",
+                { href: "#" },
+                "Copyright"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#" },
-                  "Terms of Service"
-                )
-              ),
+                "a",
+                { href: "#" },
+                "Terms of Service"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
               React.createElement(
-                "li",
-                null,
-                React.createElement(
-                  "a",
-                  { href: "#" },
-                  "Licenses"
-                )
+                "a",
+                { href: "#" },
+                "Licenses"
               )
             )
           ),
@@ -34250,7 +34242,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, "\r\n#footer {\r\n  position: relative;\r\n  float: none;\r\n  top: 0;\r\n  width: 100%;\r\n  background-color: white;\r\n  opacity: 1;\r\n  list-style-type: none;\r\n  a {\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n.footer-row1 {\r\n  position: relative;\r\n  height: 120px;\r\n}\r\n\r\n.socials {\r\n  position: relative;\r\n  display: block;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  text-align: center;\r\n}\r\n\r\n.footer-row1 ul li {\r\n  border: 2px hidden white;\r\n  display: inline-block;\r\n  margin:0px;\r\n  width: 87px;\r\n  padding: 20px 20px;\r\n  text-align: center;\r\n  margin: 0px 20px;\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n  .footer-row1 ul li {\r\n    font-size: 10px;\r\n    padding: 5px 5px;\r\n    width: 45px;\r\n    margin: 0px 15px;\r\n  }\r\n}\r\n\r\n\r\n.footer-row1 ul li:hover{\r\n  border: 2px solid #1daadf;\r\n  border-radius: 50%;\r\n}\r\n\r\n.footer-row2 {\r\n  position: relative;\r\n  background-color: #eeeeee;\r\n  height: 200px;\r\n}\r\n\r\n.footer-category {\r\n  position: absolute;\r\n  font-weight: 400;\r\n  font-size: 18px;\r\n  left: 50%;\r\n  top: 30%;\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.footer-category li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy {\r\n  position: relative;\r\n  background-color: #eeeeee;\r\n  height: 40px;\r\n}\r\n\r\n.privacy {\r\n  position: absolute;\r\n  font-weight: 400;\r\n  font-size: 18px;\r\n  left: 50%;\r\n  top: 60%;\r\n  color: #444;\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.privacy li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy li a{\r\n  color: #aaaacc !important;\r\n}\r\n\r\n.copyright {\r\n  font-weight: 400;\r\n  position: absolute;\r\n  top:70%;\r\n  left: 50%;\r\n  color: #aaaaaa;\r\n  transform: translateX(-50%);\r\n}\r\n", ""]);
+exports.push([module.i, "\r\n#footer {\r\n  position: relative !important;\r\n  top: 0;\r\n  width: 100%;\r\n  background-color: white;\r\n  opacity: 1;\r\n  list-style-type: none;\r\n  a {\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n.footer-row1 {\r\n  position: relative;\r\n  height: 120px;\r\n}\r\n\r\n.socials {\r\n  position: relative !important;\r\n  display: block;\r\n  top: 50%;\r\n  transform: translateY(-50%);\r\n  text-align: center;\r\n}\r\n\r\n.footer-row1 ul li {\r\n  border: 2px hidden white;\r\n  display: inline-block;\r\n  margin:0px;\r\n  width: 87px;\r\n  padding: 20px 20px;\r\n  text-align: center;\r\n  margin: 0px 20px;\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n  .footer-row1 ul li {\r\n    font-size: 10px;\r\n    padding: 5px 5px;\r\n    width: 45px;\r\n    margin: 0px 15px;\r\n  }\r\n}\r\n\r\n\r\n.footer-row1 ul li:hover{\r\n  border: 2px solid #1daadf;\r\n  border-radius: 50%;\r\n}\r\n\r\n.footer-row2 {\r\n  position: relative !important;\r\n  float: none;\r\n  display: block;\r\n  background-color: #eeeeee;\r\n  height: 200px;\r\n}\r\n\r\n.footer-category {\r\n  display: block;\r\n  text-align: center;\r\n  position: relative;\r\n  font-weight: 400;\r\n  font-size: 18px;\r\n  top: 30px;\r\n}\r\n\r\n.footer-category li {\r\n  display: inline-block;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy {\r\n  position: relative !important;\r\n  text-align: center;\r\n  background-color: #eeeeee;\r\n  font-weight: 400;\r\n  top: 50px;\r\n  font-size: 18px;\r\n  color: #444;\r\n}\r\n\r\n.privacy li {\r\n  display: inline-block;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy li a{\r\n  color: #aaaacc !important;\r\n}\r\n\r\n.copyright {\r\n  font-weight: 400;\r\n  position: relative !important;\r\n  text-align: center;\r\n  color: #aaaaaa;\r\n  top: 70px;\r\n}\r\n\r\n@media screen and (max-width: 600px) {\r\n  .footer-row2 div p {\r\n    font-size: 12px !important;\r\n  }\r\n}\r\n", ""]);
 
 // exports
 

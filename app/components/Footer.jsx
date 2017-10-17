@@ -24,22 +24,18 @@ export default class Footer extends React.Component {
                 <li><i className="fa fa-google fa-3x" aria-hidden="true"></i></li>
               </ul>
             </div>
-            <div className="row footer-row2">
-              <div className="row">
+            <div className="footer-row2 row">
                 <ul className="footer-category">
                   <li><a href="#">ABOUT</a></li>
                   <li><a href="#">CAREER</a></li>
                   <li><a href="#">UPCOMING</a></li>
                 </ul>
-              </div>
-              <div className="row">
                 <ul className="privacy">
                   <li><a href="#">Privacy Policy</a></li>
                   <li><a href="#">Copyright</a></li>
                   <li><a href="#">Terms of Service</a></li>
                   <li><a href="#">Licenses</a></li>
                 </ul>
-              </div>
               <div className="copyright">
                 <p>Copyright © 2017–2018 Yunlin. All rights reserved.</p>
               </div>
