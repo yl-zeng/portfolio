@@ -13,15 +13,24 @@ export default class IndexPage extends React.Component {
     return (
       <div>
         <div id="section-main" className="container-fluid">
-            <div className="row">
+            <div className="row" style={{"display":"relative"}}>
               <Video/>
+              <div className="">
+                <div className="index-left animated infinite slideInRight">
+                  <Link to="/home" style={{color:"white"}}><i className="fa fa-angle-double-right fa-5x"></i></Link>
+                </div>
+                <button className="index-mid btn btn-primary">LEARN MORE</button>
+                <div className="index-right animated infinite slideInLeft">
+                  <Link to="/home" style={{color:"white"}}><i className="fa fa-angle-double-left fa-5x"></i></Link>
+                </div>
+              </div>
             </div>
             <Footer></Footer>
-            <div id="Bigin" className="animated infinite slideInDown">
-              <Link to="/home" style={{color:"white"}}><i className="fa fa-angle-double-down fa-5x"></i></Link>
+            <div className="row">
+              <h1 className="heading">Talk is cheap, show me the code</h1>
             </div>
             <div className="row">
-              <h1 className="heading">Technology doesn't change the world people do.</h1>
+              <p className="heading2">Experienced in web development, enjoyed learning and working with cutting-edge technology. Mainly focus on Java, JavaScript and Node.js. A fast learner, a team player.</p>
             </div>
         </div>
 
