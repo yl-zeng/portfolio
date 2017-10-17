@@ -33497,51 +33497,47 @@ var IndexPage = function (_React$Component) {
           { id: "section-main", className: "container-fluid" },
           React.createElement(
             "div",
-            { className: "row", style: { "display": "relative" } },
-            React.createElement(_Video2.default, null),
+            { className: "row video-wrapper", style: { "display": "relative" } },
             React.createElement(
               "div",
-              { className: "" },
+              { className: "cell" },
+              React.createElement(_Video2.default, { autoplay: true, muted: true, loop: true })
+            ),
+            React.createElement(
+              "div",
+              { className: "hero" },
               React.createElement(
                 "div",
-                { className: "index-left animated infinite slideInRight" },
-                React.createElement("i", { className: "fa fa-angle-double-right fa-5x" })
-              ),
-              React.createElement(
-                Link,
-                { to: "/home", style: { color: "white" } },
+                { className: "hero-content" },
                 React.createElement(
-                  "button",
-                  { className: "index-mid btn btn-primary" },
-                  "LEARN MORE"
+                  "h1",
+                  { className: "heading" },
+                  "Talk is cheap, show me the code"
+                ),
+                React.createElement(
+                  "p",
+                  { className: "heading2" },
+                  "Experienced in web development, enjoyed learning and working with cutting-edge technology. Mainly focus on Java, JavaScript and Nod e.js. A fast learner, a team player."
+                ),
+                React.createElement(
+                  "div",
+                  { className: "heading3" },
+                  React.createElement("i", { className: "index-left animated infinite slideInRight fa fa-angle-double-right fa-5x" }),
+                  React.createElement(
+                    "button",
+                    { className: "btn-learn btn btn-primary" },
+                    React.createElement(
+                      Link,
+                      { to: "/home", style: { color: "white" }, className: "index-mid" },
+                      "LEARN MORE"
+                    )
+                  ),
+                  React.createElement("i", { className: "index-right animated infinite slideInLeft fa fa-angle-double-left fa-5x" })
                 )
-              ),
-              React.createElement(
-                "div",
-                { className: "index-right animated infinite slideInLeft" },
-                React.createElement("i", { className: "fa fa-angle-double-left fa-5x" })
               )
             )
           ),
-          React.createElement(_Footer2.default, null),
-          React.createElement(
-            "div",
-            { className: "row" },
-            React.createElement(
-              "h1",
-              { className: "heading" },
-              "Talk is cheap, show me the code"
-            )
-          ),
-          React.createElement(
-            "div",
-            { className: "row" },
-            React.createElement(
-              "p",
-              { className: "heading2" },
-              "Experienced in web development, enjoyed learning and working with cutting-edge technology. Mainly focus on Java, JavaScript and Node.js. A fast learner, a team player."
-            )
-          )
+          React.createElement(_Footer2.default, null)
         )
       );
     }
@@ -33984,7 +33980,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, "\r\nhtml {\r\n  padding: 0;\r\n  margin:0;\r\n  height: 100%;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  height:100%;\r\n  width:100%;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\nul {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo{\r\n  display: none;\r\n}\r\n\r\n@media screen and (min-width: 100px) {\r\n  video {\r\n      display: block;\r\n      float: left;\r\n      top: 0;\r\n      left: 0;\r\n      width: 100%;\r\n      height: auto;\r\n      z-index: -100;\r\n      /*left: 50%;\r\n      min-width: 100%;\r\n      min-height: 100%;\r\n      width: auto;\r\n      height: auto;\r\n      z-index: -100;\r\n      transform: translateX(-50%) translateY(-50%);*/\r\n      transition: 1s opacity;\r\n  }\r\n}\r\n\n/*.page {\n  background: url(\"/image/b.jpg\") no-repeat center center;\n  background-size: cover;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  min-width: 100%;\n  min-height: 100%;\n  width: auto;\n  height: auto;\n  z-index: -100;\n  transform: translateX(-50%) translateY(-50%);\n  transition: 1s opacity;\n}*/\n\r\n/*#section-main {\r\n  width:100%;\r\n  background: url(https://source.unsplash.com/random) no-repeat center center;\r\n  background-size: cover;\r\n}*/\r\n\r\n/*#section-main:after {\r\n  position: fixed;\r\n  top: 50%;\r\n  left: 50%;\r\n  min-width: 100%;\r\n  min-height: 100%;\r\n  width: auto;\r\n  height: auto;\r\n  background: rgba(0, 0, 0, 0.2);\r\n  transform: translateX(-50%) translateY(-50%);\r\n}*/\r\n\r\n.heading {\r\n  position: absolute;\r\n  text-align: center;\r\n  line-height: 50px;\r\n  color: #fff;\r\n  top:35%;\r\n  left:50%;\r\n  width: 80%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 60px;\r\n  transform: translateX(-50%) translateY(-50%);\r\n  z-index: 1;\r\n}\r\n\r\n.heading2 {\r\n  position: absolute;\r\n  text-align: center;\r\n  line-height: 30px;\r\n  color: #fff;\r\n  top:60%;\r\n  left:50%;\r\n  width: 50%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n  transform: translateX(-50%) translateY(-50%);\r\n  z-index: 1;\r\n}\r\n\r\n.index-right{\r\n  position: absolute;\r\n  left:65%;\r\n  top:80%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n.index-left{\r\n  position: absolute;\r\n  right:65%;\r\n  top:80%;\r\n  z-index:1;\r\n  color:white;\r\n}\r\n\r\n.index-mid{\r\n  position: absolute;\r\n  font-weight: 600;\r\n  font-size: 20px;\r\n  padding: 17px 50px;\r\n  border-radius: 10px;\r\n  left:50%;\r\n  top:80%;\r\n  z-index:1;\r\n  background-color: #1daadf;\r\n  color:white;\r\n  transform: translateX(-50%);\r\n}\r\n", ""]);
+exports.push([module.i, "\r\nhtml {\r\n  padding: 0;\r\n  margin:0;\r\n  height: 100%;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  height:100%;\r\n  width:100%;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\nul {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo{\r\n  display: none;\r\n  z-index: -100;\r\n}\r\n\r\n@media screen and (min-width: 100px) {\r\n  video {\r\n      display: block;\r\n      position: relative;\r\n      top: 0;\r\n      left: 0;\r\n      width: 100%;\r\n      height: auto;\r\n      transition: 1s opacity;\r\n      object-fit: cover;\r\n      overflow: hidden;\r\n  }\r\n}\r\n\r\n.video-wrapper {\r\n  position: relative;\r\n  background-color: rgba(0, 0, 0, 0.5);\r\n  overflow: hidden;\r\n}\n\n.hero {\n  position: absolute;\n  left: 0;\n\ttop: 0;\n\twidth: 100%;\n\theight: 100%;\n}\n\n\r\n#section-main {\r\n  position: relative;\r\n}\r\n\r\n.heading {\r\n  padding-top: 160px;\r\n  text-align: center;\r\n  line-height: 50px;\r\n  color: #fff;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 60px;\r\n  z-index: 5;\r\n}\r\n\r\n.heading2 {\r\n  padding-top: 60px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  line-height: 30px;\r\n  color: #fff;\r\n  width: 50%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n  z-index: 5;\r\n}\r\n\r\n.heading3 {\r\n  position: relative;\r\n  padding-top: 60px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  z-index: 30;\r\n}\r\n\r\n.index-right {\r\n  margin-left: 40px;\r\n  z-index: 5;\r\n  color: white;\r\n}\r\n\r\n.index-left {\r\n  margin-right: 40px;\r\n  z-index:5;\r\n  color:white;\r\n}\r\n\r\n.btn-learn{\r\n  display: inline-block;\r\n  padding: 17px 50px;\r\n  border-radius: 10px;\r\n  z-index:5;\r\n  background-color: #1daadf;\r\n  color:white;\r\n  transform: translateY(-30%);\r\n}\r\n", ""]);
 
 // exports
 
@@ -34029,7 +34025,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, ".navbar-inverse {\r\n    background-color: rgba(0, 0, 0, 0.8) !important;\r\n}\r\n\r\n.navbar{\r\n  z-index: 2;\r\n}\r\n\r\n#top-nav {\r\n  position: absolute;\r\n  width: 90%;\r\n  left: 50%;\r\n  top: 3%;\r\n  transform: translateX(-50%);\r\n  padding:0;\r\n  margin:0;\r\n}\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n\r\n.navbar a {\r\n  color: #1daadf !important;\r\n  font-weight: 600 !important;\r\n}\r\n\r\n.navbar a:hover {\r\n  color: white !important;\r\n  background-color: #1daadf !important;\r\n}\r\n", ""]);
+exports.push([module.i, ".navbar-inverse {\r\n    background-color: rgba(0, 0, 0, 0.8) !important;\r\n}\r\n\r\n.navbar{\r\n  z-index: 10;\r\n}\r\n\r\n#top-nav {\r\n  position: absolute;\r\n  width: 90%;\r\n  left: 50%;\r\n  top: 3%;\r\n  transform: translateX(-50%);\r\n  padding:0;\r\n  margin:0;\r\n}\r\n\r\n.navbar-default{\r\n  background: #fff;\r\n}\r\n\r\n.navbar-inverse{\r\n  background: #222;\r\n}\r\n\r\n.navbar-center {\r\n    float:none;\r\n    margin:0 auto;\r\n    display: block;\r\n    text-align: center;\r\n}\r\n\r\n\r\n.navbar-center li {\r\n    display: inline-block;\r\n    float:none;\r\n}\r\n\r\n.nav2-link-title{\r\n  font-size: 20px;\r\n}\r\n\r\n.navbar a {\r\n  color: #1daadf !important;\r\n  font-weight: 600 !important;\r\n}\r\n\r\n.navbar a:hover {\r\n  color: white !important;\r\n  background-color: #1daadf !important;\r\n}\r\n", ""]);
 
 // exports
 
