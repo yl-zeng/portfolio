@@ -27,9 +27,17 @@
 }
 
 .footer-row1 ul li {
+  border: 2px solid white;
   display: inline-block;
   margin:0px;
-  padding: 0px 40px;
+  width: 87px;
+  padding: 20px 20px;
+  margin: 0px 20px;
+}
+
+.footer-row1 ul li:hover{
+  border: 2px solid #1daadf;
+  border-radius: 50%;
 }
 
 .footer-row2 {

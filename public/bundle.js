@@ -22177,11 +22177,6 @@ var Nav2 = function (_React$Component) {
               React.createElement("span", { className: "icon-bar" }),
               React.createElement("span", { className: "icon-bar" }),
               React.createElement("span", { className: "icon-bar" })
-            ),
-            React.createElement(
-              "a",
-              { href: "https://github.com/yl-zeng/", target: "_block" },
-              React.createElement("i", { className: "navbar-brand fa fa-github animated flip" })
             )
           ),
           React.createElement(
@@ -34213,7 +34208,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, "\r\n.sec-contact {\r\n  padding-top:60px;\r\n  padding-bottom: 70px;\r\n}\r\n\r\n\r\n.sec-contact .form-control:focus {\r\n  border-color: #ad0000;\r\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);\r\n}\r\n\r\n.sec-contact .btn {\r\n  padding: .5rem 1.75rem;\r\n  background: #000;\r\n  font-size: .95rem;\r\n  color: #fff;\r\n}\r\n.sec-contact .btn:hover, .sec-contact .btn:focus {\r\n  background: #ad0000;\r\n  border-color: #7a0000;\r\n}\r\n", ""]);
+exports.push([module.i, "\r\n.sec-contact {\r\n  padding-top:60px;\r\n}\r\n\r\n\r\n.sec-contact .form-control:focus {\r\n  border-color: #ad0000;\r\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);\r\n}\r\n\r\n.sec-contact .btn {\r\n  padding: .5rem 1.75rem;\r\n  background: #000;\r\n  font-size: .95rem;\r\n  color: #fff;\r\n}\r\n.sec-contact .btn:hover, .sec-contact .btn:focus {\r\n  background: #ad0000;\r\n  border-color: #7a0000;\r\n}\r\n", ""]);
 
 // exports
 
@@ -34258,7 +34253,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, "\r\n#footer {\r\n  position: relative;\r\n  float: none;\r\n  top: 0;\r\n  width: 100%;\r\n  background-color: white;\r\n  opacity: 1;\r\n  list-style-type: none;\r\n  a {\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n.footer-row1 {\r\n  position: relative;\r\n  height: 120px;\r\n}\r\n\r\n.footer-row1 ul {\r\n  display: block;\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  color: #555;\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.footer-row1 ul li {\r\n  display: inline-block;\r\n  margin:0px;\r\n  padding: 0px 40px;\r\n}\r\n\r\n.footer-row2 {\r\n  position: relative;\r\n  background-color: #eeeeee;\r\n  height: 200px;\r\n}\r\n\r\n.footer-category {\r\n  position: absolute;\r\n  font-weight: 400;\r\n  font-size: 18px;\r\n  left: 50%;\r\n  top: 30%;\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.footer-category li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy {\r\n  position: relative;\r\n  background-color: #eeeeee;\r\n  height: 40px;\r\n}\r\n\r\n.privacy {\r\n  position: absolute;\r\n  font-weight: 400;\r\n  font-size: 18px;\r\n  left: 50%;\r\n  top: 60%;\r\n  color: #444;\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.privacy li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy li a{\r\n  color: #aaaacc !important;\r\n}\r\n\r\n.copyright {\r\n  font-weight: 400;\r\n  position: absolute;\r\n  top:70%;\r\n  left: 50%;\r\n  color: #aaaaaa;\r\n  transform: translateX(-50%);\r\n}\r\n", ""]);
+exports.push([module.i, "\r\n#footer {\r\n  position: relative;\r\n  float: none;\r\n  top: 0;\r\n  width: 100%;\r\n  background-color: white;\r\n  opacity: 1;\r\n  list-style-type: none;\r\n  a {\r\n    text-decoration: none;\r\n  }\r\n}\r\n\r\n.footer-row1 {\r\n  position: relative;\r\n  height: 120px;\r\n}\r\n\r\n.footer-row1 ul {\r\n  display: block;\r\n  position: absolute;\r\n  left: 50%;\r\n  top: 50%;\r\n  color: #555;\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.footer-row1 ul li {\r\n  border: 2px solid white;\r\n  display: inline-block;\r\n  margin:0px;\r\n  width: 87px;\r\n  padding: 20px 20px;\r\n  margin: 0px 20px;\r\n}\r\n\r\n.footer-row1 ul li:hover{\r\n  border: 2px solid #1daadf;\r\n  border-radius: 50%;\r\n}\r\n\r\n.footer-row2 {\r\n  position: relative;\r\n  background-color: #eeeeee;\r\n  height: 200px;\r\n}\r\n\r\n.footer-category {\r\n  position: absolute;\r\n  font-weight: 400;\r\n  font-size: 18px;\r\n  left: 50%;\r\n  top: 30%;\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.footer-category li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy {\r\n  position: relative;\r\n  background-color: #eeeeee;\r\n  height: 40px;\r\n}\r\n\r\n.privacy {\r\n  position: absolute;\r\n  font-weight: 400;\r\n  font-size: 18px;\r\n  left: 50%;\r\n  top: 60%;\r\n  color: #444;\r\n  transform: translateX(-50%) translateY(-50%);\r\n}\r\n\r\n.privacy li {\r\n  display: inline;\r\n  margin:0px;\r\n  padding: 0px 20px 0px 20px;\r\n}\r\n\r\n.privacy li a{\r\n  color: #aaaacc !important;\r\n}\r\n\r\n.copyright {\r\n  font-weight: 400;\r\n  position: absolute;\r\n  top:70%;\r\n  left: 50%;\r\n  color: #aaaaaa;\r\n  transform: translateX(-50%);\r\n}\r\n", ""]);
 
 // exports
 

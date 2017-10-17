@@ -43,7 +43,6 @@ export default class Nav2 extends React.Component {
 
                   <span className="icon-bar"></span>
                 </button>
-                <a href="https://github.com/yl-zeng/" target="_block"><i className="navbar-brand fa fa-github animated flip"></i></a>
               </div>
 
               <div className="collapse navbar-collapse">
