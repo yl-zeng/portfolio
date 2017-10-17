@@ -16,7 +16,7 @@ export default class Footer extends React.Component {
   render() {
     return (
         <div id='footer'>
-            <div className="row footer-row1">
+            <div className="footer-row1 row">
               <ul className="socials">
                 <a href="#" target="_blank"><li>
                   <i className="fa fa-twitter fa-3x" aria-hidden="true"></i>

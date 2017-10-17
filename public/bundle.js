@@ -16444,7 +16444,7 @@ var Footer = function (_React$Component) {
         { id: "footer" },
         React.createElement(
           "div",
-          { className: "row footer-row1" },
+          { className: "footer-row1 row" },
           React.createElement(
             "ul",
             { className: "socials" },
@@ -33669,10 +33669,10 @@ var Contact = function (_React$Component) {
           { id: "contact", className: "sec-contact" },
           React.createElement(
             "div",
-            { className: "container" },
+            { className: "container-fluid" },
             React.createElement(
               "h1",
-              null,
+              { className: "text-center" },
               "Contact me"
             ),
             React.createElement("hr", null),
@@ -33727,13 +33727,9 @@ var Contact = function (_React$Component) {
                   )
                 )
               )
-            )
+            ),
+            React.createElement(_Footer2.default, null)
           )
-        ),
-        React.createElement(
-          "div",
-          null,
-          React.createElement(_Footer2.default, null)
         )
       );
     }
@@ -33969,7 +33965,7 @@ exports = module.exports = __webpack_require__(17)(undefined);
 
 
 // module
-exports.push([module.i, "\r\nhtml {\r\n  padding: 0;\r\n  margin:0;\r\n  height: 100%;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  height:100%;\r\n  width:100%;\r\n}\r\n\r\na:link, a:visited {\r\n  text-decoration: none;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\nul {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo{\r\n  z-index: -100;\r\n  display: block;\r\n  position: relative;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: auto;\r\n  transition: 1s opacity;\r\n  object-fit: cover;\r\n  overflow: hidden;\r\n}\r\n\r\n#video-placeholder {\r\n  display: none;\r\n  filter: brightness(50%);\r\n}\r\n\r\n\r\n.video-wrapper {\r\n  position: relative;\r\n  background-color: rgba(0, 0, 0, 0.5);\r\n  overflow: hidden;\r\n}\n\n.hero {\n  position: absolute;\n  left: 0;\n\ttop: 0;\n\twidth: 100%;\n\theight: 100%;\n}\n\n\r\n#section-main {\r\n  position: relative;\r\n}\r\n\r\n.heading {\r\n  padding-top: 170px;\r\n  text-align: center;\r\n  margin: 0 auto;\r\n  line-height: 70px;\r\n  color: #fff;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 70px;\r\n  z-index: 5;\r\n}\r\n\r\n.heading2 {\r\n  padding-top: 60px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  line-height: 30px;\r\n  color: #fff;\r\n  width: 50%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n  z-index: 5;\r\n}\r\n\r\n.heading3 {\r\n  position: relative;\r\n  padding-top: 62px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  z-index: 30;\r\n}\r\n\r\n.index-right {\r\n  margin-left: 80px;\r\n  z-index: 5;\r\n  color: white;\r\n}\r\n\r\n.index-left {\r\n  margin-right: 70px;\r\n  z-index:5;\r\n  color:white;\r\n}\r\n\r\n\r\n/* responsive */\r\n@media screen and (max-width: 1080px){\r\n  video {\r\n    width: auto;\r\n    height: 600px;\r\n  }\r\n\r\n  .heading {\r\n    padding-top: 120px;\r\n    width: 80%;\r\n    font-size: 30px;\r\n    line-height: 50px;\r\n  }\r\n\r\n  .heading2 {\r\n    padding-top: 40px;\r\n    width: 60%;\r\n    font-size: 15px;\r\n  }\r\n\r\n  .index-right {\r\n    font-size: 40px;\r\n  }\r\n\r\n  .index-left {\r\n    font-size: 40px;\r\n  }\r\n\r\n  .btn-learn {\r\n    padding: 8px 20px !important;\r\n    border-radius: 7px !important;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 520px) {\r\n  video {\r\n    display: none;\r\n  }\r\n  #video-placeholder {\r\n    display: block;\r\n    width: auto;\r\n    height: 600px;\r\n  }\r\n}\r\n\r\n\r\n.btn-learn {\r\n  display: inline-block;\r\n  padding: 17px 50px;\r\n  border-radius: 10px;\r\n  z-index:5;\r\n  background-color: #1daadf;\r\n  color:white;\r\n  transform: translateY(-30%);\r\n}\r\n\r\n.btn-learn:hover {\r\n  transition: all 0.3s ease;\r\n}\r\n", ""]);
+exports.push([module.i, "\r\nhtml {\r\n  padding: 0;\r\n  margin:0;\r\n  height: 100%;\r\n}\r\n\r\nbody {\r\n  font-family: 'Open sans', sans-serif;\r\n  font-weight: 300;\r\n  height:100%;\r\n  width:100%;\r\n}\r\n\r\na:link, a:visited {\r\n  text-decoration: none;\r\n}\r\n\r\nhr {\r\n  margin-bottom: 3em;\r\n  width: 7%;\r\n}\r\n\r\nul {\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.container > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\n.container-fluid > h1 {\r\n  font-weight: 300;\r\n  text-align: center;\r\n  text-transform: uppercase;\r\n}\r\n\r\np {\r\n  font-size: 16px;\r\n  line-height: 1.5;\r\n}\r\n\r\nvideo{\r\n  z-index: -100;\r\n  display: block;\r\n  position: relative;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: auto;\r\n  transition: 1s opacity;\r\n  object-fit: cover;\r\n  overflow: hidden;\r\n}\r\n\r\n#video-placeholder {\r\n  display: none;\r\n  filter: brightness(50%);\r\n}\r\n\r\n\r\n.video-wrapper {\r\n  position: relative;\r\n  background-color: rgba(0, 0, 0, 0.5);\r\n  overflow: hidden;\r\n}\n\n.hero {\n  position: absolute;\n  left: 0;\n\ttop: 0;\n\twidth: 100%;\n\theight: 100%;\n}\n\n\r\n#section-main {\r\n  position: relative;\r\n}\r\n\r\n.heading {\r\n  padding-top: 170px;\r\n  text-align: center;\r\n  margin: 0 auto;\r\n  line-height: 70px;\r\n  color: #fff;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 70px;\r\n  z-index: 5;\r\n}\r\n\r\n.heading2 {\r\n  padding-top: 60px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  line-height: 30px;\r\n  color: #fff;\r\n  width: 50%;\r\n  font-family: 'Open sans', sans-serif;\r\n  font-size: 20px;\r\n  font-weight: 400;\r\n  z-index: 5;\r\n}\r\n\r\n.heading3 {\r\n  position: relative;\r\n  padding-top: 62px;\r\n  margin: 0 auto;\r\n  text-align: center;\r\n  z-index: 30;\r\n}\r\n\r\n.index-right {\r\n  margin-left: 80px;\r\n  z-index: 5;\r\n  color: white;\r\n}\r\n\r\n.index-left {\r\n  margin-right: 70px;\r\n  z-index:5;\r\n  color:white;\r\n}\r\n\r\n\r\n/* responsive */\r\n@media screen and (max-width: 1080px){\r\n  video {\r\n    width: auto;\r\n    height: 600px;\r\n  }\r\n\r\n  .heading {\r\n    padding-top: 120px;\r\n    width: 80%;\r\n    font-size: 30px;\r\n    line-height: 50px;\r\n  }\r\n\r\n  .heading2 {\r\n    padding-top: 40px;\r\n    width: 60%;\r\n    font-size: 15px;\r\n  }\r\n\r\n  .index-right {\r\n    font-size: 40px;\r\n  }\r\n\r\n  .index-left {\r\n    font-size: 40px;\r\n  }\r\n\r\n  .btn-learn {\r\n    padding: 8px 20px !important;\r\n    border-radius: 7px !important;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 520px) {\r\n  video {\r\n    display: none;\r\n  }\r\n  #video-placeholder {\r\n    display: block;\r\n    width: auto;\r\n    height: 600px;\r\n  }\r\n}\r\n\r\n\r\n.btn-learn {\r\n  display: inline-block;\r\n  padding: 17px 50px;\r\n  border-radius: 10px;\r\n  z-index:5;\r\n  background-color: #1daadf;\r\n  color:white;\r\n  transform: translateY(-30%);\r\n}\r\n\r\n.btn-learn:hover {\r\n  transition: all 0.3s ease;\r\n}\r\n", ""]);
 
 // exports
 

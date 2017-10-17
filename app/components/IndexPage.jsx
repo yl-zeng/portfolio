@@ -37,7 +37,6 @@ export default class IndexPage extends React.Component {
             </div>
             <Footer></Footer>
         </div>
-
       </div>
     );
   }

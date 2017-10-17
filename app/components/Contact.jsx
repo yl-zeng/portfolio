@@ -42,8 +42,8 @@ export default class Contact extends React.Component{
     return (
       <div>
         <section id="contact" className="sec-contact">
-          <div className="container">
-            <h1>Contact me</h1>
+          <div className="container-fluid">
+            <h1 className="text-center">Contact me</h1>
             <hr />
             <div className="row">
               <div className="col-sm-4 col-sm-offset-4">
@@ -71,11 +71,9 @@ export default class Contact extends React.Component{
                 </form>
               </div>
             </div>
+            <Footer></Footer>
           </div>
         </section>
-        <div>
-          <Footer></Footer>
-        </div>
       </div>
     );
   }
