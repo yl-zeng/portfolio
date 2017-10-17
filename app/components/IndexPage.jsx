@@ -17,11 +17,13 @@ export default class IndexPage extends React.Component {
               <Video/>
               <div className="">
                 <div className="index-left animated infinite slideInRight">
-                  <Link to="/home" style={{color:"white"}}><i className="fa fa-angle-double-right fa-5x"></i></Link>
+                  <i className="fa fa-angle-double-right fa-5x"></i>
                 </div>
-                <button className="index-mid btn btn-primary">LEARN MORE</button>
+                <Link to="/home" style={{color:"white"}}>
+                  <button className="index-mid btn btn-primary">LEARN MORE</button>
+                </Link>
                 <div className="index-right animated infinite slideInLeft">
-                  <Link to="/home" style={{color:"white"}}><i className="fa fa-angle-double-left fa-5x"></i></Link>
+                  <i className="fa fa-angle-double-left fa-5x"></i>
                 </div>
               </div>
             </div>

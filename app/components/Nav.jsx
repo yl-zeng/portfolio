@@ -10,16 +10,13 @@ export default class Nav extends React.Component{
 
   render() {
     return (
-        <nav className="navbar navbar-inverse navbar-fixed-top">
+        <nav id="top-nav" className="navbar navbar-inverse">
           <div className="container-fluid">
             <div className="navbar-header">
               <button className="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
                 <span className="sr-only">Toggle Navigation</span>
-
                 <span className="icon-bar"></span>
-
                 <span className="icon-bar"></span>
-
                 <span className="icon-bar"></span>
               </button>
               <a className="navbar-brand" href="/">YUNLIN's PORTFOLIO</a>
