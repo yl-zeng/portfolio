@@ -106,15 +106,29 @@ video{
 
 @media screen and (max-width: 900px) {
   .heading {
-    padding-top: 80px;
+    padding-top: 120px;
     width: 80%;
     font-size: 30px;
+    line-height: 50px;
   }
 
   .heading2 {
-    padding-top: 20px;
+    padding-top: 40px;
     width: 60%;
     font-size: 15px;
+  }
+
+  .index-right {
+    font-size: 40px;
+  }
+
+  .index-left {
+    font-size: 40px;
+  }
+
+  .btn-learn {
+    padding: 8px 20px !important;
+    border-radius: 7px !important;
   }
 }
 
