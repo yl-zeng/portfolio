@@ -76,13 +76,17 @@ video{
 	height: 100%;
 }
 
+.hero-content {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 #section-main {
   position: relative;
 }
 
 .heading {
-  padding-top: 170px;
+  padding-top: 30px;
   text-align: center;
   margin: 0 auto;
   line-height: 70px;
@@ -93,7 +97,7 @@ video{
 }
 
 .heading2 {
-  padding-top: 60px;
+  padding-top: 30px;
   margin: 0 auto;
   text-align: center;
   line-height: 30px;
@@ -106,21 +110,20 @@ video{
 }
 
 .heading3 {
-  position: relative;
-  padding-top: 62px;
+  padding-top: 30px;
   margin: 0 auto;
   text-align: center;
   z-index: 30;
 }
 
 .index-right {
-  margin-left: 80px;
+  margin-left: 60px;
   z-index: 5;
   color: white;
 }
 
 .index-left {
-  margin-right: 70px;
+  margin-right: 60px;
   z-index:5;
   color:white;
 }
@@ -133,15 +136,20 @@ video{
     height: 600px;
   }
 
+  .hero-content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .heading {
-    padding-top: 120px;
+    padding-top: 20px;
     width: 80%;
     font-size: 30px;
     line-height: 50px;
   }
 
   .heading2 {
-    padding-top: 40px;
+    padding-top: 20px;
     width: 60%;
     font-size: 15px;
   }
